@@ -1,7 +1,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background: #fff0ff
+	background: #ffffff
 }
 html {
 	height: 100%
@@ -11,18 +11,25 @@ body {
 	display: flex;
   	flex-direction: column
 }
+a {
+	text-decoration: none
+}
 header.tit {
+	z-index: 100;
 	position: fixed;
-	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
 	height: 64px;
 	line-height: 64px;
-	background: linear-gradient(35deg, #ba55d3, #9400d3);
-	text-align: center
-}
-header.tit:hover {
-	position: fixed
+	background-color: #eeeeee;
 }
 footer.ede {
+	z-index: 100;
+	margin: 0;
+	padding: 0;
 	height: 72px;
 	line-height: 72px;
 	text-align: center
@@ -33,4 +40,40 @@ footer.ede {
 .jbtxt {
 	color: transparent;
 	background-clip: text;
+	-webkit-background-clip: text
+}
+/* Ul nav */
+ul.nav {
+	margin: 0;
+	padding: 0;
+	z-index: 99;
+	position: fixed;
+	top: 64px;
+	left: 0
+}
+ul.nav li, .nav-cov {
+	height: 48px;
+	line-height: 48px;
+	border-radius: 24px;
+	margin-left: -80px;
+	transition-duration: 0.4s
+}
+ul.nav li {
+	display: block;
+	text-align: center;
+	list-style-type: none;
+	width: 160px;
+	font-weight: 600;
+	font-size: 16px;
+	background-image: linear-gradient(to bottom, #8a2be2, #ff1493)
+}
+.nav-cov {
+	position: absolute;
+	width: 156px;
+	left: 0;
+	margin-left: -80px;
+	background-color: #eeeeee
+}
+ul.nav li:hover, .nav-cov:hover {
+	margin-left: -40px
 }
