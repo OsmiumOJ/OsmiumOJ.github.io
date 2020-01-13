@@ -3,12 +3,34 @@ html, body {
 	padding: 0;
 	background: #fff0ff
 }
+html {
+	height: 100%
+}
+body {
+	min-height: 100%;
+	display: flex;
+  	flex-direction: column
+}
 header.tit {
-	position: fixed
+	position: fixed;
+	width: 100%;
+	height: 64px;
+	line-height: 64px;
+	background: linear-gradient(35deg, #ba55d3, #9400d3);
+	text-align: center
 }
 header.tit:hover {
 	position: fixed
 }
 footer.ede {
-	position: fixed
+	height: 72px;
+	line-height: 72px;
+	text-align: center
+}
+.vm {
+	vertical-align: middle
+}
+.jbtxt {
+	color: transparent;
+	background-clip: text;
 }
