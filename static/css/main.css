@@ -1,5 +1,6 @@
 * {
-	box-sizing: border-box
+	box-sizing: border-box;
+	word-wrap: break-word
 }
 html, body {
 	margin: 0;
@@ -81,18 +82,54 @@ ul.nav li {
 ul.nav li:hover {
 	left: -40px
 }
-.grad-line, .grad-line-top, .grad-line-bottom {
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: #dddddd
+}
+::-webkit-scrollbar-button {
+	display: none
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: #dddddd
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to bottom right, #aaaaaa, #666666)
+}
+::-webkit-scrollbar-corner {
+	background-color: #dddddd
+}
+/* Grad line and grad column */
+.grad-line, .grad-line-top, .grad-line-bottom, .grad-column, .grad-column-left, .grad-column-right {
 	position: absolute;
+	background-image: linear-gradient(to bottom right, #ee82ee, #ba55d3)
+}
+.grad-line, .grad-line-top, .grad-line-bottom {
 	left: 0;
 	right: 0;
-	height: 2px;
-	background-image: linear-gradient(to right, #ee82ee, #ba55d3)
+	height: 2px
+}
+.grad-column, .grad-column-left, .grad-column-right {
+	top: 0;
+	bottom: 0;
+	width: 2px
 }
 .grad-line-top {
 	top: 0
 }
 .grad-line-bottom {
 	bottom: 0
+}
+.grad-column-left {
+	left: 0
+}
+.grad-column-right {
+	right: 0
 }
 /* Elements part */
 main.main-part {
@@ -105,6 +142,5 @@ main.main-part {
 .box-1 {
 	margin: 8px;
 	padding: 8px;
-	border-radius: 6px;
 	background-color: #eeeeee
 }
