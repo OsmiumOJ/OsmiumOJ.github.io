@@ -52,17 +52,18 @@ ul.nav {
 	left: 0
 }
 ul.nav li, .nav-cov {
-	height: 48px;
 	line-height: 48px;
 	border-radius: 24px;
-	margin-left: -80px;
 	transition-duration: 0.4s
 }
 ul.nav li {
+	position: relative;
 	display: block;
 	text-align: center;
 	list-style-type: none;
 	width: 160px;
+	height: 48px;
+	left: -80px;
 	font-weight: 600;
 	font-size: 16px;
 	background-image: linear-gradient(to bottom, #8a2be2, #ff1493)
@@ -70,10 +71,10 @@ ul.nav li {
 .nav-cov {
 	position: absolute;
 	width: 156px;
+	height: 47px;
 	left: 0;
-	margin-left: -80px;
 	background-color: #eeeeee
 }
-ul.nav li:hover, .nav-cov:hover {
-	margin-left: -40px
+ul.nav li:hover {
+	left: -40px
 }
