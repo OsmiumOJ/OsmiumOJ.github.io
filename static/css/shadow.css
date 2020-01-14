@@ -195,65 +195,65 @@
 /* Static big shadow */
 /* Normal, Zuo shang */
 .static-big-shad, .static-big-shad-zs {
-    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.24), 3px 3px 9px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.24), 17px 17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* Zuo shang text */
 .static-big-shad-txt, .static-big-shad-txt-zs {
-    text-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.24), 3px 3px 9px 0 rgba(0, 0, 0, 0.19)
+    text-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.24), 17px 17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* Zuo xia */
 .static-big-shad-zx {
-    box-shadow: 3px -3px 4px 0 rgba(0, 0, 0, 0.24), 3px -3px 9px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 12px -12px 16px 0 rgba(0, 0, 0, 0.24), 17px -17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* Zuo xia text */
 .static-big-shad-txt-zx {
-    text-shadow: 3px -3px 4px 0 rgba(0, 0, 0, 0.24), 3px -3px 9px 0 rgba(0, 0, 0, 0.19)
+    text-shadow: 12px -12px 16px 0 rgba(0, 0, 0, 0.24), 17px -17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* You shang */
 .static-big-shad-ys {
-    box-shadow: -3px 3px 4px 0 rgba(0, 0, 0, 0.24), -3px 3px 9px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: -12px 12px 16px 0 rgba(0, 0, 0, 0.24), -17px 17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* You shang text */
 .static-big-shad-txt-ys {
-    text-shadow: -3px 3px 4px 0 rgba(0, 0, 0, 0.24), -3px 3px 9px 0 rgba(0, 0, 0, 0.19)
+    text-shadow: -12px 12px 16px 0 rgba(0, 0, 0, 0.24), -17px 17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* You xia */
 .static-big-shad-yx {
-    box-shadow: -3px -3px 4px 0 rgba(0, 0, 0, 0.24), -3px -3px 9px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: -12px -12px 16px 0 rgba(0, 0, 0, 0.24), -17px -17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* You xia text */
 .static-big-shad-txt-yx {
-    text-shadow: -3px -3px 4px 0 rgba(0, 0, 0, 0.24), -3px -3px 9px 0 rgba(0, 0, 0, 0.19)
+    text-shadow: -12px -12px 16px 0 rgba(0, 0, 0, 0.24), -17px -17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* Shang */
 .static-big-shad-s {
-    box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, 0.24), 0 -3px 9px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 0 -12px 16px 0 rgba(0, 0, 0, 0.24), 0 -17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* Shang text */
 .static-big-shad-txt-s {
-    text-shadow: 0 -3px 4px 0 rgba(0, 0, 0, 0.24), 0 -3px 9px 0 rgba(0, 0, 0, 0.19)
+    text-shadow: 0 -12px 16px 0 rgba(0, 0, 0, 0.24), 0 -17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* Xia */
 .static-big-shad-x {
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 3px 9px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* Xia text */
 .static-big-shad-txt-x {
-    text-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 3px 9px 0 rgba(0, 0, 0, 0.19)
+    text-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* Zuo */
 .static-big-shad-z {
-    box-shadow: -3px 0 4px 0 rgba(0, 0, 0, 0.24), -3px 0 9px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: -12px 0 16px 0 rgba(0, 0, 0, 0.24), -17px 0 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* Zuo text */
 .static-big-shad-txt-z {
-    text-shadow: -3px 0 4px 0 rgba(0, 0, 0, 0.24), -3px 0 9px 0 rgba(0, 0, 0, 0.19)
+    text-shadow: -12px 0 16px 0 rgba(0, 0, 0, 0.24), -17px 0 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* You */
 .static-big-shad-y {
-    box-shadow: 3px 0 4px 0 rgba(0, 0, 0, 0.24), 3px 0 9px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 12px 0 16px 0 rgba(0, 0, 0, 0.24), 17px 0 24px 0 rgba(0, 0, 0, 0.19)
 }
 /* You text */
 .static-big-shad-txt-y {
-    text-shadow: 3px 0 4px 0 rgba(0, 0, 0, 0.24), 3px 0 9px 0 rgba(0, 0, 0, 0.19)
+    text-shadow: 12px 0 16px 0 rgba(0, 0, 0, 0.24), 17px 0 24px 0 rgba(0, 0, 0, 0.19)
 }

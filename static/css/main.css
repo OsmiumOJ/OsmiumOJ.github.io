@@ -1,15 +1,13 @@
+* {
+	box-sizing: border-box
+}
 html, body {
 	margin: 0;
 	padding: 0;
 	background: #ffffff
 }
 html {
-	height: 100%
-}
-body {
-	min-height: 100%;
-	display: flex;
-  	flex-direction: column
+	height: 100vh
 }
 a {
 	text-decoration: none
@@ -30,8 +28,13 @@ footer.ede {
 	z-index: 100;
 	margin: 0;
 	padding: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	height: 72px;
 	line-height: 72px;
+	position: fixed;
+	background-color: #eeeeee;
 	text-align: center
 }
 .vm {
@@ -78,4 +81,30 @@ ul.nav li {
 ul.nav li:hover {
 	left: -40px
 }
+.grad-line, .grad-line-top, .grad-line-bottom {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-image: linear-gradient(to right, #ee82ee, #ba55d3)
+}
+.grad-line-top {
+	top: 0
+}
+.grad-line-bottom {
+	bottom: 0
+}
 /* Elements part */
+main.main-part {
+	position: absolute;
+	margin-top: 76px;
+	margin-bottom: 84px;
+	left: 12vw;
+	right: 12vw
+}
+.box-1 {
+	margin: 8px;
+	padding: 8px;
+	border-radius: 6px;
+	background-color: #eeeeee
+}
