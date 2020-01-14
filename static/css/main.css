@@ -32,8 +32,8 @@ footer.ede {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 72px;
-	line-height: 72px;
+	height: 36px;
+	line-height: 36px;
 	position: fixed;
 	background-color: #eeeeee;
 	text-align: center
@@ -135,9 +135,9 @@ ul.nav li:hover {
 main.main-part {
 	position: absolute;
 	margin-top: 76px;
-	margin-bottom: 84px;
-	left: 12vw;
-	right: 12vw
+	margin-bottom: 48px;
+	left: 8vw;
+	right: 8vw
 }
 .box-1 {
 	margin: 8px;
