@@ -23,36 +23,16 @@
         </div>
         <div class="div1 artic" style="width: calc(100% - 32px);">
 
-            <h2 id="3">联系我们</h2>
-            排名不分先后。
-            <h3 id="3.1">站长</h3>
-            <h4 id="zpp">zhanghengrui</h4>
-            <p>
-                后端管理员一个，任何后端问题（比如服务器挂了、评测挂了等）找他<br /> 他的邮箱：
-                <a href="mailto:zhr@ooj.ac.cn"><code>zhr@ooj.ac.cn</code></a><br /> 只解决技术问题，前端鸽了或者题目数据有误别找他
-            </p>
-            <h4 id="bsh">bysyhu</h4>
-            <p>
-                前端管理员一个，任何前端问题（比如界面太丑、按钮内容了等）找TA<br /> TA的邮箱：
-                <a href="mailto:bysyhu@ooj.ac.cn"><code>bysyhu@ooj.ac.cn</code></a><br />（只解决前端问题，鸽子属性）<br />
-                附注：鉴于TA的鸽子属性，如果您对前端有意见，请于Github上提issue。如果挺急的，请找
-                <a href="#hjg">HJGranger</a>。
-            </p>
-            <h4 id="hjg">HJGranger</h4>
-            <p>
-                除了搬题啥都不会的管理员。<br /> 如果你要添加题目，或者想出比赛，找她。
-                <br /> 她的邮箱：
-                <a href="mailto:hermione_granger@ooj.ac.cn"><code>hermione_granger@ooj.ac.cn</code></a><br />
-            </p>
-            <h3 id="3.2">管理员们</h3>
-            <h4>OsOI出题团</h4>
-            <ul>
-                <li>runde</li>
-                <li>BilyHurington</li>
-                <li>zengxy</li>
-            </ul>
-            （由于OsOI还没搞好，所以就暂时不放联系方式了，他们的联系方式会在第一场OsOI出现！）
-            <br />
+            <div id="test-markdown-view"></div>
+            <script type="text/javascript">
+                $(function () {
+                    var testView = editormd.markdownToHTML("test-markdown-view", {
+                        markdown : "## 联系我们\n排名不分先后。\n### 站长们\n<h4 id=\"zhr\">zhanghengrui</h4>\n后端管理员一个，喜欢让服务器为科学献身。任何后端问题（比如评测挂了、服务器挂了等）找他。\n\n他的邮箱：[`1736466350@qq.com`](mailto:1736466350@qq.com)。\n\n<h4 id=\"qcn\">bysyhu</h4>\n前端管理一个，任何前端问题找TA。当然您也可以去[提issue](https://github.com/OsmiumOJ/OsmiumOJ.github.io/issues)。\n\nTA的邮箱：[`lemonnyh@foxmail.com`](mailto:lemonnyh@foxmail.com)。\n\n<h4 id=\"hrm\">HJGranger</h4>\n其他事情都找她，比如出比赛，贡献题目等琐事。\n\n她的邮箱：[`hermione_granger@foxmail.com`](mailto:hermione_granger@foxmail.com)", // Also, you can dynamic set Markdown text
+                        htmlDecode : true,  // Enable / disable HTML tag encode.
+                        // htmlDecode : "style,script,iframe",  // Note: If enabled, you should filter some dangerous HTML tags for website security.
+                    });
+                });
+            </script>
 
         </div>
         <div class="div1" style="width: calc(100% - 32px); font-size: 16px;">

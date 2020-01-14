@@ -24,9 +24,16 @@
             </span>
         </div>
         <div class="div1 artic" style="width: calc(100% - 32px);">
-            不知大家是否赞叹过，<a href="https://loj.ac">LOJ</a>这种自由、开放的理念。<br />
-            我们非常欣赏这种理念，而又感慨于当下这种精神没有传递给所有的OIer。<br />OOJ正是建立于这种理念上的，我们<b>希望</b>能够搭建一个自由、开放、包容的OJ。<br />在建设OOJ的过程中，我们可能会遇到很多困难，但是——“我们遇到什么困难，也不要怕，微笑着面对他！”<br />
-            <del>目前OOJ仍在建设，几乎什么功能都没有，希望大家能够包容一下</del>
+            <div id="test-markdown-view"></div>
+            <script type="text/javascript">
+                $(function () {
+                    var testView = editormd.markdownToHTML("test-markdown-view", {
+                        markdown : "不知道大家是否赞叹过，<a href=\"https://loj.ac\" target=\"_blank\">LOJ</a>这种自由、开放的理念。\n\n我们非常欣赏这种理念，希望我们的OOJ也能像LOJ一样自由、开放，可是我们发现，LOJ的功能有点稀缺，因此我们希望我们的OOJ能稍多一点功能，给大家一个方便的做题环境，把自由、开放的理念传递给大家。", // Also, you can dynamic set Markdown text
+                        htmlDecode : true,  // Enable / disable HTML tag encode.
+                        // htmlDecode : "style,script,iframe",  // Note: If enabled, you should filter some dangerous HTML tags for website security.
+                    });
+                });
+            </script>
         </div>
         <div class="div1" style="width: calc(100% - 32px); font-size: 16px;">
             <span class="text1 sh">评论</span>
