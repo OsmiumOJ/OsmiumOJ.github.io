@@ -42,6 +42,20 @@ footer.ede {
 	background-clip: text;
 	-webkit-background-clip: text
 }
+.user-lr {
+	position: absolute;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	top: 12px;
+	border-radius: 20px
+}
+#user-login {
+	right: 64px
+}
+#user-register {
+	right: 248px
+}
 /* Ul nav */
 ul.nav {
 	margin: 0;
@@ -163,31 +177,20 @@ ul.nav li:hover {
 	background-image: linear-gradient(to right, rgba(207, 207, 207, 0.85), transparent)
 }
 /* Grad line and grad column */
-.grad-line, .grad-line-top, .grad-line-bottom, .grad-column, .grad-column-left, .grad-column-right {
-	position: absolute;
-	background-image: linear-gradient(to bottom right, #008080, #00ffff)
+.grad-border {
+	border: 2px solid #00bcbc
 }
-.grad-line, .grad-line-top, .grad-line-bottom {
-	left: 0;
-	right: 0;
-	height: 2px
+.grad-double-lines, .grad-line-top {
+	border-top: 2px solid #00bcbc
 }
-.grad-column, .grad-column-left, .grad-column-right {
-	top: 0;
-	bottom: 0;
-	width: 2px
+.grad-double-lines, .grad-line-bottom {
+	border-bottom: 2px solid #00bcbc
 }
-.grad-line-top {
-	top: 0
+.grad-double-columns, .grad-column-left {
+	border-left: 2px solid #00bcbc
 }
-.grad-line-bottom {
-	bottom: 0
-}
-.grad-column-left {
-	left: 0
-}
-.grad-column-right {
-	right: 0
+.grad-double-columns, .grad-column-right {
+	border-right: 2px solid #00bcbc
 }
 /* Elements part */
 main.main-part, div.ext-part {
@@ -207,6 +210,12 @@ div.ext-part {
 .box-1 {
 	margin: 8px;
 	padding: 8px;
+	border-radius: 8px;
+	background-color: rgba(239, 239, 239, 0.85)
+}
+.button-1 {
+	outline: medium;
+	border: 2px solid #00bcbc;
 	background-color: rgba(239, 239, 239, 0.85)
 }
 .grad-bg-1 {
