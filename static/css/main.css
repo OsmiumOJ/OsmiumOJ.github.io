@@ -22,7 +22,7 @@ header.tit {
 	padding: 0;
 	height: 64px;
 	line-height: 64px;
-	background-color: rgba(239, 239, 239, 0.7);
+	background-color: rgba(239, 239, 239, 0.85);
 }
 footer.ede {
 	z-index: 100;
@@ -34,7 +34,7 @@ footer.ede {
 	height: 36px;
 	line-height: 36px;
 	position: fixed;
-	background-color: rgba(239, 239, 239, 0.7);
+	background-color: rgba(239, 239, 239, 0.85);
 	text-align: center
 }
 .jbtxt {
@@ -140,9 +140,9 @@ ul.nav li:hover {
 }
 .artic code, .artic pre {
 	padding: 2px;
-	border: 1px solid rgba(165, 165, 165, 0.7);
+	border: 1px solid rgba(165, 165, 165, 0.85);
 	border-radius: 3px;
-	background-color: rgba(207, 207, 207, 0.7)
+	background-color: rgba(207, 207, 207, 0.85)
 }
 .artic hr {
 	margin-left: 0;
@@ -151,7 +151,7 @@ ul.nav li:hover {
 	margin-bottom: 8px;
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.7), transparent)
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.85), transparent)
 }
 .artic blockquote {
 	margin-left: 12px;
@@ -159,8 +159,8 @@ ul.nav li:hover {
 	margin-top: 4px;
 	margin-bottom: 4px;
 	padding: 8px;
-	border-left: 3px solid rgba(165, 165, 165, 0.7);
-	background-image: linear-gradient(to right, rgba(207, 207, 207, 0.7), transparent)
+	border-left: 3px solid rgba(165, 165, 165, 0.85);
+	background-image: linear-gradient(to right, rgba(207, 207, 207, 0.85), transparent)
 }
 /* Grad line and grad column */
 .grad-line, .grad-line-top, .grad-line-bottom, .grad-column, .grad-column-left, .grad-column-right {
@@ -207,7 +207,7 @@ div.ext-part {
 .box-1 {
 	margin: 8px;
 	padding: 8px;
-	background-color: rgba(239, 239, 239, 0.7)
+	background-color: rgba(239, 239, 239, 0.85)
 }
 .grad-bg-1 {
 	background-image: linear-gradient(to bottom right, #008b8b, #00bdbd)
