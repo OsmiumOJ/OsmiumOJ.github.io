@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	color: #111414;
 	word-wrap: break-word
 }
 html, body {
@@ -21,7 +22,7 @@ header.tit {
 	padding: 0;
 	height: 64px;
 	line-height: 64px;
-	background-color: #eeeeee;
+	background-color: rgba(239, 239, 239, 0.7);
 }
 footer.ede {
 	z-index: 100;
@@ -33,7 +34,7 @@ footer.ede {
 	height: 36px;
 	line-height: 36px;
 	position: fixed;
-	background-color: #eeeeee;
+	background-color: rgba(239, 239, 239, 0.7);
 	text-align: center
 }
 .jbtxt {
@@ -65,7 +66,7 @@ ul.nav li {
 	margin-left: -80px;
 	font-weight: 600;
 	font-size: 16px;
-	background-image: linear-gradient(to bottom right, #00ced1, #008b8b)
+	background-image: linear-gradient(to bottom right, #008b8b, #00bdbd)
 }
 .nav-cov {
 	position: absolute;
@@ -99,10 +100,68 @@ ul.nav li:hover {
 ::-webkit-scrollbar-corner {
 	background-color: #dddddd
 }
+/* Article part */
+.artic {
+	font-size: 14px
+}
+/* .artic h1, .artic h2, .artic h3, .artic h4, .artic h5, .artic h6 {
+	color: #008383
+} */
+.artic h1 {
+	font-size: 30px
+}
+.artic h2 {
+	font-size: 26px
+}
+.artic h3 {
+	font-size: 23px
+}
+.artic h4 {
+	font-size: 21px
+}
+.artic h5 {
+	font-size: 19px
+}
+.artic h6 {
+	font-size: 17px
+}
+.artic b {
+	font-weight: 800
+}
+.artic a {
+	font-weight: 600;
+	transition-duration: 0.4s
+}
+.artic a:link, .artic a:visited {
+	color: #008b8b
+}
+.artic a:hover, .artic a:active {
+	color: #00bdbd
+}
+.artic code, .artic pre {
+	padding: 2px;
+	border: 1px solid rgba(165, 165, 165, 0.7);
+	border-radius: 3px;
+	background-color: rgba(207, 207, 207, 0.7)
+}
+.artic hr {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 8px;
+	margin-bottom: 8px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.7), transparent)
+}
+.artic blockquote {
+	padding: 8px;
+	border-left: 3px solid rgba(165, 165, 165, 0.7);
+	background-image: linear-gradient(to right, rgba(207, 207, 207, 0.7), transparent)
+}
 /* Grad line and grad column */
 .grad-line, .grad-line-top, .grad-line-bottom, .grad-column, .grad-column-left, .grad-column-right {
 	position: absolute;
-	background-image: linear-gradient(to bottom right, #00ced1, #008b8b)
+	background-image: linear-gradient(to bottom right, #008080, #00ffff)
 }
 .grad-line, .grad-line-top, .grad-line-bottom {
 	left: 0;
@@ -144,10 +203,10 @@ div.ext-part {
 .box-1 {
 	margin: 8px;
 	padding: 8px;
-	background-color: #eeeeee
+	background-color: rgba(239, 239, 239, 0.7)
 }
 .grad-bg-1 {
-	background-image: linear-gradient(to bottom right, #008b8b, #006363)
+	background-image: linear-gradient(to bottom right, #008b8b, #00bdbd)
 }
 .grad-bg-2 {
 	background-image: linear-gradient(to bottom right, #008080, #00ffff)
