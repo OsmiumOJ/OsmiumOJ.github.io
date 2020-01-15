@@ -5,10 +5,9 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background: #ffffff
-}
-html {
-	height: 100vh
+	background: #ffffff;
+	min-height: 350px;
+	min-width: 550px
 }
 a {
 	text-decoration: none
@@ -38,9 +37,6 @@ footer.ede {
 	background-color: #eeeeee;
 	text-align: center
 }
-.vm {
-	vertical-align: middle
-}
 .jbtxt {
 	color: transparent;
 	background-clip: text;
@@ -67,10 +63,10 @@ ul.nav li {
 	list-style-type: none;
 	width: 160px;
 	height: 48px;
-	left: -80px;
+	margin-left: -80px;
 	font-weight: 600;
 	font-size: 16px;
-	background-image: linear-gradient(to bottom, #8a2be2, #ff1493)
+	background-image: linear-gradient(to bottom right, #00ced1, #008b8b)
 }
 .nav-cov {
 	position: absolute;
@@ -80,7 +76,7 @@ ul.nav li {
 	background-color: #eeeeee
 }
 ul.nav li:hover {
-	left: -40px
+	margin-left: -40px
 }
 /* Scroll bar */
 ::-webkit-scrollbar {
@@ -107,7 +103,7 @@ ul.nav li:hover {
 /* Grad line and grad column */
 .grad-line, .grad-line-top, .grad-line-bottom, .grad-column, .grad-column-left, .grad-column-right {
 	position: absolute;
-	background-image: linear-gradient(to bottom right, #ee82ee, #ba55d3)
+	background-image: linear-gradient(to bottom right, #00ced1, #008b8b)
 }
 .grad-line, .grad-line-top, .grad-line-bottom {
 	left: 0;
@@ -143,4 +139,10 @@ main.main-part {
 	margin: 8px;
 	padding: 8px;
 	background-color: #eeeeee
+}
+.grad-bg-1 {
+	background-image: linear-gradient(to bottom right, #008b8b, #006363)
+}
+.grad-bg-2 {
+	background-image: linear-gradient(to bottom right, #008080, #00ffff)
 }
