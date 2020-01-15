@@ -154,6 +154,10 @@ ul.nav li:hover {
     background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.7), transparent)
 }
 .artic blockquote {
+	margin-left: 12px;
+	margin-right: 4px;
+	margin-top: 4px;
+	margin-bottom: 4px;
 	padding: 8px;
 	border-left: 3px solid rgba(165, 165, 165, 0.7);
 	background-image: linear-gradient(to right, rgba(207, 207, 207, 0.7), transparent)
