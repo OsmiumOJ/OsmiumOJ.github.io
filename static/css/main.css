@@ -128,11 +128,18 @@ ul.nav li:hover {
 	right: 0
 }
 /* Elements part */
-main.main-part {
+main.main-part, div.ext-part {
 	position: absolute;
 	margin-top: 76px;
 	margin-bottom: 48px;
+	min-height: calc(100vh - 124px)
+}
+main.main-part {
 	left: 8vw;
+	right: 28vw
+}
+div.ext-part {
+	left: 72vw;
 	right: 8vw
 }
 .box-1 {
