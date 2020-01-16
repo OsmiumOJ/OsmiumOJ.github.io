@@ -38,6 +38,7 @@ footer.ede {
 	background-color: rgba(239, 239, 239, 0.85);
 	text-align: center
 }
+/* Gradient text */
 .jbtxt {
 	color: transparent;
 	background-clip: text;
@@ -59,40 +60,44 @@ footer.ede {
 	right: 162px
 }
 /* Ul nav */
-ul.nav {
+ul.nav-left, ul.nav-right {
 	margin: 0;
 	padding: 0;
 	z-index: 99;
 	position: fixed;
-	top: 64px;
+	top: 64px
+}
+ul.nav-left {
 	left: 0
 }
-ul.nav li, .nav-cov {
+ul.nav-right {
+	right: 0
+}
+ul.nav-left li, ul.nav-right li {
 	line-height: 48px;
 	border-radius: 24px;
-	transition-duration: 0.4s
-}
-ul.nav li {
+	transition-duration: 0.4s;
 	position: relative;
 	display: block;
 	text-align: center;
 	list-style-type: none;
 	width: 160px;
 	height: 48px;
-	margin-left: -80px;
 	font-weight: 600;
 	font-size: 16px;
-	background-image: linear-gradient(to bottom right, #008b8b, #00bdbd)
-}
-.nav-cov {
-	position: absolute;
-	width: 156px;
-	height: 47px;
-	left: 0;
 	background-color: #eeeeee
 }
-ul.nav li:hover {
+ul.nav-left li {
+	margin-left: -80px
+}
+ul.nav-left li:hover {
 	margin-left: -40px
+}
+ul.nav-right li {
+	margin-right: -80px
+}
+ul.nav-right li:hover {
+	margin-right: -40px
 }
 /* Scroll bar */
 ::-webkit-scrollbar {
@@ -179,6 +184,21 @@ ul.nav li:hover {
 	background-image: linear-gradient(to right, rgba(207, 207, 207, 0.85), transparent)
 }
 /* Grad line and grad column */
+.thin-border {
+	border: 1px solid #00bcbc
+}
+.thin-double-lines, .thin-line-top {
+	border-top: 1px solid #00bcbc
+}
+.thin-double-lines, .thin-line-bottom {
+	border-bottom: 1px solid #00bcbc
+}
+.thin-double-columns, .thin-column-left {
+	border-left: 1px solid #00bcbc
+}
+.thin-double-columns, .thin-column-right {
+	border-right: 1px solid #00bcbc
+}
 .grad-border {
 	border: 2px solid #00bcbc
 }
@@ -193,6 +213,21 @@ ul.nav li:hover {
 }
 .grad-double-columns, .grad-column-right {
 	border-right: 2px solid #00bcbc
+}
+.fat-border {
+	border: 4px solid #00bcbc
+}
+.fat-double-lines, .fat-line-top {
+	border-top: 4px solid #00bcbc
+}
+.fat-double-lines, .fat-line-bottom {
+	border-bottom: 4px solid #00bcbc
+}
+.fat-double-columns, .fat-column-left {
+	border-left: 4px solid #00bcbc
+}
+.fat-double-columns, .fat-column-right {
+	border-right: 4px solid #00bcbc
 }
 /* Elements part */
 main.main-part, div.ext-part {
@@ -245,7 +280,7 @@ div.ext-part {
 	font-weight: 500
 }
 .tag-1:hover {
-	opacity: 0.85
+	opacity: 0.95
 }
 .tag-1.black {
 	background-color: #000000
@@ -258,6 +293,9 @@ div.ext-part {
 }
 .tag-1.red {
 	background-color: #bf0000
+}
+.tag-1.orange {
+	background-color: #ff7700
 }
 .tag-1.yellow {
 	background-color: #bfbf00
@@ -278,37 +316,37 @@ div.ext-part {
 	background-color: #8a8a8a
 }
 .tag-1.noob::before {
-	content: "新人入坑题\/"
+	content: "新人入坑题"
 }
 .tag-1.easy {
 	background-color: #00bf00
 }
 .tag-1.easy::before {
-	content: "蒟蒻向\/"
+	content: "蒟蒻向"
 }
 .tag-1.middle {
 	background-color: #0000bf
 }
 .tag-1.middle::before {
-	content: "普通\/"
+	content: "普通"
 }
 .tag-1.hard {
-	background-color: #bfbf00
+	background-color: #ff7700
 }
 .tag-1.hard::before {
-	content: "大佬向\/"
+	content: "大佬向"
 }
 .tag-1.duliu {
 	background-color: #bf0000
 }
 .tag-1.duliu::before {
-	content: "神仙题\/"
+	content: "神仙题"
 }
 .tag-1.sh_t {
 	background-color: #360000
 }
 .tag-1.sh_t::before {
-	content: "毒瘤\/"
+	content: "毒瘤"
 }
 /* Zad */ 
 .button-1 {
