@@ -1,13 +1,14 @@
 * {
 	box-sizing: border-box;
 	color: #111414;
-	word-wrap: break-word
+	word-wrap: break-word;
+	vertical-align: middle
 }
 html, body {
 	margin: 0;
 	padding: 0;
 	background: #ffffff;
-	min-height: 350px;
+	min-height: 350px
 }
 a {
 	text-decoration: none
@@ -44,17 +45,18 @@ footer.ede {
 }
 .user-lr {
 	position: absolute;
-	width: 120px;
-	height: 40px;
-	line-height: 40px;
-	top: 12px;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	top: 17px;
+	font-size: 14px;
 	border-radius: 20px
 }
 #user-login {
 	right: 64px
 }
 #user-register {
-	right: 248px
+	right: 162px
 }
 /* Ul nav */
 ul.nav {
@@ -213,14 +215,130 @@ div.ext-part {
 	border-radius: 8px;
 	background-color: rgba(239, 239, 239, 0.85)
 }
+/* Fulfill in static (:P) */
+.full-in-static {
+	margin: 0
+}
+.full-in-static-left, .full-in-static-left-right {
+	margin-left: 0
+}
+.full-in-static-right, .full-in-static-left-right {
+	margin-right: 0
+}
+.full-in-static-top, .full-in-static-top-bottom {
+	margin-top: 0
+}
+.full-in-static-bottom, .full-in-static-top-bottom {
+	margin-bottom: 0
+}
+/* Tags */
+.tag-1 {
+	display: inline-block;
+	margin: 4px;
+	padding: 4px;
+	font-size: 11px;
+	color: #ffffff;
+	opacity: 0.7;
+	border-radius: 4px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-weight: 500
+}
+.tag-1:hover {
+	opacity: 0.85
+}
+.tag-1.black {
+	background-color: #000000
+}
+.tag-1.gray, .tag-1.grey {
+	background-color: #474747
+}
+.tag-1.silver {
+	background-color: #8a8a8a
+}
+.tag-1.red {
+	background-color: #bf0000
+}
+.tag-1.yellow {
+	background-color: #bfbf00
+}
+.tag-1.blue {
+	background-color: #0000bf
+}
+.tag-1.green {
+	background-color: #00bf00
+}
+.tag-1.maroon {
+	background-color: #360000
+}
+.tag-1.purple {
+	background-color: #7a007a
+}
+.tag-1.noob {
+	background-color: #8a8a8a
+}
+.tag-1.noob::before {
+	content: "新人入坑题\/"
+}
+.tag-1.easy {
+	background-color: #00bf00
+}
+.tag-1.easy::before {
+	content: "蒟蒻向\/"
+}
+.tag-1.middle {
+	background-color: #0000bf
+}
+.tag-1.middle::before {
+	content: "普通\/"
+}
+.tag-1.hard {
+	background-color: #bfbf00
+}
+.tag-1.hard::before {
+	content: "大佬向\/"
+}
+.tag-1.duliu {
+	background-color: #bf0000
+}
+.tag-1.duliu::before {
+	content: "神仙题\/"
+}
+.tag-1.sh_t {
+	background-color: #360000
+}
+.tag-1.sh_t::before {
+	content: "毒瘤\/"
+}
+/* Zad */ 
 .button-1 {
 	outline: medium;
-	border: 2px solid #00bcbc;
+	border: 1px solid #00bcbc;
+	font-size: 16px;
+	font-weight: 600;
+	transition-duration: 0.4s;
 	background-color: rgba(239, 239, 239, 0.85)
+}
+.button-1:hover {
+	background-color: rgba(207, 207, 207, 0.85)
 }
 .grad-bg-1 {
 	background-image: linear-gradient(to bottom right, #008b8b, #00bdbd)
 }
 .grad-bg-2 {
 	background-image: linear-gradient(to bottom right, #008080, #00ffff)
+}
+.con-with-ot-left-part {
+	width: 72%;
+	min-height: 100%;
+	display: inline-block;
+	margin: 0;
+	padding: 0
+}
+.con-with-ot-right-part {
+	width: 28%;
+	min-height: 100%;
+	display: inline-block;
+	margin: 0;
+	padding: 0
 }
