@@ -77,9 +77,7 @@ ul.nav-left li, ul.nav-right li {
 	line-height: 48px;
 	border-radius: 24px;
 	transition-duration: 0.4s;
-	position: relative;
 	display: block;
-	text-align: center;
 	list-style-type: none;
 	width: 160px;
 	height: 48px;
