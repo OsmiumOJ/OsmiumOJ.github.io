@@ -18,17 +18,73 @@
     </head>
     <body>
         <!-- 后面会加载 -->
-        <div id="header"></div>
+        <!-- <div id="header"></div>
         <div id="left-list"></div>
         <div id="right-list"></div>
-        <div id="footer"></div>
+        <div id="footer"></div> -->
         <!--这里加载-->
-        <script>
+        <!-- <script>
             $("#header").load("/html/header.html");
             $("#left-list").load("/html/list-left.html");
             $("#left-right").load("/html/left-right.html");
             $("#footer").load("/html/footer.html");
-        </script>
+        </script> -->
+        <ul class="nav-left">
+            <a href="/">
+                <li class="shad fat-column-right thin-line-bottom">
+                    <i class="jbtxt fa fa-home grad-bg-1" style="position: relative; left: -15px; font-size: 23px"></i>
+                    <span class="jbtxt grad-bg-1" style="position: absolute; right: 30px">主页</span>
+                </li>
+            </a>
+            <a href="/problems">
+                <li class="shad fat-column-right thin-line-bottom">
+                    <i class="jbtxt fa fa-book grad-bg-1" style="position: relative; left: -15px; font-size: 23px"></i>
+                    <span class="jbtxt grad-bg-1" style="position: absolute; right: 30px">题库</span>
+                </li>
+            </a>
+            <a href="/contests">
+                <li class="shad fat-column-right thin-line-bottom">
+                    <i class="jbtxt fa fa-crosshairs grad-bg-1" style="position: relative; left: -15px; font-size: 23px"></i>
+                    <span class="jbtxt grad-bg-1" style="position: absolute; right: 30px">比赛</span>
+                </li>
+            </a>
+            <a href="/discussions">
+                <li class="shad fat-column-right thin-line-bottom">
+                    <i class="jbtxt fa fa-comments grad-bg-1" style="position: relative; left: -15px; font-size: 23px"></i>
+                    <span class="jbtxt grad-bg-1" style="position: absolute; right: 30px">讨论</span>
+                </li>
+            </a>
+            <a href="/functions">
+                <li class="shad fat-column-right thin-line-bottom">
+                    <i class="jbtxt fa fa-cogs grad-bg-1" style="position: relative; left: -15px; font-size: 23px"></i>
+                    <span class="jbtxt grad-bg-1" style="position: absolute; right: 30px">功能</span>
+                </li>
+            </a>
+        </ul>
+        <header class="tit shad-x grad-line-bottom">
+            <a href="/">
+                <img id="title-icon" alt="OOJ Image" src="static/icon/ooj.png" style="position: absolute; top: 8px; left: 8px; width: 48px; height: 48px"/>
+            </a>
+            <a id="title" class="jbtxt grad-bg-1" style="position: absolute; left: 64px; top: 0; font-size: 35px" href="/">Osmium OJ</a>
+            <img alt="OOJ QR Code image" style="position: absolute; top: 8px; right: 8px; width: 48px; height: 48px" src="static/icon/OOJqrCode.png"/>
+        </header>
+        <ul class="nav-right">
+            <a href="/login">
+                <li class="shad fat-column-left thin-line-bottom">
+                    <i class="jbtxt fa fa-sign-in grad-bg-1" style="position: relative; right: -15px; font-size: 23px"></i>
+                    <span class="jbtxt grad-bg-1" style="position: absolute; left: 30px">登录</span>
+                </li>
+            </a>
+            <a href="/register">
+                <li class="shad fat-column-left thin-line-bottom">
+                    <i class="jbtxt fa fa-user-plus grad-bg-1" style="position: relative; right: -15px; font-size: 23px"></i>
+                    <span class="jbtxt grad-bg-1" style="position: absolute; left: 30px">注册</span>
+                </li>
+            </a>
+        </ul>
+        <footer class="ede shad-s grad-line-top">
+            <span style="font-size: 16px">OOJ (2019 - 2020), developed by OOJ-dev team.</span>
+        </footer>
         <main class="artic main-part static-shad box-1 grad-double-lines">
             <div class="static-shad box-1 grad-double-lines full-in-static-left-right">
                 <h2>新比赛</h2>
