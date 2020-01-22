@@ -334,16 +334,16 @@ div.ext-part {
 .tag-1.hard::before {
 	content: "大佬向"
 }
-.tag-1.duliu {
+.tag-1.god {
 	background-color: #bf0000
 }
-.tag-1.duliu::before {
+.tag-1.god::before {
 	content: "神仙题"
 }
-.tag-1.sh_t {
+.tag-1.duliu {
 	background-color: #360000
 }
-.tag-1.sh_t::before {
+.tag-1.duliu::before {
 	content: "毒瘤"
 }
 /* Zad */ 
