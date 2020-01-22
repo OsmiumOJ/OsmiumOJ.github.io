@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="static/icon/ooj.png"/>
         <style>/* Something */</style>
-        <script src="static/js/jq.js"></script>
+        <script src="static/js/jquery.js"></script>
         <script src="static/js/css.js"></script>
         <script src="static/js/alert1.js"></script>
         <script src="static/js/main.js"></script>
@@ -17,15 +17,18 @@
         </script>
     </head>
     <body>
-        <header class="tit shad-x grad-line-bottom">
-            <a href="/">
-                <img id="title-icon" alt="OOJ Image" src="static/icon/ooj.png" style="position: absolute; top: 8px; left: 8px; width: 48px; height: 48px"/>
-            </a>
-            <a id="title" class="jbtxt grad-bg-1" style="position: absolute; left: 64px; top: 0; font-size: 35px" href="/">Osmium OJ</a>
-            <img alt="OOJ QR Code image" style="position: absolute; top: 8px; right: 8px; width: 48px; height: 48px" src="static/icon/OOJqrCode.png"/>
-        </header>
-        <!-- #include file=“/static/html/list-left.html"-->
-        <!-- #include file="/static/html/list-right.html" -->
+        <!-- 后面会加载 -->
+        <div id="header"></div>
+        <div id="left-list"></div>
+        <div id="right-list"></div>
+        <div id="footer"></div>
+        <!--这里加载-->
+        <script>
+            $("#header").load("/html/header.html");
+            $("#left-list").load("/html/list-left.html");
+            $("#left-right").load("/html/left-right.html");
+            $("#footer").load("/html/footer.html");
+        </script>
         <main class="artic main-part static-shad box-1 grad-double-lines">
             <div class="static-shad box-1 grad-double-lines full-in-static-left-right">
                 <h2>新比赛</h2>
