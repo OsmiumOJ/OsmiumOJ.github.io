@@ -112,6 +112,26 @@
             <div class="static-shadow box-1 gradient-double-lines full-in-static-left-right">
                 <h2>公告</h2>
             </div>
+            <div class="static-shadow box-1 gradient-double-lines full-in-static-left-right">
+                <h2>一言</h2>
+                <p id="hitokoto-main">Loading...</p>
+                <p id="hitokoto-from" style="text-align: right;">Loading...</p>
+                <script>
+                    // 一言加载
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('get', 'https://v1.hitokoto.cn');
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === 4) {
+                            var data = JSON.parse(xhr.responseText);
+                            // var hitokoto = document.getElementById('hitokoto-text');
+                            document.getElementById('hitokoto-from').innerText = data.from;
+                            document.getElementById('hitokoto-text').innerText = data.hitokoto;
+                            document.getElementById('hitokoto-from').innerText = "——" + document.getElementById('hitokoto-from').innerText;
+                        }
+                    }
+                    xhr.send();
+                </script>
+            </div>
         </div>
         <!-- #include file="/static/html/footer.html" -->
     </body>
