@@ -119,7 +119,7 @@
                 <script>
                     // 一言加载
                     var xhr = new XMLHttpRequest();
-                    xhr.open('get', 'https://v1.hitokoto.cn');
+                    xhr.open('get', 'https://v1.hitokoto.cn/?c=a&c=b&c=c&c=d');
                     xhr.onreadystatechange = function () {
                         if (xhr.readyState === 4) {
                             var data = JSON.parse(xhr.responseText);
@@ -127,6 +127,8 @@
                             document.getElementById('hitokoto-from').innerText = data.from;
                             document.getElementById('hitokoto-text').innerText = data.hitokoto;
                             document.getElementById('hitokoto-from').innerText = "——" + document.getElementById('hitokoto-from').innerText;
+                            
+                            // 判断一言的 type
                         }
                     }
                     xhr.send();
