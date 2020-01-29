@@ -2,21 +2,18 @@
 	box-sizing: border-box;
 	color: #111414;
 	word-wrap: break-word;
-	vertical-align: middle;
+	vertical-align: middle
 }
-
 html, body {
 	margin: 0;
 	padding: 0;
 	background: #ffffff;
-	min-height: 350px;
+	min-height: 350px
 }
-
 a {
-	text-decoration: none;
+	text-decoration: none
 }
-
-header.title {
+header.tit {
 	z-index: 100;
 	position: fixed;
 	top: 0;
@@ -28,8 +25,7 @@ header.title {
 	line-height: 64px;
 	background-color: rgba(239, 239, 239, 0.85);
 }
-
-footer.footer {
+footer.ede {
 	z-index: 100;
 	margin: 0;
 	padding: 0;
@@ -40,209 +36,171 @@ footer.footer {
 	line-height: 36px;
 	position: fixed;
 	background-color: rgba(239, 239, 239, 0.85);
-	text-align: center;
+	text-align: center
 }
-
 /* Gradient text */
-.gradient_text {
+.jbtxt {
 	color: transparent;
 	background-clip: text;
-	-webkit-background-clip: text;
+	-webkit-background-clip: text
 }
-
-/* list that stay in the right of the page */
-.user-list {
+.user-lr {
 	position: absolute;
 	width: 90px;
 	height: 30px;
 	line-height: 30px;
 	top: 17px;
 	font-size: 14px;
-	border-radius: 20px;
+	border-radius: 20px
 }
-
 #user-login {
 	right: 64px
 }
 #user-register {
-	right: 162px;
+	right: 162px
 }
-
-/* Ul nav */
-ul.nav-left, ul.nav-right {
-	margin: 0;
-	padding: 0;
-	z-index: 99;
-	position: fixed;
-	top: 64px;
-}
-ul.nav-left {
-	left: 0;
-}
-ul.nav-right {
-	right: 0;
-}
-ul.nav-left li, ul.nav-right li {
-	line-height: 48px;
-	border-radius: 24px;
-	transition-duration: 0.4s;
-	display: block;
-	list-style-type: none;
-	width: 160px;
-	height: 48px;
-	font-weight: 600;
-	font-size: 16px;
-	background-color: #eeeeee;
-}
-ul.nav-left li {
-	margin-left: -80px;
-}
-ul.nav-left li:hover {
-	margin-left: -40px;
-}
-ul.nav-right li {
-	margin-right: -80px;
-}
-ul.nav-right li:hover {
-	margin-right: -40px;
-}
-
 /* Scroll bar */
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
-    background-color: #dddddd;
+    background-color: #dddddd
 }
 ::-webkit-scrollbar-button {
-	display: none;
+	display: none
 }
 ::-webkit-scrollbar-track {
     box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.3);
     border-radius: 6px;
-    background-color: #dddddd;
+    background-color: #dddddd
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 6px;
     box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.3);
-    background-image: linear-gradient(to bottom right, #aaaaaa, #666666);
+    background-image: linear-gradient(to bottom right, #aaaaaa, #666666)
 }
 ::-webkit-scrollbar-corner {
-	background-color: #dddddd;
+	background-color: #dddddd
 }
-
 /* Article part */
-.article {
-	font-size: 14px;
+.artic {
+	font-size: 14px
 }
-/* .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
+/* .artic h1, .artic h2, .artic h3, .artic h4, .artic h5, .artic h6 {
 	color: #008383
 } */
-
-.article h1 {
-	font-size: 30px;
+.artic h1 {
+	font-size: 30px
 }
-.article h2 {
-	font-size: 26px;
+.artic h2 {
+	font-size: 26px
 }
-.article h3 {
-	font-size: 23px;
+.artic h3 {
+	font-size: 23px
 }
-.article h4 {
-	font-size: 21px;
+.artic h4 {
+	font-size: 21px
 }
-.article h5 {
-	font-size: 19px;
+.artic h5 {
+	font-size: 19px
 }
-.article h6 {
-	font-size: 17px;
+.artic h6 {
+	font-size: 17px
 }
-.article b {
-	font-weight: 800;
+.artic b {
+	font-weight: 800
 }
-.article a {
+.artic a {
 	font-weight: 600;
-	transition-duration: 0.4s;
+	transition-duration: 0.4s
 }
-.article a:link, .article a:visited {
+.artic a:link, .artic a:visited {
 	color: #008b8b
 }
-.article a:hover, .article a:active {
+.artic a:hover, .artic a:active {
 	color: #00bdbd
 }
-.article code, .article pre {
+.artic a, .a-1 {
+	font-weight: 600;
+	transition-duration: 0.4s
+}
+.artic a:link, .a-1:link, .artic a:visited, .a-1:visited {
+	color: #008b8b
+}
+.artic a:hover, .a-1:hover, .artic a:active, .a-1:active {
+	color: #00bdbd
+}
+.artic code, .artic pre {
 	padding: 2px;
 	border: 1px solid rgba(165, 165, 165, 0.85);
 	border-radius: 3px;
-	background-color: rgba(207, 207, 207, 0.85);
+	background-color: rgba(207, 207, 207, 0.85)
 }
-.article hr {
+.artic hr {
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: 8px;
 	margin-bottom: 8px;
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.85), transparent);
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.85), transparent)
 }
-.article blockquote {
+.artic blockquote {
 	margin-left: 12px;
 	margin-right: 4px;
 	margin-top: 4px;
 	margin-bottom: 4px;
 	padding: 8px;
 	border-left: 3px solid rgba(165, 165, 165, 0.85);
-	background-image: linear-gradient(to right, rgba(207, 207, 207, 0.85), transparent);
+	background-image: linear-gradient(to right, rgba(207, 207, 207, 0.85), transparent)
 }
-
-/* Gradient line and gradient column */
+/* Grad line and grad column */
 .thin-border {
-	border: 1px solid #00bcbc;
+	border: 1px solid #00bcbc
 }
 .thin-double-lines, .thin-line-top {
-	border-top: 1px solid #00bcbc;
+	border-top: 1px solid #00bcbc
 }
 .thin-double-lines, .thin-line-bottom {
-	border-bottom: 1px solid #00bcbc;
+	border-bottom: 1px solid #00bcbc
 }
 .thin-double-columns, .thin-column-left {
-	border-left: 1px solid #00bcbc;
+	border-left: 1px solid #00bcbc
 }
 .thin-double-columns, .thin-column-right {
-	border-right: 1px solid #00bcbc;
+	border-right: 1px solid #00bcbc
 }
-.gradient-border {
-	border: 2px solid #00bcbc;
+.grad-border {
+	border: 2px solid #00bcbc
 }
-.gradient-double-lines, .gradient-line-top {
-	border-top: 2px solid #00bcbc;
+.grad-double-lines, .grad-line-top {
+	border-top: 2px solid #00bcbc
 }
-.gradient-double-lines, .gradient-line-bottom {
-	border-bottom: 2px solid #00bcbc;
+.grad-double-lines, .grad-line-bottom {
+	border-bottom: 2px solid #00bcbc
 }
-.gradient-double-columns, .gradient-column-left {
-	border-left: 2px solid #00bcbc;
+.grad-double-columns, .grad-column-left {
+	border-left: 2px solid #00bcbc
 }
-.gradient-double-columns, .gradient-column-right {
-	border-right: 2px solid #00bcbc;
+.grad-double-columns, .grad-column-right {
+	border-right: 2px solid #00bcbc
 }
 .fat-border {
-	border: 4px solid #00bcbc;
+	border: 4px solid #00bcbc
 }
 .fat-double-lines, .fat-line-top {
-	border-top: 4px solid #00bcbc;
+	border-top: 4px solid #00bcbc
 }
 .fat-double-lines, .fat-line-bottom {
-	border-bottom: 4px solid #00bcbc;
+	border-bottom: 4px solid #00bcbc
 }
 .fat-double-columns, .fat-column-left {
-	border-left: 4px solid #00bcbc;
+	border-left: 4px solid #00bcbc
 }
 .fat-double-columns, .fat-column-right {
-	border-right: 4px solid #00bcbc;
+	border-right: 4px solid #00bcbc
 }
-
 /* Elements part */
-main.main-part, div.extend-part {
+main.main-part, main.full-part, div.ext-part {
 	position: absolute;
 	margin-top: 76px;
 	margin-bottom: 48px;
@@ -252,7 +210,11 @@ main.main-part {
 	left: 8vw;
 	right: 28vw
 }
-div.extend-part {
+main.full-part {
+	left: 8vw;
+	right: 8vw
+}
+div.ext-part {
 	left: 72vw;
 	right: 8vw
 }
@@ -324,43 +286,42 @@ div.extend-part {
 .tag-1.purple {
 	background-color: #7a007a
 }
-/* Hrm 注：难度评分仍需讨论 */
-/* .tag-1.noob {
+.tag-1.noob {
 	background-color: #8a8a8a
 }
 .tag-1.noob::before {
-	content: "新人入坑题"
+	content: "难度-E"
 }
 .tag-1.easy {
 	background-color: #00bf00
 }
 .tag-1.easy::before {
-	content: "蒟蒻向"
+	content: "难度-D"
 }
 .tag-1.middle {
 	background-color: #0000bf
 }
 .tag-1.middle::before {
-	content: "普通"
+	content: "难度-C"
 }
 .tag-1.hard {
 	background-color: #ff7700
 }
 .tag-1.hard::before {
-	content: "大佬向"
-}
-.tag-1.god {
-	background-color: #bf0000
-}
-.tag-1.god::before {
-	content: "神仙题"
+	content: "难度-B"
 }
 .tag-1.duliu {
-	background-color: #360000
+	background-color: #bf0000
 }
 .tag-1.duliu::before {
-	content: "毒瘤"
-} */
+	content: "难度-A"
+}
+.tag-1.sh_t {
+	background-color: #360000
+}
+.tag-1.sh_t::before {
+	content: "难度-S"
+}
 /* Zad */ 
 .button-1 {
 	outline: medium;
@@ -373,26 +334,26 @@ div.extend-part {
 .button-1:hover {
 	background-color: rgba(207, 207, 207, 0.85)
 }
-.gradient-background-1 {
+.grad-bg-1 {
 	background-image: linear-gradient(to bottom right, #008b8b, #00bdbd)
 }
-.gradient-background-2 {
+.grad-bg-2 {
 	background-image: linear-gradient(to bottom right, #008080, #00ffff)
 }
-
-/* 请nyh同学解释这是什么 */
-/* 「解释框」 */
 .con-with-ot-left-part {
-	width: 72%;
+	width: calc(64% - 8px);
 	min-height: 100%;
 	display: inline-block;
 	margin: 0;
 	padding: 0
 }
 .con-with-ot-right-part {
-	width: 28%;
+	width: 36%;
 	min-height: 100%;
 	display: inline-block;
 	margin: 0;
 	padding: 0
+}
+.contest-name {
+	font-size: 18px
 }

@@ -8,133 +8,65 @@
         <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="/static/icon/ooj.png"/>
         <style>/* Something */</style>
-        <script src="/static/js/jquery.js"></script>
+        <script src="/static/js/jq.js"></script>
         <script src="/static/js/css.js"></script>
         <script src="/static/js/alert1.js"></script>
         <script src="/static/js/main.js"></script>
-        
-        <!-- 一言 -->
-        <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-        
         <script>
             $(function() {});
         </script>
     </head>
     <body>
-        <!-- <div id="header"></div>
-        <div id="left-list"></div>
-        <div id="right-list"></div>
-        <div id="footer"></div> -->
-        <!-- <script>
-            $("#header").load("/html/header.html");
-            $("#left-list").load("/html/list-left.html");
-            $("#left-right").load("/html/left-right.html");
-            $("#footer").load("/html/footer.html");
-        </script> -->
-        <ul class="nav-left">
-            <a href="/">
-                <li class="shadow fat-column-right thin-line-bottom">
-                    <i class="gradient_text fa fa-home gradient-background-1" style="position: relative; /* left: -15px; */ left: 55px; bottom: 1px; font-size: 23px"></i>
-                    <span class="gradient_text gradient-background-1" style="/* position: absolute; right: 30px */ position: relative; left: 72px; bottom: 1px;">主页</span>
-                </li>
-            </a>
-            <a href="/problems">
-                <li class="shadow fat-column-right thin-line-bottom">
-                    <i class="gradient_text fa fa-book gradient-background-1" style="position: relative; /* left: -15px; */ left: 55px; bottom: 1px; font-size: 23px"></i>
-                    <span class="gradient_text gradient-background-1" style="/* position: absolute; right: 30px */ position: relative; left: 72px; bottom: 1px;">题库</span>
-                </li>
-            </a>
-            <a href="/contests">
-                <li class="shadow fat-column-right thin-line-bottom">
-                    <i class="gradient_text fa fa-crosshairs gradient-background-1" style="position: relative; /* left: -15px; */ left: 55px; bottom: 1px; font-size: 23px"></i>
-                    <span class="gradient_text gradient-background-1" style="/* position: absolute; right: 30px */ position: relative; left: 72px; bottom: 1px;">比赛</span>
-                </li>
-            </a>
-            <a href="/discussions">
-                <li class="shadow fat-column-right thin-line-bottom">
-                    <i class="gradient_text fa fa-comments gradient-background-1" style="position: relative; /* left: -15px; */ left: 55px; bottom: 1px; font-size: 23px"></i>
-                    <span class="gradient_text gradient-background-1" style="/* position: absolute; right: 30px */ position: relative; left: 72px; bottom: 1px;">讨论</span>
-                </li>
-            </a>
-            <a href="/functions">
-                <li class="shadow fat-column-right thin-line-bottom">
-                    <i class="gradient_text fa fa-cogs gradient-background-1" style="position: relative; /* left: -15px; */ left: 55px; bottom: 1px; font-size: 23px"></i>
-                    <span class="gradient_text gradient-background-1" style="/* position: absolute; right: 30px */ position: relative; left: 72px; bottom: 1px;">功能</span>
-                </li>
-            </a>
-        </ul>
-        <header class="title shadow-down gradient-line-bottom">
+        <header class="tit shad-x grad-line-bottom">
             <a href="/">
                 <img id="title-icon" alt="OOJ Image" src="/static/icon/ooj.png" style="position: absolute; top: 8px; left: 8px; width: 48px; height: 48px"/>
             </a>
-            <a id="title" class="gradient_text gradient-background-1" style="position: absolute; left: 64px; top: 0; font-size: 35px" href="/">Osmium OJ</a>
+            <a id="title" class="jbtxt grad-bg-1" style="position: absolute; left: 64px; top: 0; font-size: 35px" href="/">Osmium OJ</a>
             <img alt="OOJ QR Code image" style="position: absolute; top: 8px; right: 8px; width: 48px; height: 48px" src="/static/icon/OOJqrCode.png"/>
         </header>
-        <ul class="nav-right">
-            <a href="/login">
-                <li class="shadow fat-column-left thin-line-bottom">
-                    <i class="gradient_text fa fa-sign-in gradient-background-1" style="position: relative; right: -80px; font-size: 23px"></i>
-                    <span class="gradient_text gradient-background-1" style="position: absolute; left: 30px">登录</span>
-                </li>
-            </a>
-            <a href="/register">
-                <li class="shadow fat-column-left thin-line-bottom">
-                    <i class="gradient_text fa fa-user-plus gradient-background-1" style="position: relative; right: -80px; font-size: 23px"></i>
-                    <span class="gradient_text gradient-background-1" style="position: absolute; left: 30px">注册</span>
-                </li>
-            </a>
-        </ul>
-        <footer class="footer shadow-up gradient-line-top">
-            <span style="font-size: 16px">OOJ (2019 - 2020), developed by OOJ-dev team.</span>
-        </footer>
-        <main class="article main-part static-shadow box-1 gradient-double-lines">
-            <div class="static-shadow box-1 gradient-double-lines full-in-static-left-right">
+        <main class="artic main-part static-shad box-1 grad-double-lines">
+            <div class="static-shad box-1 grad-double-lines full-in-static-left-right">
                 <h2>新比赛</h2>
-                <div class="static-shadow box-1 full-in-static-left-right">
-                    <!-- <div class="con-with-ot-left-part"> -->
+                <div class="static-shad box-1 full-in-static-left-right">
+                    <div class="con-with-ot-left-part">
                         <a href="/contest/1" class="contest-name a-1">OOJ test-contest</a>
-                    <!-- </div> -->
-                    <!-- <div class="con-with-ot-right-part"> -->
-                        <!-- 这怕不是评价题目的东西
-                        <span class="shadow tag-1 noob"></span>
-                        <span class="shadow tag-1 easy"></span>
-                        <span class="shadow tag-1 middle"></span>
-                        <span class="shadow tag-1 hard"></span>
-                        <span class="shadow tag-1 god"></span>
-                        <span class="shadow tag-1 duliu"></span> -->
-                        
-                    <!-- </div> -->
+                    </div>
+                    <div class="con-with-ot-right-part">
+                        <span class="shad tag-1 noob"></span>
+                        <span class="shad tag-1 easy"></span>
+                        <span class="shad tag-1 middle"></span>
+                        <span class="shad tag-1 hard"></span>
+                        <span class="shad tag-1 duliu"></span>
+                        <span class="shad tag-1 sh_t"></span>
+                    </div>
                 </div>
             </div>
         </main>
-        <div class="article extend-part static-shadow box-1 gradient-double-lines">
-            <div class="static-shadow box-1 gradient-double-lines full-in-static-left-right">
-                <h2>公告</h2>
-            </div>
-            <div class="static-shadow box-1 gradient-double-lines full-in-static-left-right">
+        <div class="artic ext-part static-shad box-1 grad-double-lines">
+            <div class="static-shad box-1 grad-double-lines full-in-static-left-right">
                 <h2>一言</h2>
-                <p id="hitokoto-text">Loading...</p>
-                <p id="hitokoto-from" style="text-align: right;">Loading...</p>
+                <span id="hitokoto" style="display: inline-block"></span>
                 <script>
-                    // 一言加载
-                    var xhr = new XMLHttpRequest();
-                    xhr.open('get', 'https://v1.hitokoto.cn/?c=a&c=b&c=c&c=d');
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState === 4) {
-                            var data = JSON.parse(xhr.responseText);
-                            // var hitokoto = document.getElementById('hitokoto-text');
-                            document.getElementById('hitokoto-from').innerText = data.from;
-                            document.getElementById('hitokoto-text').innerText = data.hitokoto;
-                            document.getElementById('hitokoto-from').innerText = "——" + document.getElementById('hitokoto-from').innerText;
-                            
-                            // 判断一言的 type
-                        }
-                    }
-                    xhr.send();
+                    $("#hitokoto").load("https://v1.hitokoto.cn/?encode=text");
                 </script>
             </div>
+            <div class="static-shad box-1 grad-double-lines full-in-static-left-right">
+                <h2>公告</h2>
+                <a class="a-1" style="display: inline-block" href="/notice/1">OOJ 计划于 [d.d.] 正式使用</a>
+                <span> | </span>
+            </div>
+            <div class="static-shad box-1 grad-double-lines full-in-static-left-right">
+                <h2>友链</h2>
+                <a class="a-1" style="display: inline-block" href="https://bysyhu.cf">Nyh's</a>
+                <span> | </span>
+                <a class="a-1" style="display: inline-block" href="https://henry-zhang.github.io">++'s blog</a>
+                <span> | </span>
+                <a class="a-1" style="display: inline-block" href="https://h-j-granger.github.io">HJG's blog</a>
+                <span> | </span>
+            </div>
         </div>
-        <!-- #include file="/static/html/footer.html" -->
+        <footer class="ede shad-s grad-line-top">
+            <span style="font-size: 16px">OOJ (2019 - 2020), developed by OOJ-dev team.</span>
+        </footer>
     </body>
 </html>
