@@ -39,7 +39,7 @@ footer.ede {
 	text-align: center
 }
 /* Gradient text */
-.jbtxt {
+.grad-txt {
 	color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text
@@ -246,12 +246,12 @@ div.ext-part {
 	margin: 4px;
 	padding: 4px;
 	font-size: 11px;
-	color: #ffffff;
+	color: #ffffff !important;
 	opacity: 0.7;
 	border-radius: 4px;
 	transition-duration: 0.4s;
 	cursor: pointer;
-	font-weight: 500
+	font-weight: 500 !important
 }
 .tag-1:hover {
 	opacity: 0.95
@@ -340,14 +340,14 @@ div.ext-part {
 .grad-bg-2 {
 	background-image: linear-gradient(to bottom right, #008080, #00ffff)
 }
-.con-with-ot-left-part {
+.splited-left-part {
 	width: calc(64% - 8px);
 	min-height: 100%;
 	display: inline-block;
 	margin: 0;
 	padding: 0
 }
-.con-with-ot-right-part {
+.splited-right-part {
 	width: 36%;
 	min-height: 100%;
 	display: inline-block;
@@ -355,5 +355,58 @@ div.ext-part {
 	padding: 0
 }
 .contest-name {
-	font-size: 18px
+	font-size: 18px !important
+}
+/* Nav */
+ul.nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: fixed;
+	top: calc(4vw + 40px);
+	width: 48px
+}
+ul.nav.nav-left {
+	left: calc(4vw - 24px)
+}
+ul.nav.nav-right {
+	right: calc(4vw - 24px)
+}
+ul.nav>:first-of-type li {
+	margin-top: 0;
+	border-top-left-radius: 32px;
+	border-top-right-radius: 32px;
+	border-top: 2px solid #00bcbc
+}
+ul.nav>:last-of-type li {
+	margin-bottom: 0;
+	border-bottom-left-radius: 32px;
+	border-bottom-right-radius: 32px;
+	border-bottom: 2px solid #00bcbc
+}
+ul.nav li {
+	transition-duration: 0.4s;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+	line-height: 48px;
+	background-color: #eeeeee;
+	width: 48px;
+	height: 48px
+}
+ul.nav li:hover {
+	height: 96px
+}
+ul.nav li span.nav-text {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	transition-delay: 0s;
+	visibility: hidden
+}
+ul.nav li:hover span.nav-text {
+	transition-delay: 0.2s;
+	visibility: visible
 }

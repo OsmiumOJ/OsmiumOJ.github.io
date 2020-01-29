@@ -21,23 +21,80 @@
             <a href="/">
                 <img id="title-icon" alt="OOJ Image" src="/static/icon/ooj.png" style="position: absolute; top: 8px; left: 8px; width: 48px; height: 48px"/>
             </a>
-            <a id="title" class="jbtxt grad-bg-1" style="position: absolute; left: 64px; top: 0; font-size: 35px" href="/">Osmium OJ</a>
+            <a id="title" class="grad-txt grad-bg-1" style="position: absolute; left: 64px; top: 0; font-size: 35px" href="/">Osmium OJ</a>
             <img alt="OOJ QR Code image" style="position: absolute; top: 8px; right: 8px; width: 48px; height: 48px" src="/static/icon/OOJqrCode.png"/>
         </header>
+        <ul class="nav nav-left">
+            <a href="/">
+                <li class="shad">
+                    <i class="fa fa-home grad-txt grad-bg-1" style="font-size: 23px"></i>
+                    <span class="nav-text grad-txt grad-bg-1">主页</span>
+                </li>
+            </a>
+            <a href="/problems">
+                <li class="shad">
+                    <i class="fa fa-book grad-txt grad-bg-1" style="font-size: 23px"></i>
+                    <span class="nav-text grad-txt grad-bg-1">题库</span>
+                </li>
+            </a>
+            <a href="/contests">
+                <li class="shad">
+                    <i class="fa fa-crosshairs grad-txt grad-bg-1" style="font-size: 23px"></i>
+                    <span class="nav-text grad-txt grad-bg-1">比赛</span>
+                </li>
+            </a>
+            <a href="/discussions">
+                <li class="shad">
+                    <i class="fa fa-comments grad-txt grad-bg-1" style="font-size: 23px"></i>
+                    <span class="nav-text grad-txt grad-bg-1">讨论</span>
+                </li>
+            </a>
+            <a href="/functions">
+                <li class="shad">
+                    <i class="fa fa-cogs grad-txt grad-bg-1" style="font-size: 23px"></i>
+                    <span class="nav-text grad-txt grad-bg-1">功能</span>
+                </li>
+            </a>
+        </ul>
+        <ul class="nav nav-right">
+            <a href="/login">
+                <li class="shad">
+                    <i class="fa fa-sign-in grad-txt grad-bg-1" style="font-size: 23px"></i>
+                    <span class="nav-text grad-txt grad-bg-1">登录</span>
+                </li>
+            </a>
+            <a href="/register">
+                <li class="shad">
+                    <i class="fa fa-user-plus grad-txt grad-bg-1" style="font-size: 23px"></i>
+                    <span class="nav-text grad-txt grad-bg-1">注册</span>
+                </li>
+            </a>
+        </ul>
         <main class="artic main-part static-shad box-1 grad-double-lines">
             <div class="static-shad box-1 grad-double-lines full-in-static-left-right">
                 <h2>新比赛</h2>
                 <div class="static-shad box-1 full-in-static-left-right">
-                    <div class="con-with-ot-left-part">
-                        <a href="/contest/1" class="contest-name a-1">OOJ test-contest</a>
+                    <div class="splited-left-part">
+                        <a href="/contest/1" class="contest-name a-1">OOJ E级比赛测试</a>
                     </div>
-                    <div class="con-with-ot-right-part">
-                        <span class="shad tag-1 noob"></span>
-                        <span class="shad tag-1 easy"></span>
-                        <span class="shad tag-1 middle"></span>
-                        <span class="shad tag-1 hard"></span>
-                        <span class="shad tag-1 duliu"></span>
-                        <span class="shad tag-1 sh_t"></span>
+                    <div class="splited-right-part">
+                        <a class="shad tag-1 noob" href="javascript:;"></a>
+                    </div>
+                </div>
+                <div class="static-shad box-1 full-in-static-left-right">
+                    <div class="splited-left-part">
+                        <a href="/contest/2" class="contest-name a-1">OOJ D级比赛测试</a>
+                    </div>
+                    <div class="splited-right-part">
+                        <a class="shad tag-1 easy" href="javascript:;"></a>
+                    </div>
+                </div>
+                <div class="static-shad box-1 full-in-static-left-right">
+                    <div class="splited-left-part">
+                        <a href="/contest/3" class="contest-name a-1">OOJ C级比赛测试</a>
+                    </div>
+                    <div class="splited-right-part">
+                        <a class="shad tag-1 middle" href="javascript:;"></a>
                     </div>
                 </div>
             </div>
@@ -45,10 +102,8 @@
         <div class="artic ext-part static-shad box-1 grad-double-lines">
             <div class="static-shad box-1 grad-double-lines full-in-static-left-right">
                 <h2>一言</h2>
-                <span id="hitokoto" style="display: inline-block"></span>
-                <script>
-                    $("#hitokoto").load("https://v1.hitokoto.cn/?encode=text");
-                </script>
+                <span id="hitokoto"></span>
+                <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
             </div>
             <div class="static-shad box-1 grad-double-lines full-in-static-left-right">
                 <h2>公告</h2>
