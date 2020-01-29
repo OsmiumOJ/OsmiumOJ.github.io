@@ -1,2 +1,4 @@
 .vscode/*
 .$RECYCLE.BIN/*
+.git/*
+.gitignore
