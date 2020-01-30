@@ -130,6 +130,7 @@ footer.ede {
 	color: #00bdbd
 }
 .artic code, .artic pre {
+	font-family: "Consolas";
 	padding: 2px;
 	border: 1px solid rgba(165, 165, 165, 0.85);
 	border-radius: 3px;
@@ -240,6 +241,12 @@ div.ext-part {
 .full-in-static-bottom, .full-in-static-top-bottom {
 	margin-bottom: 0
 }
+.full-1, .full-1-left-right {
+	width: 100%
+}
+.full-1, .full-1-top-bottom {
+	height: 100%
+}
 /* Tags */
 .tag-1 {
 	display: inline-block;
@@ -340,20 +347,22 @@ div.ext-part {
 .grad-bg-2 {
 	background-image: linear-gradient(to bottom right, #008080, #00ffff)
 }
-.splited-left-part {
-	width: calc(64% - 8px);
-	min-height: 100%;
-	display: inline-block;
-	margin: 0;
-	padding: 0
+/* Table */
+table {
+	border: 0
 }
-.splited-right-part {
-	width: 36%;
-	min-height: 100%;
-	display: inline-block;
-	margin: 0;
-	padding: 0
+th {
+	text-align: center;
+	font-weight: bold
 }
+table.splited-1 td.name-part {
+	width: 70%
+}
+table.splited-1 td.tag-part {
+	width: 30%;
+	text-align: center
+}
+/* Contest */
 .contest-name {
 	font-size: 18px !important
 }
@@ -385,6 +394,7 @@ ul.nav>:last-of-type li {
 	border-bottom: 2px solid #00bcbc
 }
 ul.nav li {
+	transition-delay: 0.07s;
 	transition-duration: 0.4s;
 	margin-left: 0;
 	margin-right: 0;
@@ -407,6 +417,6 @@ ul.nav li span.nav-text {
 	visibility: hidden
 }
 ul.nav li:hover span.nav-text {
-	transition-delay: 0.2s;
+	transition-delay: 0.27s;
 	visibility: visible
 }
