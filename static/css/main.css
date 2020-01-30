@@ -209,16 +209,16 @@ main.main-part, main.full-part, div.ext-part {
 	margin-bottom: 48px;
 }
 main.main-part {
-	left: 8vw;
+	left: 100px;
 	right: 28vw
 }
 main.full-part {
-	left: 8vw;
-	right: 8vw
+	left: 100px;
+	right: 100px
 }
 div.ext-part {
 	left: 72vw;
-	right: 8vw
+	right: 100px
 }
 .box-1 {
 	margin: 8px;
@@ -381,14 +381,14 @@ ul.nav {
 	padding: 0;
 	list-style-type: none;
 	position: fixed;
-	top: calc(4vw + 40px);
+	top: 90px;
 	width: 48px
 }
 ul.nav.nav-left {
-	left: calc(4vw - 24px)
+	left: 26px
 }
 ul.nav.nav-right {
-	right: calc(4vw - 24px)
+	right: 26px
 }
 ul.nav>:first-of-type li {
 	margin-top: 0;
