@@ -360,7 +360,7 @@ table.splited-1 td.name-part {
 }
 table.splited-1 td.tag-part {
 	width: 30%;
-	text-align: center
+	text-align: right
 }
 /* Contest */
 .contest-name {
