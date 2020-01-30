@@ -24,6 +24,7 @@ header.tit {
 	height: 64px;
 	line-height: 64px;
 	background-color: rgba(239, 239, 239, 0.85);
+	transition-delay: 0.07s
 }
 footer.ede {
 	z-index: 100;
@@ -36,6 +37,7 @@ footer.ede {
 	line-height: 36px;
 	position: fixed;
 	background-color: rgba(239, 239, 239, 0.85);
+	transition-delay: 0.07s;
 	text-align: center
 }
 /* Gradient text */

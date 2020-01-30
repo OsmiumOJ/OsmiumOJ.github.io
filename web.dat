@@ -1,0 +1,62 @@
+<header class="tit shad-x grad-line-bottom">
+    <a href="/">
+        <img id="title-icon" alt="OOJ Image" src="/static/icon/ooj.png" style="position: absolute; top: 8px; left: 8px; width: 48px; height: 48px"/>
+    </a>
+    <a id="title" class="grad-txt grad-bg-1" style="position: absolute; left: 64px; top: 0; font-size: 35px" href="/">Osmium OJ</a>
+    <img alt="OOJ QR Code image" style="position: absolute; top: 8px; right: 8px; width: 48px; height: 48px" src="/static/icon/OOJqrCode.png"/>
+</header>
+<ul class="nav nav-left">
+    <a href="/">
+        <li class="shad">
+            <i class="fa fa-home grad-txt grad-bg-1" style="font-size: 23px"></i>
+            <span class="nav-text grad-txt grad-bg-1">主页</span>
+        </li>
+    </a>
+    <a href="/problems">
+        <li class="shad">
+            <i class="fa fa-book grad-txt grad-bg-1" style="font-size: 23px"></i>
+            <span class="nav-text grad-txt grad-bg-1">题库</span>
+        </li>
+    </a>
+    <a href="/contests">
+        <li class="shad">
+            <i class="fa fa-crosshairs grad-txt grad-bg-1" style="font-size: 23px"></i>
+            <span class="nav-text grad-txt grad-bg-1">比赛</span>
+        </li>
+    </a>
+    <a href="/discussions">
+        <li class="shad">
+            <i class="fa fa-comments grad-txt grad-bg-1" style="font-size: 23px"></i>
+            <span class="nav-text grad-txt grad-bg-1">讨论</span>
+        </li>
+    </a>
+    <a href="/notices">
+        <li class="shad">
+            <i class="fa fa-info-circle grad-txt grad-bg-1" style="font-size: 23px"></i>
+            <span class="nav-text grad-txt grad-bg-1">公告</span>
+        </li>
+    </a>
+    <a href="/functions">
+        <li class="shad">
+            <i class="fa fa-cogs grad-txt grad-bg-1" style="font-size: 23px"></i>
+            <span class="nav-text grad-txt grad-bg-1">功能</span>
+        </li>
+    </a>
+</ul>
+<ul class="nav nav-right">
+    <a href="/login">
+        <li class="shad">
+            <i class="fa fa-sign-in grad-txt grad-bg-1" style="font-size: 23px"></i>
+            <span class="nav-text grad-txt grad-bg-1">登录</span>
+        </li>
+    </a>
+    <a href="/register">
+        <li class="shad">
+            <i class="fa fa-user-plus grad-txt grad-bg-1" style="font-size: 23px"></i>
+            <span class="nav-text grad-txt grad-bg-1">注册</span>
+        </li>
+    </a>
+</ul>
+<footer class="ede shad-s grad-line-top">
+    <span style="font-size: 16px">OOJ (2019 - 2020), developed by OOJ-dev team.</span>
+</footer>
