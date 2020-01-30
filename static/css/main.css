@@ -202,12 +202,11 @@ footer.ede {
 .fat-double-columns, .fat-column-right {
 	border-right: 4px solid #00bcbc
 }
-/* Elements part */
+/* Elements part (Part in css.js) */
 main.main-part, main.full-part, div.ext-part {
 	position: absolute;
 	margin-top: 76px;
 	margin-bottom: 48px;
-	min-height: calc(100vh - 124px)
 }
 main.main-part {
 	left: 8vw;
@@ -354,7 +353,6 @@ table {
 	border: 0
 }
 th {
-	text-align: center;
 	font-weight: bold
 }
 table.splited-1 td.name-part {
@@ -363,6 +361,15 @@ table.splited-1 td.name-part {
 table.splited-1 td.tag-part {
 	width: 30%;
 	text-align: right
+}
+table.splited-1 td.author {
+	text-align: center;
+	vertical-align: top;
+	width: 48px
+}
+table.splited-1 td.author-text {
+	vertical-align: top;
+	width: calc(100% - 48px)
 }
 /* Contest */
 .contest-name {
