@@ -331,16 +331,46 @@ div.ext-part {
 	content: "难度-S"
 }
 /* Zad */ 
-.button-1 {
+.fill-1 {
+	outline: medium;
+	border: 0;
+	font-size: 16px;
+	font-weight: 600;
+	transition-duration: 0.4s;
+	transition-delay: 0.07s;
+	background-image: linear-gradient(to right, #008080, #00ffff);
+	background-size: 200% 200%;
+	background-position: 100% 100%
+}
+.fill-1:hover {
+	background-position: 0 0
+}
+.fill-2 {
 	outline: medium;
 	border: 1px solid #00bcbc;
 	font-size: 16px;
 	font-weight: 600;
 	transition-duration: 0.4s;
+	transition-delay: 0.07s;
 	background-color: rgba(239, 239, 239, 0.85)
 }
-.button-1:hover {
+.fill-2:hover {
 	background-color: rgba(207, 207, 207, 0.85)
+}
+.fill-3 {
+	outline: medium;
+	border: 0;
+	font-size: 16px;
+	font-weight: 600;
+	transition-duration: 0.4s;
+	transition-delay: 0.07s;
+	border: 1px solid #00bcbc;
+	background-image: linear-gradient(to right, rgba(239, 239, 239, 0.85), rgba(175, 175, 175, 0.85));
+	background-size: 200% 200%;
+	background-position: 100% 100%
+}
+.fill-3:hover {
+	background-position: 0 0
 }
 .grad-bg-1 {
 	background-image: linear-gradient(to bottom right, #008b8b, #00bdbd)
@@ -350,17 +380,20 @@ div.ext-part {
 }
 /* Table */
 table {
-	border: 0
+	border: 0 !important
 }
 th {
 	font-weight: bold
 }
-table.splited-1 td.name-part {
+table.splited-1 td.name-part, table.splited-1 td.left-70 {
 	width: 70%
 }
 table.splited-1 td.tag-part {
 	width: 30%;
 	text-align: right
+}
+table.splited-1 td.right-30 {
+	width: 30%
 }
 table.splited-1 td.author {
 	text-align: center;
@@ -392,14 +425,14 @@ ul.nav.nav-right {
 }
 ul.nav>:first-of-type li {
 	margin-top: 0;
-	border-top-left-radius: 32px;
-	border-top-right-radius: 32px;
+	border-top-left-radius: 24px;
+	border-top-right-radius: 24px;
 	border-top: 2px solid #00bcbc
 }
 ul.nav>:last-of-type li {
 	margin-bottom: 0;
-	border-bottom-left-radius: 32px;
-	border-bottom-right-radius: 32px;
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
 	border-bottom: 2px solid #00bcbc
 }
 ul.nav li {
@@ -426,6 +459,67 @@ ul.nav li span.nav-text {
 	visibility: hidden
 }
 ul.nav li:hover span.nav-text {
+	transition-delay: 0.27s;
+	visibility: visible
+}
+/* Input */
+.input-1 {
+	font-weight: 400;
+	outline: medium;
+	border: 0
+}
+/* Comment pager */
+.comment-pager-text {
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 12px;
+	width: 100%
+}
+.comment-pager-button {
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 18px;
+	height: 36px;
+	line-height: 36px;
+	width: 100%
+}
+/* Nav line */
+ul.nav-line {
+	margin: 8px;
+	padding: 0;
+	list-style-type: none;
+	height: 36px
+}
+ul.nav-line>:first-of-type li {
+	border-top-left-radius: 18px;
+	border-bottom-left-radius: 18px;
+	border-left: 2px solid #00bcbc
+}
+ul.nav-line>:last-of-type li {
+	border-top-right-radius: 18px;
+	border-bottom-right-radius: 18px;
+	border-right: 2px solid #00bcbc
+}
+ul.nav-line li {
+	transition-delay: 0.07s;
+	transition-duration: 0.4s;
+	text-align: center;
+	line-height: 36px;
+	background-color: #eeeeee;
+	display: inline-block;
+	width: 36px;
+	height: 36px
+}
+ul.nav-line li span.nav-text {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	transition-delay: 0s;
+	visibility: hidden
+}
+ul.nav-line li:hover span.nav-text {
 	transition-delay: 0.27s;
 	visibility: visible
 }

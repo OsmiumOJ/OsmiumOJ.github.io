@@ -5,4 +5,7 @@ $(function() {
             $("body").append(res);
         }
     });
+    var editor = editormd("editor-md-1", {
+        path: "/static/editor.md/lib"
+    });
 });
