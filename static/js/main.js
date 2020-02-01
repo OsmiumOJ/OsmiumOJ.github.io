@@ -10,11 +10,11 @@ $(function() {
                 hasCancel: true,
                 doShow: false
             });
-            var editor = editormd("editor-md-1", {
+            editormd("editor-md-1", {
 				width: "100%",
 				height: "100%",
 				tex: true,
-                path: "/static/editor.md/lib"
+                path: "/static/editor.md/lib/"
             });
         }
     });
