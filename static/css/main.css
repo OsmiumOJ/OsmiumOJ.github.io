@@ -7,8 +7,16 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background: #ffffff;
-	min-height: 350px
+	background: #ffffff
+}
+html {
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+body {
+	min-width: 1180px;
+	max-width: 2000px
 }
 a {
 	text-decoration: none
@@ -340,7 +348,7 @@ div.ext-part {
 	transition-delay: 0.07s;
 	background-image: linear-gradient(to right, #008080, #00ffff);
 	background-size: 200% 200%;
-	background-position: 100% 100%
+	background-position: 99% 99%
 }
 .fill-1:hover {
 	background-position: 0 0
@@ -367,7 +375,7 @@ div.ext-part {
 	border: 1px solid #00bcbc;
 	background-image: linear-gradient(to right, rgba(239, 239, 239, 0.85), rgba(175, 175, 175, 0.85));
 	background-size: 200% 200%;
-	background-position: 100% 100%
+	background-position: 99% 99%
 }
 .fill-3:hover {
 	background-position: 0 0
@@ -468,7 +476,7 @@ ul.nav li:hover span.nav-text {
 	outline: medium;
 	border: 0
 }
-/* Comment pager */
+/* Commenter */
 .comment-pager-text {
 	font-size: 14px;
 	height: 24px;
@@ -478,12 +486,40 @@ ul.nav li:hover span.nav-text {
 	width: 100%
 }
 .comment-pager-button {
+	display: inline-block;
+	cursor: pointer;
 	font-size: 18px;
 	font-weight: 400;
 	border-radius: 18px;
 	height: 36px;
 	line-height: 36px;
 	width: 100%
+}
+.post-comment-button {
+	display: inline-block;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 36px;
+	line-height: 36px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+/* Alert1 button */
+.alert1-button {
+	display: inline-block;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 36px;
+	line-height: 36px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin: 8px
 }
 /* Nav line */
 ul.nav-line {

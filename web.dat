@@ -57,6 +57,14 @@
         </li>
     </a>
 </ul>
+<div id="alert1Container" style="display: none; position: fixed; z-index: 101; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.5); justify-content: center; align-items: center">
+	<div id="alert1Body" class="artic static-shad box-1 grad-double-lines"
+	style="width: 80vw; background-color: rgba(239, 239, 239, 0.85); text-align: center">
+		<h2 id="alert1Cap"></h2>
+		<div id="alert1Txt" class="static-shad box-1"></div>
+		<button id="alert1OkButton" class="static-shad fill-3 alert1-button"></button>
+	</div>
+</div>
 <footer class="ede shad-s grad-line-top">
     <span style="font-size: 16px">OOJ (2019 - 2020), developed by OOJ-dev team.</span>
 </footer>
