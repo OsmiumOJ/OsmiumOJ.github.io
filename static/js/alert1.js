@@ -1,12 +1,15 @@
 "use strict";
-var alert1On = false;
+var alert1On = false, alert1Chu = true;
 function alert1(args) {
 	if(alert1On) {
 		return;
 	}
 	if(args === undefined) {
+		if(alert1Chu) {
+			alert1Chu = false;
+			$("#alert1Container").css({display: "flex"});
+		}
 		$("#alert1Container").fadeIn();
-		$("#alert1Container").css({display: "flex"});
 		return;
 	}
 	var txt = Boolean(args.txt) ? String(args.txt) : "内容";
@@ -21,6 +24,10 @@ function alert1(args) {
 	} : null;
 	var doShow = args.doShow == undefined ? true : Boolean(args.doShow);
 	alert1On = doShow;
+	if(doShow && alert1Chu) {
+		alert1Chu = false;
+		$("#alert1Container").css({display: "flex"});
+	}
 	$("#alert1Txt").css({textAlign: txtAlign});
 	$("#alert1Txt").html(txt);
 	$("#alert1Cap").html(cap);
@@ -43,7 +50,6 @@ function alert1(args) {
 	}
 	if(doShow) {
 		$("#alert1Container").fadeIn();
-		$("#alert1Container").css({display: "flex"});
 	}
 }
 $(function() {
