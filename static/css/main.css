@@ -9,15 +9,6 @@ html, body {
 	padding: 0;
 	background: #ffffff
 }
-html {
-	display: flex;
-	justify-content: center;
-	align-items: center
-}
-body {
-	min-width: 1180px;
-	max-width: 2000px
-}
 a {
 	text-decoration: none
 }

@@ -4,17 +4,12 @@ $(function() {
         success: function(res) {
             $("body").append(res);
             alert({
-                txt: "<div style=\"width: 100%; height: 50vh\"><div id=\"editor-md-1\" style=\"height: 100%\"><\/div><\/div>",
+                txt: "<iframe src=\"\/editormd\" style=\"width: 100%; height: 50vh\" frameborder=\"0\" name=\"editor-md\"><\/iframe>",
                 cap: "发表评论",
                 okTxt: "发&ensp;表",
                 hasCancel: true,
-                doShow: false
-            });
-            editormd("editor-md-1", {
-				width: "100%",
-				height: "100%",
-				tex: true,
-                path: "/static/editor.md/lib/"
+                doShow: false,
+                txtAlign: "left"
             });
         }
     });

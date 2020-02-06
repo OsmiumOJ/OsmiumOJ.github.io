@@ -5,11 +5,9 @@ function alert1(args) {
 		return;
 	}
 	if(args === undefined) {
-		if(alert1Chu) {
-			alert1Chu = false;
-			$("#alert1Container").css({display: "flex"});
-		}
+		alert1On = true;
 		$("#alert1Container").fadeIn();
+		$("#alert1Body").css({marginTop: "10vh"});
 		return;
 	}
 	var txt = Boolean(args.txt) ? String(args.txt) : "内容";
@@ -24,10 +22,6 @@ function alert1(args) {
 	} : null;
 	var doShow = args.doShow == undefined ? true : Boolean(args.doShow);
 	alert1On = doShow;
-	if(doShow && alert1Chu) {
-		alert1Chu = false;
-		$("#alert1Container").css({display: "flex"});
-	}
 	$("#alert1Txt").css({textAlign: txtAlign});
 	$("#alert1Txt").html(txt);
 	$("#alert1Cap").html(cap);
@@ -36,6 +30,7 @@ function alert1(args) {
 		okDo;
 		doRemove;
 		$("#alert1Container").fadeOut();
+		$("#alert1Body").css({marginTop: "-60vh"});
 		alert1On = false;
 	});
 	$("#alert1CancelButton").remove();
@@ -45,11 +40,13 @@ function alert1(args) {
 		$("#alert1CancelButton").click(function() {
 			doRemove;
 			$("#alert1Container").fadeOut();
+			$("#alert1Body").css({marginTop: "-60vh"});
 			alert1On = false;
 		});
 	}
 	if(doShow) {
 		$("#alert1Container").fadeIn();
+		$("#alert1Body").css({marginTop: "10vh"});
 	}
 }
 $(function() {
