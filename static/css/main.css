@@ -486,20 +486,8 @@ ul.nav li:hover span.nav-text {
 	line-height: 36px;
 	width: 100%
 }
-.post-comment-button {
-	display: inline-block;
-	cursor: pointer;
-	font-size: 18px;
-	font-weight: 400;
-	border-radius: 36px;
-	line-height: 36px;
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
 /* Alert1 button */
-.alert1-button {
+.comment-button, .post-comment-button, .alert1-button {
 	display: inline-block;
 	cursor: pointer;
 	font-size: 18px;
@@ -509,7 +497,9 @@ ul.nav li:hover span.nav-text {
 	padding-left: 25px;
 	padding-right: 25px;
 	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-bottom: 2px
+}
+.post-comment-button, .alert1-button {
 	margin: 8px
 }
 /* Nav line */
@@ -549,4 +539,8 @@ ul.nav-line li span.nav-text {
 ul.nav-line li:hover span.nav-text {
 	transition-delay: 0.27s;
 	visibility: visible
+}
+/* Change */
+.change:not(.change-show) {
+	display: none
 }
