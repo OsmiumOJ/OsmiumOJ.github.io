@@ -11,9 +11,18 @@ function Change() {
 }
 $(function() {
     $.ajax({
-        url: "/web.dat",
+        url: "/template.html",
         success: function(res) {
             $("body").append(res);
+            alert({
+                doShow: false,
+                txt: "<div id=\"comment-editor\"><\/div>",
+                cap: "发表评论",
+                okTxt: "发&ensp;表",
+                okDo: "postComment();",
+                hasCancel: true,
+                txtAlign: "left"
+            });
             editormd("comment-editor", {
                 width: "100%",
                 height: "50vh",

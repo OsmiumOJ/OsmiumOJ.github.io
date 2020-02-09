@@ -6,8 +6,9 @@ function alert1(args) {
 	}
 	if(args === undefined) {
 		alert1On = true;
-		$("#alert1Container").fadeIn();
-		$("#alert1Body").css({marginTop: "10vh"});
+		$("#alert1Container").css({zIndex: "101"});
+		$("#alert1Body").stop().animate({marginTop: "10vh"}, 250, "swing");
+		$("#alert1Container").stop().animate({opacity: "1"}, 250, "swing");
 		return;
 	}
 	var txt = Boolean(args.txt) ? String(args.txt) : "内容";
@@ -29,8 +30,10 @@ function alert1(args) {
 	$("#alert1OkButton").click(function() {
 		okDo;
 		doRemove;
-		$("#alert1Container").fadeOut();
-		$("#alert1Body").css({marginTop: "-60vh"});
+		$("#alert1Body").stop().animate({marginTop: "-60vh"}, 250, "swing");
+		$("#alert1Container").stop().animate({opacity: "0"}, 250, "swing", function() {
+			$("#alert1Container").css({zIndex: "-101"});
+		});
 		alert1On = false;
 	});
 	$("#alert1CancelButton").remove();
@@ -39,14 +42,17 @@ function alert1(args) {
 		$("#alert1CancelButton").html(cancelTxt);
 		$("#alert1CancelButton").click(function() {
 			doRemove;
-			$("#alert1Container").fadeOut();
-			$("#alert1Body").css({marginTop: "-60vh"});
+			$("#alert1Body").stop().animate({marginTop: "-60vh"}, 250, "swing");
+			$("#alert1Container").stop().animate({opacity: "0"}, 250, "swing", function() {
+				$("#alert1Container").css({zIndex: "-101"});
+			});
 			alert1On = false;
 		});
 	}
 	if(doShow) {
-		$("#alert1Container").fadeIn();
-		$("#alert1Body").css({marginTop: "10vh"});
+		$("#alert1Container").css({zIndex: "101"});
+		$("#alert1Body").stop().animate({marginTop: "10vh"}, 250, "swing");
+		$("#alert1Container").stop().animate({opacity: "1"}, 250, "swing");
 	}
 }
 $(function() {
