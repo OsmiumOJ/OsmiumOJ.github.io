@@ -30,16 +30,6 @@ $(function() {
                 placeholder: "输入 Markdown",
                 path: "/static/editor.md/lib/"
             });
-            var xhr = new XMLHttpRequest();
-            xhr.open('get', 'https://v1.hitokoto.cn?c=a&c=b&c=c&c=d');
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    var data = JSON.parse(xhr.responseText);
-                    $("#hitokoto-hitokoto").text(data.hitokoto);
-                    $("#hitokoto-from").text('——' + data.from);
-                }
-            }
-            xhr.send();
         }
     });
 });
