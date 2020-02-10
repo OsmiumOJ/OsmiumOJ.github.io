@@ -476,7 +476,7 @@ ul.nav li:hover span.nav-text {
 	width: 100%
 }
 /* Alert1 button */
-.comment-button, .post-comment-button, .alert1-button {
+.comment-button, .post-button, .alert1-button {
 	display: inline-block;
 	cursor: pointer;
 	font-size: 18px;
@@ -488,7 +488,7 @@ ul.nav li:hover span.nav-text {
 	padding-top: 2px;
 	padding-bottom: 2px
 }
-.post-comment-button, .alert1-button {
+.post-button, .alert1-button {
 	margin: 8px
 }
 /* Nav line */
@@ -537,7 +537,23 @@ ul.nav-line li:hover span.nav-text {
 #user-login, #user-register {
 	text-align: center
 }
+.user-sign-box {
+	width: 70%;
+	margin: 0 15% 0 15%
+}
+.user-sign-text-left, .user-sign-text-right {
+	display: block;
+	width: 100%;
+	margin: 0
+}
+.user-sign-text-left {
+	text-align: left
+}
+.user-sign-text-right {
+	text-align: right
+}
 .user-sign-input {
+	display: block;
 	font-weight: 400;
 	outline: medium;
 	border: 0;
@@ -546,5 +562,6 @@ ul.nav-line li:hover span.nav-text {
 	line-height: 32px;
 	text-align: center;
 	border-radius: 16px;
-	margin: 4px 14px 4px 14px
+	width: 100%;
+	margin: 0 0 4px 0
 }

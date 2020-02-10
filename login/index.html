@@ -23,7 +23,19 @@
         <main class="artic main-small static-shad box-1 grad-double-lines">
             <form id="user-login" method="post" class="full-in-static-left-right">
                 <h2>登录</h2>
-                <input id="user-username" class="static-shad user-sign-input" placeholder="输入用户名或邮箱"/>
+                <div class="user-sign-box">
+                    <div class="user-sign-text-left">用户名</div>
+                    <input id="user-username" name="username" class="static-shad user-sign-input" placeholder="输入用户名或邮箱"/>
+                    <div class="user-sign-text-left">密码</div>
+                    <input id="user-password" name="password" class="static-shad user-sign-input" placeholder="输入密码" type="password"/>
+                    <div class="user-sign-text-right" style="font-size: 12px">
+                        <span>忘记密码</span>
+                        <a id="forgot-password" class="a-1" href="/forget">点我</a>
+                        <span>，尚未注册</span>
+                        <a id="new-user" class="a-1" href="/register">点我</a>
+                    </div>
+                    <button id="user-login-submit" class="static-shad fill-3 alert1-button" type="submit">登&ensp;录</button>
+                </div>
             </form>
         </main>
     </body>
