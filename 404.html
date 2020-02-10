@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="keywords" content="锇,Osmium,OsmiumOJ,Osmium OJ,锇OJ,Osmium Online Judge,OOJ,OsmiumOnlinejudge"/>
+        <meta name="description" content="OOJ，全称OsmiumOnlineJudge，或者叫OsmiumOJ，是一个于2019年1月12日开始的项目。OsmiumOJ的目标是成为一个开放、活跃的OJ。OsmiumOJ一开始的静态前端页面托管在GitHub上，现在您可以在ooj.ac.cn查看OOJ的GitHub静态前端页面。如果您对OOJ的前端有什么意见，我们欢迎您随时Pull Request或者开Issue。在OOJ，你目前能做的事比较有限，不过您在以后能够做很多事情，比如：做题、给公众题库贡献题目、打比赛、创建比赛、在讨论区讨论学术问题、登录&注册、"/>
+        <title>404 - OOJ</title>
+        <link rel="stylesheet" href="/static/css/main.css"/>
+        <link rel="stylesheet" href="/static/css/shadow.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/editor.md/css/editormd.min.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/static/icon/ooj.png"/>
+        <style>
+            #main-404 {
+                background-image: linear-gradient(to bottom right, rgba(239, 239, 239, 0.85), rgba(175, 175, 175, 0.85));
+                width: 100%;
+                border-radius: 50%;
+                text-align: center;
+                margin: 6px 0 6px 0
+            }
+            #text-404 {
+                font-size: 18px
+            }
+            #text-404::before {
+                content: "找不到网页「"
+            }
+            #text-404::after {
+                content: "」"
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/editor.md/editormd.min.js"></script>
+        <script src="/static/js/alert1.js"></script>
+        <script src="/static/js/main.js"></script>
+        <script>
+            $(function() {
+                var main404Width = $("#main-404").width();
+                $("#main-404").css({
+                    height: main404Width,
+                    lineHeight: main404Width
+                });
+                $("#text-404").html("<b>" + window.location.pathname + "<\/b>");
+            });
+        </script>
+    </head>
+    <body>
+        <main class="artic main-small static-shad box-1 grad-double-lines">
+            <div class="grad-border static-shad" id="main-404"><span>404</span></div>
+            <div id="text-404"></div>
+        </main>
+    </body>
+</html>
