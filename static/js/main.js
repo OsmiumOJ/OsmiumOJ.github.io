@@ -28,7 +28,7 @@ $(function() {
                 height: "50vh",
                 tex: true,
                 placeholder: "输入 Markdown",
-                path: "/static/editor.md/lib/"
+                path: "https://cdn.jsdelivr.net/npm/editor.md/lib/"
             });
         }
     });
