@@ -15,14 +15,25 @@
                 background-image: linear-gradient(to bottom right, rgba(239, 239, 239, 0.85), rgba(175, 175, 175, 0.85));
                 width: 100%;
                 border-radius: 50%;
+                margin: 6px 0 6px 0;
+                display: flex;
                 text-align: center;
-                margin: 6px 0 6px 0
+                justify-content: center;
+                align-items: center
+            }
+            #main-404-text {
+                font-size: 100px;
+                font-weight: 600
+            }
+            #main-404-comment {
+                font-size: 40px;
+                font-weight: 400
             }
             #text-404 {
                 font-size: 18px
             }
             #text-404::before {
-                content: "找不到网页「"
+                content: "找不到「"
             }
             #text-404::after {
                 content: "」"
@@ -35,18 +46,34 @@
         <script>
             $(function() {
                 var main404Width = $("#main-404").width();
-                $("#main-404").css({
-                    height: main404Width,
-                    lineHeight: main404Width
-                });
-                $("#text-404").html("<b>" + window.location.pathname + "<\/b>");
+                $("#main-404").height(main404Width);
+                $("#text-404-url").text(window.location.pathname);
             });
         </script>
     </head>
     <body>
         <main class="artic main-small static-shad box-1 grad-double-lines">
-            <div class="grad-border static-shad" id="main-404"><span>404</span></div>
-            <div id="text-404"></div>
+            <div class="grad-border static-shad" id="main-404">
+                <table>
+                    <tr>
+                        <td>
+                            <span id="main-404-text" class="grad-txt grad-bg-1 turning">404</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="main-404-comment" class="grad-txt grad-bg-1">Not&nbsp;Found</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="text-404">
+                                <b id="text-404-url"></b>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </main>
     </body>
 </html>

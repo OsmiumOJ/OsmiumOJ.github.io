@@ -565,7 +565,7 @@ ul.nav-line li:hover span.nav-text {
 	width: 100%;
 	margin: 0 0 4px 0
 }
-/* Turning animation */
+/* Animations */
 @keyframes turning-animation {
 	0% {
 		transform: rotate(0);
@@ -574,6 +574,17 @@ ul.nav-line li:hover span.nav-text {
 		transform: rotate(360deg);
 	}
 }
-.turning {
+.turning-animation {
 	animation: turning-animation 5s infinite;
+}
+@keyframes fake-moving-grad-bg {
+	0%, 100% {
+		background-position: 99% 99%
+	}
+	50% {
+		background-position: 0 0
+	}
+}
+.fake-moving-grad-bg {
+	animation: fake-moving-grad-bg 2s infinite;
 }
