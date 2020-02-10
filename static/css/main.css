@@ -45,21 +45,6 @@ footer.ede {
 	background-clip: text;
 	-webkit-background-clip: text
 }
-.user-lr {
-	position: absolute;
-	width: 90px;
-	height: 30px;
-	line-height: 30px;
-	top: 17px;
-	font-size: 14px;
-	border-radius: 20px
-}
-#user-login {
-	right: 64px
-}
-#user-register {
-	right: 162px
-}
 /* Scroll bar */
 ::-webkit-scrollbar {
     width: 12px;
@@ -201,8 +186,8 @@ footer.ede {
 .fat-double-columns, .fat-column-right {
 	border-right: 4px solid #00bcbc
 }
-/* Elements part (Part in css.js) */
-main.main-part, main.full-part, div.ext-part {
+/* Elements part */
+main.main-part, main.full-part, main.main-small, div.ext-part {
 	position: absolute;
 	margin-top: 76px;
 	margin-bottom: 48px;
@@ -214,6 +199,10 @@ main.main-part {
 main.full-part {
 	left: 100px;
 	right: 100px
+}
+main.main-small {
+	left: calc(50% - 216px);
+	right: calc(50% - 216px)
 }
 div.ext-part {
 	left: 72vw;
@@ -543,4 +532,19 @@ ul.nav-line li:hover span.nav-text {
 /* Change */
 .change:not(.change-show) {
 	display: none
+}
+/* Login & Register */
+#user-login, #user-register {
+	text-align: center
+}
+.user-sign-input {
+	font-weight: 400;
+	outline: medium;
+	border: 0;
+	font-size: 16px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	border-radius: 16px;
+	margin: 4px 14px 4px 14px
 }
