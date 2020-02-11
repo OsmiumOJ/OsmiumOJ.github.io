@@ -44,13 +44,7 @@
                 user-select: none
             }
             #text-404 {
-                font-size: 18px
-            }
-            #text-404::before {
-                content: "你说的「"
-            }
-            #text-404::after {
-                content: "」是什么呀~"
+                font-size: 14px
             }
         </style>
         <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
@@ -59,6 +53,18 @@
         <script src="/static/js/main.js"></script>
         <script>
             $(function() {
+                const text404Text = [
+                    ["这个叫「", "」的页面被藏起来了呢"],
+                    ["你说的「", "」是什么呀"],
+                    ["怎么也找不到「", "」……"],
+                    ["「", "」被lemonnyh吃掉了"],
+                    ["「", "」被hjg切丝切片切块下酒了"],
+                    ["「", "」上上上上海的车跑了"],
+                    ["「", "」去火星了，不知什么时候回来"]
+                ];
+                var text404Index = String(Math.round(Math.random() * 10000) % text404Text.length);
+                $("#text-404").before(text404Text[text404Index][0]);
+                $("#text-404").after(text404Text[text404Index][1]);
                 $("#text-404-url").text(window.location.pathname);
                 for(var i = 1, j, k; i <= 108; ++i) {
                     j = String(Math.round(Math.random() * 10000) / 100.0) + "vw";
@@ -97,9 +103,9 @@
                 </tr>
                 <tr>
                     <td>
-                        <div id="text-404">
+                        <span id="text-404">
                             <b id="text-404-url"></b>
-                        </div>
+                        </span>
                     </td>
                 </tr>
             </table>
