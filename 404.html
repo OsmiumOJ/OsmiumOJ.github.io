@@ -65,7 +65,7 @@
                     k = String(Math.round(Math.random() * 10000) / 100.0) + "vh";
                     var idNow = "span-404-" + String(i);
                     $("body").append("<span id=\"" + idNow + "\"><\/span>");
-                    $("style").append("@keyframes " + idNow + "-animation {0%, 100% {margin-top: " + k + "} 50% {margin-top: calc(" + k + " + " + String(Math.round(Math.random() * 1000) / 35.0) + "px)}}");
+                    $("style").append((i % 2) ? ("@keyframes " + idNow + "-animation {0%, 100% {margin-left: " + j + "} 50% {margin-left: calc(" + j + " + " + String(Math.round(Math.random() * 1000) / 35.0) + "px)}}") : ("@keyframes " + idNow + "-animation {0%, 100% {margin-top: " + k + "} 50% {margin-top: calc(" + k + " + " + String(Math.round(Math.random() * 1000) / 35.0) + "px)}}"));
                     $("#" + idNow).text("404NotFound"[i % 11]);
                     $("#" + idNow).css({
                         position: "fixed",
