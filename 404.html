@@ -13,10 +13,10 @@
         <style>
             @keyframes main-404 {
                 0%, 100% {
-                    margin-top: calc(45vh - 200px)
+                    margin-top: calc(48vh - 200px)
                 }
                 50% {
-                    margin-top: calc(42vh - 200px)
+                    margin-top: calc(43vh - 200px)
                 }
             }
             #main-404 {
@@ -24,22 +24,24 @@
                 width: 400px;
                 height: 400px;
                 border-radius: 50%;
-                margin-top: calc(45vh - 200px);
+                margin-top: calc(48vh - 200px);
                 margin-left: calc(50vw - 200px);
                 position: fixed;
                 display: flex;
                 text-align: center;
                 justify-content: center;
                 align-items: center;
-                animation: main-404 2s infinite;
+                animation: main-404 3s infinite;
             }
             #main-404-text {
                 font-size: 80px;
-                font-weight: 600
+                font-weight: 600;
+                user-select: none
             }
             #main-404-comment {
                 font-size: 40px;
-                font-weight: 400
+                font-weight: 400;
+                user-select: none
             }
             #text-404 {
                 font-size: 18px
@@ -58,6 +60,24 @@
         <script>
             $(function() {
                 $("#text-404-url").text(window.location.pathname);
+                for(var i = 1, j, k; i <= 108; ++i) {
+                    j = String(Math.round(Math.random() * 10000) / 100.0) + "vw";
+                    k = String(Math.round(Math.random() * 10000) / 100.0) + "vh";
+                    var idNow = "span-404-" + String(i);
+                    $("body").append("<span id=\"" + idNow + "\"><\/span>");
+                    $("style").append("@keyframes " + idNow + "-animation {0%, 100% {margin-top: " + k + "} 50% {margin-top: calc(" + k + " + " + String(Math.round(Math.random() * 1000) / 35.0) + "px)}}");
+                    $("#" + idNow).text("404NotFound"[i % 11]);
+                    $("#" + idNow).css({
+                        position: "fixed",
+                        marginLeft: j,
+                        marginTop: k,
+                        fontSize: String(Math.round(Math.random() * 1000) / 35.0) + "px",
+                        filter: "blur(" + String(Math.round(Math.random() * 100) / 35.0) + "px)",
+                        userSelect: "none",
+                        zIndex: "-99",
+                        animation: idNow + "-animation " + String(Math.round(Math.random() * 1000) / 100.0 + 3.0) + "s infinite"
+                    });
+                }
             });
         </script>
     </head>
