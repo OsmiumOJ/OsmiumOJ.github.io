@@ -20,14 +20,15 @@ function Change() {
 }
 function setColor(index) {
     $(":root").css({cssText: "--color-0: " + uiData.colors[index][0] + "; --color-1: " + uiData.colors[index][1] + "; --color-2: " + uiData.colors[index][2]});
-    $.cookie("oojColor", String(index), {path: "/"});
+    localStorage.removeItem("oojColor");
+    localStorage.setItem("oojColor", String(index));
 }
 $(function() {
     $.ajax({
         url: "/template.html",
         success: function(res) {
             $("body").append(res);
-            var colorsIndex = Boolean($.cookie("oojColor")) ? Number($.cookie("oojColor")) : 0;
+            var colorsIndex = Boolean(localStorage.getItem("oojColor")) ? Number(localStorage.getItem("oojColor")) : 0;
             var color = uiData.colors[colorsIndex % uiData.colors.length];
             $(":root").css({cssText: "--color-0: " + color[0] + "; --color-1: " + color[1] + "; --color-2: " + color[2]});
             for(var i = 0; i < uiData.colors.length; ++i) {
