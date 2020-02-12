@@ -3,7 +3,7 @@ const uiData = {
         ["#008080", "#00bcbc", "#00ffff"],
         ["#d94600", "#ea7500", "#ffaf60"],
         ["#0000c6", "#0072e3", "#46a3ff"],
-        ["#ae00ae", "#ff359a", "#ff95ca"],
+        ["#880088", "#ff359a", "#ff95ca"],
         ["#3c3c3c", "#7b7b7b", "#bebebe"]
     ]
 };
@@ -28,7 +28,6 @@ $(function() {
         success: function(res) {
             $("body").append(res);
             var colorsIndex = Boolean($.cookie("oojColor")) ? Number($.cookie("oojColor")) : 0;
-            console.log(colorsIndex);
             var color = uiData.colors[colorsIndex % uiData.colors.length];
             $(":root").css({cssText: "--color-0: " + color[0] + "; --color-1: " + color[1] + "; --color-2: " + color[2]});
             for(var i = 0; i < uiData.colors.length; ++i) {
