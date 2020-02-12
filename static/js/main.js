@@ -1,9 +1,11 @@
 const uiData = {
     colors: [
         ["#008080", "#00bcbc", "#00ffff"],
-        ["#d94600", "#ea7500", "#ffaf60"],
+        ["#ea2300", "#ea7500", "#ffc78e"],
         ["#0000c6", "#0072e3", "#46a3ff"],
-        ["#880088", "#ff359a", "#ff95ca"],
+        ["#8600ff", "#ff359a", "#ffa6ff"],
+        ["#ae8f00", "#eac100", "#ffe66f"],
+        ["#00a600", "#00db00", "#79ff79"],
         ["#3c3c3c", "#7b7b7b", "#bebebe"]
     ]
 };
@@ -11,10 +13,10 @@ var changeStatus = false;
 function Change() {
     if(changeStatus) {
         $(".change:not(.change-show)").fadeToggle(400);
-        $(".change.change-show").delay(400).fadeToggle(400);
+        $(".change.change-show").delay(405).fadeToggle(400);
     } else {
         $(".change.change-show").fadeToggle(400);
-        $(".change:not(.change-show)").delay(400).fadeToggle(400);
+        $(".change:not(.change-show)").delay(405).fadeToggle(400);
     }
     changeStatus = !changeStatus;
 }
