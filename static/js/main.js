@@ -32,4 +32,15 @@ $(function() {
             });
         }
     });
+    const uiData = {
+        colors: [
+            ["#d94600", "#ea7500", "#ffa042"],
+            ["#008080", "#00bcbc", "#00ffff"],
+            ["#d94600", "#ea7500", "#ffa042"]
+        ]
+    }
+    var colorsIndex = Boolean($.cookie("oojColor")) ? Number($.cookie("oojColor")) : 0;
+    console.log(colorsIndex);
+    var color = UiData.colors[colorsIndex % UiData.colors.length];
+    $(":root").css({cssText: "--color-0: " + color[0] + "; --color-1: " + color[1] + "; --color-2: " + color[2]});
 });
