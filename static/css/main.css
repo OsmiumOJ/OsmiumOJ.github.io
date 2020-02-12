@@ -1,7 +1,7 @@
 :root {
 	--color-0: #008080;
 	--color-1: #00bcbc;
-	--color-2: #00ffff;
+	--color-2: #00ffff
 }
 * {
 	box-sizing: border-box;
@@ -571,6 +571,22 @@ ul.nav-inline li:hover span.nav-text {
 	border-radius: 16px;
 	width: 100%;
 	margin: 0 0 4px 0
+}
+/* Color selector */
+#color-selector {
+	margin: 0 4px 0 4px;
+	padding: 3px 8px 3px 8px;
+	font-size: 26px
+}
+#color-selector i {
+	transition-delay: 0.07s;
+	transition-duration: 0.2s;
+	margin: 3px;
+	display: inline-block;
+	border-radius: 50%
+}
+#color-selector i:hover {
+	font-size: 34px
 }
 /* Animations */
 @keyframes turning-animation {
