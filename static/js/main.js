@@ -3,7 +3,7 @@ const varDomain = domain.replace(/\./g, '-');
 const uiData = {
     colors: [
         ["#008080", "#00bcbc", "#00ffff"],
-        ["#ea2300", "#ea7500", "#ffc78e"],
+        ["#ea0000", "#ea7500", "#ffc78e"],
         ["#0000c6", "#0072e3", "#46a3ff"],
         ["#8600ff", "#ff359a", "#ffa6ff"],
         ["#ae8f00", "#eac100", "#ffe66f"],
