@@ -1,3 +1,5 @@
+const domain = document.domain;
+const varDomain = domain.replace(/\./g, '-');
 const uiData = {
     colors: [
         ["#008080", "#00bcbc", "#00ffff"],
@@ -22,15 +24,15 @@ function Change() {
 }
 function setColor(index) {
     $(":root").css({cssText: "--color-0: " + uiData.colors[index][0] + "; --color-1: " + uiData.colors[index][1] + "; --color-2: " + uiData.colors[index][2]});
-    localStorage.removeItem("oojColor");
-    localStorage.setItem("oojColor", String(index));
+    localStorage.removeItem(varDomain + "-color");
+    localStorage.setItem(varDomain + "-color", String(index));
 }
 $(function() {
     $.ajax({
         url: "/template.html",
         success: function(res) {
             $("body").append(res);
-            var colorsIndex = Boolean(localStorage.getItem("oojColor")) ? Number(localStorage.getItem("oojColor")) : 0;
+            var colorsIndex = Boolean(localStorage.getItem(varDomain + "-color")) ? Number(localStorage.getItem(varDomain + "-color")) : 0;
             var color = uiData.colors[colorsIndex % uiData.colors.length];
             $(":root").css({cssText: "--color-0: " + color[0] + "; --color-1: " + color[1] + "; --color-2: " + color[2]});
             for(var i = 0; i < uiData.colors.length; ++i) {
