@@ -1,11 +1,12 @@
 <header class="tit shad-x grad-line-bottom">
     <a href="/">
-        <img id="title-icon" alt="OOJ Image" src="/static/icon/ooj.png" style="position: absolute; top: 8px; left: 8px; width: 48px; height: 48px"/>
+        <img id="title-icon" alt="OOJ Image" src="/static/icon/ooj.png" style="margin: 8px; width: 48px; height: 48px"/>
     </a>
-    <a id="title" class="grad-txt grad-bg-1" style="position: absolute; left: 64px; top: 0; font-size: 35px" href="/">Osmium OJ</a>
+    <a id="title" class="grad-txt grad-bg-1" style="margin: 0; font-size: 35px" href="/">Osmium OJ</a>
+    <span id="color-selector"></span>
     <img alt="OOJ QR Code image" style="position: absolute; top: 8px; right: 8px; width: 48px; height: 48px" src="/static/icon/OOJqrCode.png"/>
 </header>
-<ul class="nav nav-left">
+<ul class="nav-top nav-left">
     <a href="/">
         <li class="shad">
             <i class="fa fa-home grad-txt grad-bg-1" style="font-size: 23px"></i>
@@ -43,7 +44,7 @@
         </li>
     </a>
 </ul>
-<ul class="nav nav-right">
+<ul class="nav-top nav-right">
     <a href="/login">
         <li class="shad">
             <i class="fa fa-sign-in grad-txt grad-bg-1" style="font-size: 23px"></i>
@@ -57,7 +58,7 @@
         </li>
     </a>
 </ul>
-<div id="alert1Container" style="opacity: 0; position: fixed; z-index: -101; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.5)">
+<div id="alert1Container" style="opacity: 0; position: fixed; z-index: -101; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5)">
 	<div id="alert1Body" class="artic static-shad box-1 grad-double-lines"
 	style="width: 76vw; margin-left: 12vw; margin-top: -60vh; background-color: rgba(239, 239, 239, 0.85); text-align: center">
 		<h2 id="alert1Cap"></h2>
@@ -65,7 +66,8 @@
 		<button id="alert1OkButton" class="static-shad fill-3 alert1-button"></button>
 	</div>
 </div>
+<div id="htmlLab" style="display: none"></div>
 <div id="htmlCoverer" style="position: fixed; z-index: -100; left: 0; right: 0; top: 0; bottom: 0; background-color: #ffffff"></div>
 <footer class="ede shad-s grad-line-top">
-    <span style="font-size: 16px">OOJ (2019 - 2020), developed by OOJ-dev team.</span>
+    <span style="font-size: 16px">OOJ (2019 - 2020), developed by <a class="a-1" href="https://github.com/ooj-dev">OOJ-dev team.</a></span>
 </footer>

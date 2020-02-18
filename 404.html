@@ -48,6 +48,7 @@
             }
         </style>
         <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.cookie/jquery.cookie.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/editor.md/editormd.min.js"></script>
         <script src="/static/js/alert1.js"></script>
         <script src="/static/js/main.js"></script>
@@ -75,7 +76,7 @@
                     ["根本就没有「", "」啊，你是在玩我吗"],
                     ["「", "」根本就不存在，换个页面试试？"],
                     ["什么是「", "」？能吃吗？"]
-                ];
+                ], span404Text = ["肆", "零", "4", "0", "N", "o", "t", "f", "u", "n", "d"];
                 var text404Index = String(Math.round(Math.random() * 10000) % text404Text.length);
                 $("#text-404").before(text404Text[text404Index][0]);
                 $("#text-404").after(text404Text[text404Index][1]);
@@ -86,7 +87,7 @@
                     var idNow = "span-404-" + String(i);
                     $("body").append("<span id=\"" + idNow + "\"><\/span>");
                     $("style").append((i % 2) ? ("@keyframes " + idNow + "-animation {0%, 100% {margin-left: " + j + "} 50% {margin-left: calc(" + j + " + " + String(Math.round(Math.random() * 1000) / 35.0) + "px)}}") : ("@keyframes " + idNow + "-animation {0%, 100% {margin-top: " + k + "} 50% {margin-top: calc(" + k + " + " + String(Math.round(Math.random() * 1000) / 35.0) + "px)}}"));
-                    $("#" + idNow).text("404NotFound"[i % 11]);
+                    $("#" + idNow).text(span404Text[i % span404Text.length]);
                     $("#" + idNow).css({
                         position: "fixed",
                         marginLeft: j,
