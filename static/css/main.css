@@ -196,7 +196,9 @@ footer.ede {
 /* Elements part */
 main.main-part, main.full-part, div.ext-part {
 	background-color: transparent !important;
-	padding: 0 !important
+	padding: 0 !important;
+	margin-left: 8px;
+	margin-right: 8px
 }
 main.main-part, main.full-part, main.main-small, div.ext-part {
 	position: absolute;
