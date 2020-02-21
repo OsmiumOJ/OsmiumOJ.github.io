@@ -194,10 +194,16 @@ footer.ede {
 	border-right: 4px solid var(--color-1, #00bcbc)
 }
 /* Elements part */
+main.main-part, main.full-part, div.ext-part {
+	background-color: transparent !important;
+	padding: 0 !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important
+}
 main.main-part, main.full-part, main.main-small, div.ext-part {
 	position: absolute;
-	margin-top: 76px;
-	margin-bottom: 48px
+	margin-top: 76px !important;
+	margin-bottom: 48px !important
 }
 main.main-part {
 	left: 100px;
