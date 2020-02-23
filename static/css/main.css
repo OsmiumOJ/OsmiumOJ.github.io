@@ -12,10 +12,32 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	font-size: 0.9em;
 	background: #ffffff
 }
 a {
 	text-decoration: none
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.54em 0.17em 0.54em 0.17em
+}
+h1 {
+	font-size: 2em
+}
+h2 {
+	font-size: 1.5em
+}
+h3 {
+	font-size: 1.17em
+}
+h4 {
+	font-size: 1em
+}
+h5 {
+	font-size: 0.83em
+}
+h6 {
+	font-size: 0.67em
 }
 header.tit {
 	z-index: 100;
@@ -75,61 +97,30 @@ footer.ede {
 	background-color: #dddddd
 }
 /* Article part */
-.artic {
-	font-size: 14px
-}
-/* .artic h1, .artic h2, .artic h3, .artic h4, .artic h5, .artic h6 {
-	color: #008383
-} */
-.artic h1 {
-	font-size: 30px
-}
-.artic h2 {
-	font-size: 26px
-}
-.artic h3 {
-	font-size: 23px
-}
-.artic h4 {
-	font-size: 21px
-}
-.artic h5 {
-	font-size: 19px
-}
-.artic h6 {
-	font-size: 17px
-}
-.artic b {
-	font-weight: 800
-}
-.artic a {
-	font-weight: 600;
-	transition-duration: 0.4s
-}
-.artic a:link, .artic a:visited {
+article a:link, article a:visited {
 	color: var(--color-0, #008080)
 }
-.artic a:hover, .artic a:active {
+article a:hover, article a:active {
 	color: var(--color-1, #00bcbc)
 }
-.artic a, .a-1 {
-	font-weight: 600;
-	transition-duration: 0.4s
+article a, .a-1 {
+	transition-duration: 0.4s;
+	text-decoration: underline
 }
-.artic a:link, .a-1:link, .artic a:visited, .a-1:visited {
+article a:link, .a-1:link, article a:visited, .a-1:visited {
 	color: var(--color-0, #008080)
 }
-.artic a:hover, .a-1:hover, .artic a:active, .a-1:active {
+article a:hover, .a-1:hover, article a:active, .a-1:active {
 	color: var(--color-1, #00bcbc)
 }
-.artic code, .artic pre {
+article code, article pre {
 	font-family: "Consolas";
 	padding: 2px;
 	border: 1px solid rgba(165, 165, 165, 0.85);
 	border-radius: 3px;
 	background-color: rgba(207, 207, 207, 0.85)
 }
-.artic hr {
+hr {
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: 8px;
@@ -138,7 +129,7 @@ footer.ede {
     height: 2px;
     background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.85), transparent)
 }
-.artic blockquote {
+article blockquote {
 	margin-left: 12px;
 	margin-right: 4px;
 	margin-top: 4px;
@@ -396,11 +387,11 @@ table.splited-1 td.right-30 {
 table.splited-1 td.author {
 	text-align: center;
 	vertical-align: top;
-	width: 48px
+	width: 40px
 }
 table.splited-1 td.author-text {
 	vertical-align: top;
-	width: calc(100% - 48px)
+	width: calc(100% - 40px)
 }
 /* Contest */
 .contest-name {
@@ -590,6 +581,11 @@ ul.nav-inline li:hover span.nav-text {
 }
 #color-selector i:hover {
 	font-size: 34px
+}
+/* Message blob */
+.message-blob-left {
+	border: 1px solid rgba(165, 165, 165, 0.85);
+	border-radius: 0 12px 12px 12px !important
 }
 /* Animations */
 @keyframes turning-animation {
