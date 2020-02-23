@@ -591,6 +591,9 @@ ul.nav-inline li:hover span.nav-text {
 	padding: 0 8px 0 8px;
 	border-top: 1px solid rgba(165, 165, 165, 0.85);
 }
+.item:first-of-type {
+	border: 0
+}
 /* Animations */
 @keyframes turning-animation {
 	0% {
