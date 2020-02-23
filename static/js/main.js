@@ -57,3 +57,10 @@ $(function() {
         }
     });
 });
+function getStackedit() {
+    const textarea = document.querySelector('textarea');
+    const stackedit = new Stackedit();
+    stackedit.openFile({content: {text: textarea.value}});
+    stackedit.on('fileChange', (file) => {textarea.value = file.content.text});
+    return;
+}
