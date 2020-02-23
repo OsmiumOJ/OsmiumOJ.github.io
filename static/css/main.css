@@ -104,8 +104,7 @@ article a:hover, article a:active {
 	color: var(--color-1, #00bcbc)
 }
 article a, .a-1 {
-	transition-duration: 0.4s;
-	text-decoration: underline
+	transition-duration: 0.4s
 }
 article a:link, .a-1:link, article a:visited, .a-1:visited {
 	color: var(--color-0, #008080)
@@ -395,7 +394,7 @@ table.splited-1 td.author-text {
 }
 /* Contest */
 .contest-name {
-	font-size: 18px !important
+	font-size: 1.24em !important
 }
 /* Nav */
 ul.nav-top {
@@ -586,6 +585,14 @@ ul.nav-inline li:hover span.nav-text {
 .message-blob-left {
 	border: 1px solid rgba(165, 165, 165, 0.85);
 	border-radius: 0 12px 12px 12px !important
+}
+/* Item */
+.item {
+	padding: 0 8px 0 8px;
+	border-bottom: 1px solid rgba(165, 165, 165, 0.85);
+}
+.item:last-of-type {
+	border: 0
 }
 /* Animations */
 @keyframes turning-animation {
