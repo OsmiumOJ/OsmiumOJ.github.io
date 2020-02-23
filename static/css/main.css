@@ -395,7 +395,7 @@ table.splited-1 td.right-30 {
 .post-time::before {
 	content: " 于 "
 }
-.post-time::before {
+.post-time::after {
 	content: "；"
 }
 /* Name show */
