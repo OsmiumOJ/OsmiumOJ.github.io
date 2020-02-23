@@ -62,5 +62,7 @@ function getStackedit() {
     const stackedit = new Stackedit();
     stackedit.openFile({content: {text: textarea.value}});
     stackedit.on('fileChange', (file) => {textarea.value = file.content.text});
-    return;
+}
+function openBlankStackedit() {
+    (new Stackedit()).openFile({});
 }
