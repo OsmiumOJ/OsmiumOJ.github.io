@@ -383,14 +383,20 @@ table.splited-1 td.tag-part {
 table.splited-1 td.right-30 {
 	width: 30%
 }
-table.splited-1 td.author {
+.author {
 	text-align: center;
 	vertical-align: top;
 	width: 40px
 }
-table.splited-1 td.author-text {
+.author-text {
 	vertical-align: top;
 	width: calc(100% - 40px)
+}
+.post-time::before {
+	content: " 于 "
+}
+.post-time::before {
+	content: "；"
 }
 /* Name show */
 .name-show {
