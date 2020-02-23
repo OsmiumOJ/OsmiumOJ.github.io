@@ -189,24 +189,24 @@ main.main-part, main.full-part, div.ext-part {
 }
 main.main-part, main.full-part, main.main-small, div.ext-part {
 	position: absolute;
-	margin-top: 76px !important;
-	margin-bottom: 48px !important
+	margin-top: 68px !important;
+	margin-bottom: 40px !important
 }
 main.main-part {
-	left: 100px;
-	right: 28vw
+	left: calc(50% - 540px);
+	right: calc(50% - 238px)
 }
 main.full-part {
-	left: 100px;
-	right: 100px
+	left: calc(50% - 540px);
+	right: calc(50% - 540px)
 }
 main.main-small {
 	left: calc(50% - 200px);
 	right: calc(50% - 200px)
 }
 div.ext-part {
-	left: 72vw;
-	right: 100px
+	left: calc(50% + 238px);
+	right: calc(50% - 540px)
 }
 .box-1 {
 	margin: 8px;
