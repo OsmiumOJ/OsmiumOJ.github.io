@@ -21,23 +21,23 @@
         </script>
     </head>
     <body>
-        <main class="artic main-small static-shad box-1 grad-double-lines">
-            <form id="user-register" method="post" class="full-in-static-left-right">
-                <h2>注册</h2>
-                <div class="user-sign-box">
-                    <div class="user-sign-text-left">用户名</div>
-                    <input id="user-username" name="username" class="static-shad user-sign-input" placeholder="输入用户名或邮箱"/>
-                    <div class="user-sign-text-left">密码</div>
-                    <input id="user-password" name="password" class="static-shad user-sign-input" placeholder="输入密码" type="password"/>
-                    <div class="user-sign-text-left">确认密码</div>
-                    <input id="user-password" name="password" class="static-shad user-sign-input" placeholder="请再次输入密码" type="password"/>
-                    <div class="user-sign-text-right" style="font-size: 12px">
-                        <span>已有账号？</span>
-                        <a id="has-account" class="a-1" href="/login">点我</a>
+        <main class="artic box-1 main-small">
+            <div class="box-1 thin-border full-in-static-left-right">
+                <form id="user-register" method="post" class="full-in-static-left-right">
+                    <h2>注册</h2>
+                    <div class="user-sign-box">
+                        <input id="user-username" name="username" class="static-shad user-sign-input" placeholder="用户名"/>
+                        <input id="user-mail" name="usermail" class="static-shad user-sign-input" placeholder="邮箱"/>
+                        <input id="user-password" name="password" class="static-shad user-sign-input" placeholder="密码" type="password"/>
+                        <input id="user-password-again" name="passwordagain" class="static-shad user-sign-input" placeholder="再次输入密码" type="password"/>
+                        <div class="user-sign-text-right" style="font-size: 12px">
+                            <span>已有账号？</span>
+                            <a id="has-account" class="a-1" href="/login">点我</a>
+                        </div>
+                        <button id="user-register-submit" class="static-shad fill-3 alert1-button" type="submit">注&ensp;册</button>
                     </div>
-                    <button id="user-register-submit" class="static-shad fill-3 alert1-button" type="submit">注&ensp;册</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </main>
     </body>
 </html>

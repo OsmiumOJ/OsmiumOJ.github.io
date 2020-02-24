@@ -184,10 +184,8 @@ article blockquote {
 	border-right: 4px solid var(--color-1, #00bcbc)
 }
 /* Elements part */
-main.main-part, main.full-part, div.ext-part {
-	background-color: transparent !important
-}
 main.main-part, main.full-part, main.main-small, div.ext-part {
+	background-color: transparent !important;
 	position: absolute;
 	margin-top: 68px !important;
 	margin-bottom: 40px !important
@@ -326,12 +324,12 @@ div.ext-part {
 	font-weight: 600;
 	transition-duration: 0.4s;
 	transition-delay: 0.07s;
-	background-image: linear-gradient(to right, var(--color-0, #008080), var(--color-2, #00ffff));
-	background-size: 200% 200%;
-	background-position: 99% 99%
+	background-image: linear-gradient(to right, var(--color-0, #008080), var(--color-1, #00bcbc));
+	background-size: 220% 220%;
+	background-position: 80% 80%
 }
 .fill-1:hover {
-	background-position: 0 0
+	background-position: 10% 10%
 }
 .fill-2 {
 	outline: medium;
@@ -354,11 +352,11 @@ div.ext-part {
 	transition-delay: 0.07s;
 	border: 1px solid var(--color-1, #00bcbc);
 	background-image: linear-gradient(to right, rgba(239, 239, 239, 0.85), rgba(175, 175, 175, 0.85));
-	background-size: 200% 200%;
-	background-position: 99% 99%
+	background-size: 220% 220%;
+	background-position: 80% 80%
 }
 .fill-3:hover {
-	background-position: 0 0
+	background-position: 10% 10%
 }
 .grad-bg-1 {
 	background-image: linear-gradient(to bottom right, var(--color-0, #008080), var(--color-1, #00bcbc))
@@ -558,18 +556,35 @@ ul.nav-inline li:hover span.nav-text {
 .user-sign-text-right {
 	text-align: right
 }
+.user-sign-title {
+	font-size: 5em !important
+}
 .user-sign-input {
 	display: block;
 	font-weight: 400;
 	outline: medium;
 	border: 0;
-	font-size: 16px;
-	height: 32px;
-	line-height: 32px;
+	font-size: 1.24em;
+	height: 24px;
+	line-height: 24px;
 	text-align: center;
-	border-radius: 16px;
+	border-radius: 12px;
 	width: 100%;
 	margin: 0 0 4px 0
+}
+#user-login-button, #user-register-button {
+	width: 76px;
+	height: 32px;
+	line-height: 32px;
+	margin: 0 4px 0 4px;
+	border-radius: 8px
+}
+#user-login-button {
+	border: 2px solid var(--color-1, #00bcbc);
+}
+#user-register-button {
+	border: 2px solid transparent;
+	color: #ffffff !important
 }
 /* Color selector */
 #color-selector {
@@ -599,6 +614,12 @@ ul.nav-inline li:hover span.nav-text {
 }
 .item:first-of-type {
 	border: 0
+}
+/* Top title */
+.top-title {
+	display: block;
+	background: rgba(175, 175, 175, 0.85);
+	border-bottom: 1px solid rgba(165, 165, 165, 0.85)
 }
 /* Animations */
 @keyframes turning-animation {
