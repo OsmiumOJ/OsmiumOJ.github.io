@@ -191,20 +191,20 @@ main.main-part, main.full-part, main.main-small, div.ext-part {
 	margin-bottom: 40px !important
 }
 main.main-part {
-	left: calc(50% - 540px);
-	right: calc(50% - 238px)
+	left: calc(50% - 480px);
+	right: calc(50% - 211px)
 }
 main.full-part {
-	left: calc(50% - 540px);
-	right: calc(50% - 540px)
+	left: calc(50% - 480px);
+	right: calc(50% - 480px)
 }
 main.main-small {
 	left: calc(50% - 200px);
 	right: calc(50% - 200px)
 }
 div.ext-part {
-	left: calc(50% + 238px);
-	right: calc(50% - 540px)
+	left: calc(50% + 211px);
+	right: calc(50% - 480px)
 }
 .box-1 {
 	margin: 8px;
@@ -584,7 +584,7 @@ ul.nav-inline li:hover span.nav-text {
 }
 #user-register-button {
 	border: 2px solid transparent;
-	color: #ffffff !important
+	color: #eeeeee !important
 }
 /* Color selector */
 #color-selector {
