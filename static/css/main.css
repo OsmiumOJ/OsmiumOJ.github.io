@@ -656,3 +656,15 @@ ul.nav-inline li:hover span.nav-text {
 .fake-moving-grad-bg {
 	animation: fake-moving-grad-bg 2s infinite;
 }
+*::selection {
+	background: #cce2fe;
+	color: black;
+}
+*::-moz-selection {
+	background: #cce2fe;
+	color: black;
+}
+*::-webkit-selection {
+	background: #cce2fe;
+	color: black;
+}
