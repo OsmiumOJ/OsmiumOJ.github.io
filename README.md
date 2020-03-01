@@ -1,10 +1,8 @@
 ## OOJ是什么？
-OOJ，全称OsmiumOnlineJudge，或者叫OsmiumOJ，是一个于2019年1月12日开始的项目。OsmiumOJ的目标是成为一个开放、活跃的OJ。OsmiumOJ一开始的静态前端页面托管在GitHub上，现在您可以在<a href="https://github.com/OsmiumOJ/OsmiumOJ.github.io" target="_blank">这里</a>查看OOJ的GitHub静态前端页面。如果您对OOJ的前端有什么意见，我们欢迎您随时Pull Request或者开Issue。
-## 在OOJ里能干什么？
-在OOJ，你目前能做的事比较有限，不过您在以后能够做很多事情，比如：
-- 做题
-- 给公众题库贡献题目
-- 打比赛
-- 创建比赛
-- 在讨论区讨论学术问题
-- 登录&注册
+OOJ是一个轻量级（对，和Osmium大相径庭）的开源OJ，旨在能为诸多OIer提供一个功能齐全的OJ。
+
+由于经费原因，OOJ本地的用户体验可能不如其他大型OJ，但你可以利用OOJ的源代码自行搭建一个和OOJ功能同样齐全的一个OJ。
+
+秉承着“自由、开放”的信念，OOJ将会开放全部公共题目的数据文件，方便诸位用户调试。
+
+当然，现在OOJ离这些目标还很遥远，不过勤勤恳恳的管理员们在夜以继日地建造OOJ，让我们一起期待OOJ的明天吧！
