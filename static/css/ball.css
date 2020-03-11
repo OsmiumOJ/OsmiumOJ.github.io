@@ -1,121 +1,121 @@
 .ball {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -150px 0 0 -150px;
-  transition: all .6s;
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	transition: all .6s;
 }
 
 .ball_box {
-  width: 100%;
-  height: 100%;
-  animation: rotate3d 20s infinite linear;
+	width: 100%;
+	height: 100%;
+	animation: rotate3d 20s infinite linear;
 }
 
 .ball div {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  border: solid 2px #8787b4;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -50% 0 0 -50%;
-  transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	border: solid 2px #8787b4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -50% 0 0 -50%;
+	transform-style: preserve-3d;
 }
 
 .ball .x1 {
-  transform: rotateY(0deg)
+	transform: rotateY(0deg)
 }
 
 .ball .x2 {
-  transform: rotateY(20deg)
+	transform: rotateY(20deg)
 }
 
 .ball .x3 {
-  transform: rotateY(40deg)
+	transform: rotateY(40deg)
 }
 
 .ball .x4 {
-  transform: rotateY(60deg)
+	transform: rotateY(60deg)
 }
 
 .ball .x5 {
-  transform: rotateY(80deg)
+	transform: rotateY(80deg)
 }
 
 .ball .x6 {
-  transform: rotateY(100deg)
+	transform: rotateY(100deg)
 }
 
 .ball .x7 {
-  transform: rotateY(120deg)
+	transform: rotateY(120deg)
 }
 
 .ball .x8 {
-  transform: rotateY(140deg)
+	transform: rotateY(140deg)
 }
 
 .ball .x9 {
-  transform: rotateY(160deg)
+	transform: rotateY(160deg)
 }
 
 .ball .y1 {
-  transform: rotateX(90deg) translateZ(120px) scale(0.60);
+	transform: rotateX(90deg) translateZ(120px) scale(0.60);
 }
 
 .ball .y2 {
-  transform: rotateX(90deg) translateZ(90px) scale(0.80);
+	transform: rotateX(90deg) translateZ(90px) scale(0.80);
 }
 
 .ball .y3 {
-  transform: rotateX(90deg) translateZ(60px) scale(0.92);
+	transform: rotateX(90deg) translateZ(60px) scale(0.92);
 }
 
 .ball .y4 {
-  transform: rotateX(90deg) translateZ(30px) scale(0.98);
+	transform: rotateX(90deg) translateZ(30px) scale(0.98);
 }
 
 .ball .y5 {
-  transform: rotateX(90deg) translateZ(0px);
+	transform: rotateX(90deg) translateZ(0px);
 }
 
 .ball .y6 {
-  transform: rotateX(90deg) translateZ(-30px) scale(0.98);
+	transform: rotateX(90deg) translateZ(-30px) scale(0.98);
 }
 
 .ball .y7 {
-  transform: rotateX(90deg) translateZ(-60px) scale(0.92);
+	transform: rotateX(90deg) translateZ(-60px) scale(0.92);
 }
 
 .ball .y8 {
-  transform: rotateX(90deg) translateZ(-90px) scale(0.80);
+	transform: rotateX(90deg) translateZ(-90px) scale(0.80);
 }
 
 .ball .y9 {
-  transform: rotateX(90deg) translateZ(-120px) scale(0.60);
+	transform: rotateX(90deg) translateZ(-120px) scale(0.60);
 }
 
 @keyframes rotate3d {
-  0% {
-    transform: rotate(-20deg) rotateX(-20deg) rotateY(0deg)
-  }
-  100% {
-    transform: rotate(-20deg) rotateX(-20deg) rotateY(360deg)
-  }
+	0% {
+		transform: rotate(-20deg) rotateX(-20deg) rotateY(0deg)
+	}
+	100% {
+		transform: rotate(-20deg) rotateX(-20deg) rotateY(360deg)
+	}
 }
 
 @keyframes ts {
-  0%, 100% {
-    transform: scale(0.6);
-  }
-  50% {
-    transform: scale(0.7);
-  }
+	0%, 100% {
+		transform: scale(0.6);
+	}
+	50% {
+		transform: scale(0.7);
+	}
 }
 
 .changeballsize {
-  animation: ts 3s infinite;
+	animation: ts 3s infinite;
 }
