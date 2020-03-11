@@ -1,0 +1,15 @@
+/* Fonts */
+@font-face {
+	font-family: lato-thin;
+	src: url(/fonts/lato-thin.ttf);
+}
+@font-face {
+	font-family: lato-medium;
+	src: url(/fonts/lato-medium.ttf);
+}
+* {
+	font-family: lato-thin, Helvetica, 'Microsoft Yahei', sans-serif;
+}
+a {
+	text-decoration: none;
+}
