@@ -7,9 +7,21 @@
 	font-family: lato-medium;
 	src: url(/fonts/lato-medium.ttf);
 }
+/* Text decoration */
 * {
 	font-family: lato-medium, Helvetica, 'Microsoft Yahei', sans-serif;
 }
 a {
 	text-decoration: none;
+}
+/* Headers */
+header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	height: 70px;
+	background-color: rgba(240, 240, 240, 0.836);
+	border-bottom: 0px solid #ff359a;
 }
