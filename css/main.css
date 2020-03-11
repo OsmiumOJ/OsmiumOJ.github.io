@@ -8,7 +8,7 @@
 	src: url(/fonts/lato-medium.ttf);
 }
 * {
-	font-family: lato-thin, Helvetica, 'Microsoft Yahei', sans-serif;
+	font-family: lato-medium, Helvetica, 'Microsoft Yahei', sans-serif;
 }
 a {
 	text-decoration: none;
