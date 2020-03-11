@@ -24,6 +24,6 @@ header {
 	height: 70px;
 	line-height: 70px;
 	background-color: rgba(240, 240, 240, 0.836);
-	border-bottom: 0px solid #ff359a;
+	border-bottom: 2px solid #ff359a;
 	user-select: none;
 }
