@@ -10,6 +10,7 @@
 /* Text decoration */
 * {
 	font-family: lato-medium, Helvetica, 'Microsoft Yahei', sans-serif;
+	color: #ff359a;
 }
 a {
 	text-decoration: none;
