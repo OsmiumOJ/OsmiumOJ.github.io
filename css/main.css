@@ -1,15 +1,15 @@
 /* Fonts */
-@font-face {
+/* @font-face {
 	font-family: lato-thin;
 	src: url(/fonts/lato-thin.ttf);
 }
 @font-face {
 	font-family: lato-medium;
 	src: url(/fonts/lato-medium.ttf);
-}
+} */
 /* Text decoration */
 * {
-	font-family: lato-medium, Helvetica, 'Microsoft Yahei', sans-serif;
+	font-family: 'Microsoft Yahei', sans-serif;
 	color: #ff359a;
 }
 a {
@@ -22,8 +22,8 @@ header {
 	right: 0;
 	top: 0;
 	z-index: 100;
-	height: 70px;
-	line-height: 70px;
+	height: 60px;
+	line-height: 60px;
 	background-color: rgba(240, 240, 240, 0.836);
 	border-bottom: 2px solid #ff359a;
 	user-select: none;
