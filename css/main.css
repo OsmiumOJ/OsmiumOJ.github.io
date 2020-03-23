@@ -7,10 +7,16 @@
 	font-family: lato-medium;
 	src: url(/fonts/lato-medium.ttf);
 } */
+/* Theme Colors */
+:root {
+	--default-color-begin: #8600ff;
+	--default-color-end: #ff359a;
+	--default-color: #ff359a;
+}
 /* Text decoration */
 * {
 	font-family: 'Microsoft Yahei', sans-serif;
-	color: #ff359a;
+	color: var(--default-color);
 }
 a {
 	text-decoration: none;
@@ -25,10 +31,25 @@ header {
 	height: 60px;
 	line-height: 60px;
 	background-color: rgba(240, 240, 240, 0.836);
-	border-bottom: 2px solid #ff359a;
+	border-image: linear-gradient(to right, var(--default-color-begin), var(--default-color-end)) 2px;
+	border-bottom: 2px solid;
 	-ms-user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 }
+/* Sign in & Sign up Button */
+#sign-in-button,
+#sign-up-button {
+	vertical-align: middle;
+	float: right;
+	
+}
 /* Gradient Text */
-/* Gu Gu Gu! */
+.gradient-text {
+	background-image: linear-gradient(to bottom right, var(--default-color-begin), var(--default-color-end));
+	background-color: var(--default-color);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+}
