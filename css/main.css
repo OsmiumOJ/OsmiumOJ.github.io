@@ -7,20 +7,24 @@
 	font-family: lato-medium;
 	src: url(/fonts/lato-medium.ttf);
 } */
+
 /* Theme Colors */
 :root {
 	--default-color-begin: #8600ff;
 	--default-color-end: #ff359a;
 	--default-color: #ff359a;
 }
+
 /* Text decoration */
 * {
 	font-family: 'Microsoft Yahei', sans-serif;
 	color: var(--default-color);
 }
+
 a {
 	text-decoration: none;
 }
+
 /* Header */
 header {
 	position: fixed;
@@ -28,22 +32,28 @@ header {
 	right: 0;
 	top: 0;
 	z-index: 100;
-	height: 60px;
-	line-height: 60px;
+	height: 50px;
+	line-height: 50px;
 	background-color: rgba(240, 240, 240, 0.836);
-	border-image: linear-gradient(to right, var(--default-color-begin), var(--default-color-end)) 2px;
-	border-bottom: 2px solid;
+	border-bottom: 2px solid var(--default-color);
 	-ms-user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 }
+
 /* Sign in & Sign up Button */
 #sign-in-button,
 #sign-up-button {
-	vertical-align: middle;
-	float: right;
-	
+	width: 76px;
+	height: 32px;
+	margin: 0 4px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
 }
+
 /* Gradient Text */
 .gradient-text {
 	background-image: linear-gradient(to bottom right, var(--default-color-begin), var(--default-color-end));
