@@ -1,13 +1,3 @@
-/* Fonts */
-/* @font-face {
-	font-family: lato-thin;
-	src: url(/fonts/lato-thin.ttf);
-}
-@font-face {
-	font-family: lato-medium;
-	src: url(/fonts/lato-medium.ttf);
-} */
-
 /* Theme Colors */
 :root {
 	--default-color-begin: #8600ff;
@@ -54,6 +44,28 @@ header {
 	-moz-border-radius: 8px;
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
+	border-width: 0px;
+	transition-duration: 0.4s;
+	transition-delay: 0.07s;
+	font-size: 15px;
+	/* font-weight: 400; */
+}
+
+#sign-in-button {
+	border: 2px solid;
+}
+#sign-in-button:hover {
+	background-color: rgba(207, 207, 207, 0.85);
+}
+
+#sign-up-button {
+	background-image: linear-gradient(to right, var(--default-color-begin), var(--default-color-end));
+    color: #eeeeee;
+    background-size: 220% 220%;
+    background-position: 80% 80%;
+}
+#sign-up-button:hover {
+	background-position: 10% 10%;
 }
 
 /* Gradient Text */
