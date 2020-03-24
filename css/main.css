@@ -26,6 +26,9 @@ header {
 	line-height: 50px;
 	background-color: rgba(240, 240, 240, 0.836);
 	border-bottom: 2px solid;
+	border-top: 0 solid;
+	border-left: 0 solid;
+	border-right: 0 solid;
 	border-image: linear-gradient(to right, var(--default-color-begin), var(--default-color-end)) 20 20;
 	-ms-user-select: none;
 	-moz-user-select: none;
