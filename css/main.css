@@ -35,7 +35,8 @@ header {
 	height: 50px;
 	line-height: 50px;
 	background-color: rgba(240, 240, 240, 0.836);
-	border-bottom: 2px solid var(--default-color);
+	border-bottom: 2px solid;
+	border-image: linear-gradient(to right, var(--default-color-begin), var(--default-color-end)) 20 20;
 	-ms-user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
@@ -56,7 +57,7 @@ header {
 
 /* Gradient Text */
 .gradient-text {
-	background-image: linear-gradient(to bottom right, var(--default-color-begin), var(--default-color-end));
+	background-image: linear-gradient(to top right, var(--default-color-begin), var(--default-color-end));
 	background-color: var(--default-color);
 	color: transparent;
 	background-clip: text;
