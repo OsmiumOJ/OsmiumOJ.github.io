@@ -133,10 +133,10 @@ header {
 #sidebar span {
 	display: block;
 	visibility: hidden;
-	transition-delay: .27s; /* transition-duration of #sidebar li is .4s, transition-delay of #sidebar li is .07s, this will appear at the middle of transition, so its transition-delay is .07s+.4s/2=.27s*/
 	margin-top: 50%;
 }
 
 #sidebar li:hover span {
 	visibility: visible;
+	transition-delay: .27s; /* transition-duration of #sidebar li is .4s, transition-delay of #sidebar li is .07s, this will appear at the middle of transition, so its transition-delay is .07s+.4s/2=.27s*/
 }
