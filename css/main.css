@@ -106,12 +106,12 @@ header {
 	border-bottom: 0 solid;
 	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.24), 3px 3px 9px 0 rgba(0, 0, 0, 0.19);
 }
-#sidebar>:first-of-type {
+#sidebar>:first-of-type li {
 	border-top-left-radius: 24px;
 	border-top-right-radius: 24px;
 	border-top: 1px solid var(--default-color);
 }
-#sidebar>:last-of-type {
+#sidebar>:last-of-type li {
 	border-bottom-left-radius: 24px;
 	border-bottom-right-radius: 24px;
 	border-bottom: 1px solid var(--default-color);
