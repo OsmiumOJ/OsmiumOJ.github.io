@@ -10,6 +10,7 @@
 	font-family: 'Microsoft Yahei', sans-serif;
 	color: var(--default-color);
 	box-sizing: border-box;
+	word-wrap: break-word;
 }
 
 a {
@@ -48,7 +49,7 @@ header {
 	-moz-border-radius: 8px;
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
-	border-width: 0px;
+	border-width: 0;
 	transition-duration: 0.4s;
 	transition-delay: 0.07s;
 	font-size: 15px;
@@ -79,4 +80,36 @@ header {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
+}
+
+/* Sidebar */
+#sidebar {
+	position: fixed;
+	left: 26px;
+	top: 90px;
+	list-style-type: none;
+	width: 48px;
+}
+#sidebar li {
+	height: 48px;
+	transition-delay: 0.07s;
+	transition-duration: 0.4s;
+	background-color: #eeeeee;
+	text-align: center;
+	margin: 3px 0;
+	border-right: 1px solid var(--default-color);
+	border-left: 1px solid var(--default-color);
+	border-top: 0 solid;
+	border-bottom: 0 solid;
+	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.24), 3px 3px 9px 0 rgba(0, 0, 0, 0.19);
+}
+#sidebar>:first-of-type {
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-top: 1px solid var(--default-color);
+}
+#sidebar>:last-of-type {
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom: 1px solid var(--default-color);
 }
