@@ -5,10 +5,11 @@
 	--default-color: #ff359a;
 }
 
-/* Text decoration */
+/* Global Settings */
 * {
 	font-family: 'Microsoft Yahei', sans-serif;
 	color: var(--default-color);
+	box-sizing: border-box;
 }
 
 a {
