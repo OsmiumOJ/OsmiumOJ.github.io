@@ -26,16 +26,16 @@ header {
 	z-index: 100;
 	height: 50px;
 	line-height: 50px;
-	background-color: rgba(240, 240, 240, 0.836);
+	background-color: rgba(240, 240, 240, .836);
 	border-bottom: 2px solid;
-	border-top: 0 solid;
+	border-top: 0 solid; /* some user agent stylesheet will set this into non-zero value (such as iOS Safari) */
 	border-left: 0 solid;
 	border-right: 0 solid;
 	border-image: linear-gradient(to right, var(--default-color-begin), var(--default-color-end)) 20 20;
 	-ms-user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
-	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 3px 9px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .24), 0 3px 9px 0 rgba(0, 0, 0, .19);
 }
 
 /* Sign in & Sign up Button */
@@ -50,8 +50,8 @@ header {
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
 	border-width: 0;
-	transition-duration: 0.4s;
-	transition-delay: 0.07s;
+	transition-duration: .4s;
+	transition-delay: .07s;
 	font-size: 15px;
 }
 
@@ -59,7 +59,7 @@ header {
 	border: 2px solid;
 }
 #sign-in-button:hover {
-	background-color: rgba(207, 207, 207, 0.85);
+	background-color: rgba(207, 207, 207, .85);
 }
 
 #sign-up-button {
@@ -89,14 +89,16 @@ header {
 	top: 90px;
 	list-style-type: none;
 	width: 48px;
-	padding-inline-start: 0;
+	padding-inline-start: 0; /* cover the user agent stylesheet */
 	margin-block-start: 0;
 	margin-block-end: 0;
+	z-index: 100;
 }
+
 #sidebar li {
 	height: 48px;
-	transition-delay: 0.07s;
-	transition-duration: 0.4s;
+	transition-delay: .07s;
+	transition-duration: .4s;
 	background-color: #eeeeee;
 	text-align: center;
 	margin: 3px 0;
@@ -104,15 +106,37 @@ header {
 	border-left: 1px solid var(--default-color);
 	border-top: 0 solid;
 	border-bottom: 0 solid;
-	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.24), 3px 3px 9px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
 }
+#sidebar li:hover {
+	height: 96px;
+}
+
 #sidebar>:first-of-type li {
-	border-top-left-radius: 24px;
-	border-top-right-radius: 24px;
+	border-top-left-radius: 24px; /* width is 48px, this is half of width */
+	border-top-right-radius: 24px; /* same as above */
 	border-top: 1px solid var(--default-color);
 }
+
 #sidebar>:last-of-type li {
-	border-bottom-left-radius: 24px;
+	border-bottom-left-radius: 24px; /* this two are same as above */
 	border-bottom-right-radius: 24px;
 	border-bottom: 1px solid var(--default-color);
+}
+
+#sidebar i {
+	font-size: 20px;
+	bottom: 24px;
+	margin-top: 14px; /* height of #sidebar li is 48px, so margin-top is (48-20)/2 */
+}
+
+#sidebar span {
+	display: block;
+	visibility: hidden;
+	transition-delay: .27s; /* transition-duration of #sidebar li is .4s, transition-delay of #sidebar li is .07s, this will appear at the middle of transition, so its transition-delay is .07s+.4s/2=.27s*/
+	margin-top: 50%;
+}
+
+#sidebar li:hover span {
+	visibility: visible;
 }
