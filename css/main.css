@@ -204,6 +204,7 @@ table.splited td.left-part {
 table.splited td.right-part {
 	width: 38.2%;
 	text-align: right;
+	color: grey;
 }
 
 /* Article */
