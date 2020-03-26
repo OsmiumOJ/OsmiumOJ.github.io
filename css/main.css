@@ -180,7 +180,7 @@ header {
 	border: 1px solid var(--default-color);
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
-	padding: 5px;
+	padding: 8px;
 	margin-top: 8px;
 }
 
@@ -223,4 +223,21 @@ table.splited td.right-part {
 }
 .article a:hover {
 	color: var(--default-color);
+}
+
+/* Shadow */
+.shadow {
+	transition-duration: .4s;
+	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.24), 3px 3px 9px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Tags */
+.contest-div {
+	background-color: #00bf00;
+	color: white;
+}
+
+.contest-type {
+	background-color: grey;
+	color: white;
 }
