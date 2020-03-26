@@ -228,16 +228,25 @@ table.splited td.right-part {
 /* Shadow */
 .shadow {
 	transition-duration: .4s;
-	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.24), 3px 3px 9px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
 }
 
 /* Tags */
-.contest-div {
-	background-color: #00bf00;
-	color: white;
+.tag {
+	color: 0px;
+	transition-duration: .4s;
+	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
+	border-radius: 4px;
+	opacity: .7;
+}
+.tag:hover {
+	opacity: .95;
 }
 
-.contest-type {
+.tag.contest-div {
+	background-color: #00bf00;
+}
+
+.tag.contest-type {
 	background-color: grey;
-	color: white;
 }
