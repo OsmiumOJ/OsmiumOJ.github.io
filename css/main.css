@@ -197,6 +197,15 @@ table.splited tr {
 	border-top: 1px solid rgba(165, 165, 165, 0.85);
 }
 
+table.splited td.left-part {
+	width: 61.8%;
+}
+
+table.splited td.right-part {
+	width: 38.2%;
+	text-align: right;
+}
+
 /* Article */
 .article a {
 	color: var(--default-color-begin);
