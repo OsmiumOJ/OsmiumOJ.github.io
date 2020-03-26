@@ -1,5 +1,5 @@
 "use strict";
-$(document).ready(() => {
+$(() => {
 	$('#sign-in-button').click((event) => { 
 		event.preventDefault();
 		window.open(`/login?href=${encodeURIComponent(window.location.pathname)}`, '_self');

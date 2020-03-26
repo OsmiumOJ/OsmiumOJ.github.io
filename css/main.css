@@ -13,6 +13,10 @@
 	word-wrap: break-word;
 }
 
+p {
+	color: black;
+}
+
 a {
 	text-decoration: none;
 }
