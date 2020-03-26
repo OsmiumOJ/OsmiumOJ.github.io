@@ -84,9 +84,9 @@
 					<script>
 						$.get('https://v1.hitokoto.cn?c=a&c=b&c=c&c=d', (data, status) => {
 							$('#hitokoto-content').empty();
-							$('#hitokoto-content').append(JSON.parse(data).hitokoto);
+							$('#hitokoto-content').append(data.hitokoto);
 							$('#hitokoto-author').empty();
-							$('#hitokoto-author').append(JSON.parse(data).from);
+							$('#hitokoto-author').append('——' + data.from);
 						})
 					</script>
 					<p id="hitokoto-content">加载中……</p>
