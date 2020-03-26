@@ -176,6 +176,8 @@ header {
 	border: 1px solid var(--default-color);
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
+	padding: 5px;
+	margin-top: 8px;
 }
 
 .box .box-title {
@@ -183,9 +185,12 @@ header {
 	font-size: 1.25em;
 }
 
+.box:first-of-type {
+	margin-top: 0;
+}
+
 table.splited {
-	width: calc(100% - 10px);
-	margin: 0 5px 5px;
+	width: 100%;
 	border-collapse: collapse;
 }
 
