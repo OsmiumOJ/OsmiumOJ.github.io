@@ -17,6 +17,15 @@ a {
 	text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0.44em 0.33em;
+}
+
 /* Header */
 header {
 	position: fixed;
@@ -28,9 +37,9 @@ header {
 	line-height: 50px;
 	background-color: rgba(240, 240, 240, .836);
 	border-bottom: 2px solid;
-	border-top: 0 solid; /* some user agent stylesheet will set this into non-zero value (such as iOS Safari) */
-	border-left: 0 solid;
-	border-right: 0 solid;
+	border-top: 0; /* some user agent stylesheet will set these into non-zero value (such as iOS Safari) */
+	border-left: 0;
+	border-right: 0;
 	border-image: linear-gradient(to right, var(--default-color-begin), var(--default-color-end)) 20 20;
 	-ms-user-select: none;
 	-moz-user-select: none;
@@ -46,9 +55,6 @@ header {
 	margin: 0 4px;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
 	border-width: 0;
 	transition-duration: .4s;
 	transition-delay: .07s;
@@ -89,10 +95,11 @@ header {
 	top: 90px;
 	list-style-type: none;
 	width: 48px;
+	z-index: 100;
 	padding-inline-start: 0; /* cover the user agent stylesheet */
 	margin-block-start: 0;
 	margin-block-end: 0;
-	z-index: 100;
+	padding-left: 0;
 }
 
 #sidebar li {
@@ -104,8 +111,8 @@ header {
 	margin: 3px 0;
 	border-right: 1px solid var(--default-color);
 	border-left: 1px solid var(--default-color);
-	border-top: 0 solid;
-	border-bottom: 0 solid;
+	border-top: 0;
+	border-bottom: 0;
 	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
 }
 #sidebar li:hover {
@@ -139,4 +146,62 @@ header {
 #sidebar li:hover span {
 	visibility: visible;
 	transition-delay: .27s; /* transition-duration of #sidebar li is .4s, transition-delay of #sidebar li is .07s, this will appear at the middle of transition, so its transition-delay is .07s+.4s/2=.27s*/
+}
+
+/* Main Content */
+#main-content {
+	height: 200px;
+	margin: 68px 100px 0; /* margin-left of sidebar: 26px, width of sidebar: 48px, so margin-left of main is 26 + 48 + 26 = 100 */
+}
+
+#main-content #left-content,
+#main-content #right-content {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#main-content #left-content {
+	width: calc(61.8% - 20px);
+	margin-right: 20px;
+}
+
+#main-content #right-content {
+	width: calc(38.2% - 20px);
+	margin-left: 20px;
+}
+
+/* Box */
+.box {
+	background-color: rgba(239, 239, 239, .85);
+	border: 1px solid var(--default-color);
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+.box .box-title {
+	color: black;
+	font-size: 1.25em;
+}
+
+table.splited {
+	width: calc(100% - 10px);
+	margin: 0 5px 5px;
+	border-collapse: collapse;
+}
+
+table.splited tr:first-of-type {
+	border: 0;
+}
+
+table.splited tr {
+	border-top: 1px solid rgba(165, 165, 165, 0.85);
+}
+
+/* Article */
+.article a {
+	color: var(--default-color-begin);
+	transition-duration: .4s;
+}
+.article a:hover {
+	color: var(--default-color);
 }
