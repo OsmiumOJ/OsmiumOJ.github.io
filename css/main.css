@@ -162,7 +162,7 @@ header {
 }
 
 #left-sidebar li:hover span,
-#left-sidebar li:hover span {
+#right-sidebar li:hover span {
 	visibility: visible;
 	transition-delay: .27s; /* transition-duration of #left-sidebar li is .4s, transition-delay of #left-sidebar li is .07s, this will appear at the middle of transition, so its transition-delay is .07s+.4s/2=.27s*/
 }
