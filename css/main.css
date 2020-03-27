@@ -216,6 +216,10 @@ table.splited td.right-part {
 	color: grey;
 }
 
+table.splited td {
+	padding: 3px 0 6px;
+}
+
 /* Article */
 .article a {
 	color: var(--default-color-begin);
