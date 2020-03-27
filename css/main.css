@@ -93,20 +93,29 @@ header {
 }
 
 /* Sidebar */
-#sidebar {
+#left-sidebar,
+#right-sidebar {
 	position: fixed;
-	left: 26px;
 	top: 90px;
 	list-style-type: none;
 	width: 48px;
 	z-index: 100;
-	padding-inline-start: 0; /* cover the user agent stylesheet */
+	padding-inline-start: 0;
 	margin-block-start: 0;
 	margin-block-end: 0;
 	padding-left: 0;
 }
 
-#sidebar li {
+#left-sidebar {
+	left: 26px;
+}
+
+#right-sidebar {
+	right: 26px;
+}
+
+#left-sidebar li,
+#right-sidebar li {
 	height: 48px;
 	transition-delay: .07s;
 	transition-duration: .4s;
@@ -119,37 +128,43 @@ header {
 	border-bottom: 0;
 	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
 }
-#sidebar li:hover {
+#left-sidebar li:hover,
+#right-sidebar li:hover {
 	height: 96px;
 }
 
-#sidebar>:first-of-type li {
+#left-sidebar>:first-of-type li,
+#right-sidebar>:first-of-type li {
 	border-top-left-radius: 24px; /* width is 48px, this is half of width */
 	border-top-right-radius: 24px; /* same as above */
 	border-top: 1px solid var(--default-color);
 }
 
-#sidebar>:last-of-type li {
+#left-sidebar>:last-of-type li,
+#right-sidebar>:last-of-type li {
 	border-bottom-left-radius: 24px; /* this two are same as above */
 	border-bottom-right-radius: 24px;
 	border-bottom: 1px solid var(--default-color);
 }
 
-#sidebar i {
+#left-sidebar i,
+#right-sidebar i {
 	font-size: 20px;
 	bottom: 24px;
-	margin-top: 14px; /* height of #sidebar li is 48px, so margin-top is (48-20)/2 */
+	margin-top: 14px; /* height of #left-sidebar li is 48px, so margin-top is (48-20)/2 */
 }
 
-#sidebar span {
+#left-sidebar span,
+#right-sidebar span {
 	display: block;
 	visibility: hidden;
 	margin-top: 50%;
 }
 
-#sidebar li:hover span {
+#left-sidebar li:hover span,
+#left-sidebar li:hover span {
 	visibility: visible;
-	transition-delay: .27s; /* transition-duration of #sidebar li is .4s, transition-delay of #sidebar li is .07s, this will appear at the middle of transition, so its transition-delay is .07s+.4s/2=.27s*/
+	transition-delay: .27s; /* transition-duration of #left-sidebar li is .4s, transition-delay of #left-sidebar li is .07s, this will appear at the middle of transition, so its transition-delay is .07s+.4s/2=.27s*/
 }
 
 /* Main Content */
