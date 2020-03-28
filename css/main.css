@@ -288,78 +288,33 @@ table.splited td {
 	color: black;
 	font-weight: normal;
 }
-.rating.unrated::after {
-	content: ", unrated";
-}
 
 .rating.newbie {
 	color: gray;
-}
-.rating.newbie::after {
-	content: ", newbie";
 }
 
 .rating.pupil {
 	color: green;
 }
-.rating.pupil::after {
-	content: ", pupil";
-}
 
 .rating.specialist {
 	color: #03a89e;
-}
-.rating.specialist::after {
-	content: ", specialist";
 }
 
 .rating.expert {
 	color: blue;
 }
-.rating.expert::after {
-	content: ", expert";
-}
 
 .rating.candidate-master {
 	color: #aa00aa;
-}
-.rating.candidate-master::after {
-	content: ", candidate master";
 }
 
 .rating.master {
 	color: #ff8c00;
 }
-.rating.master::after {
-	content: ", master";
-}
-
-.rating.international-master {
-	color: #ff8c00;
-}
-.rating.international-master::after {
-	content: ", international master";
-}
 
 .rating.grandmaster {
 	color: red;
-}
-.rating.grandmaster::after {
-	content: ", grandmaster";
-}
-
-.rating.international-grandmaster {
-	color: red;
-}
-.rating.international-grandmaster::after {
-	content: ", international grandmaster";
-}
-
-.rating.legendary-grandmaster {
-	color: red;
-}
-.rating.legendary-grandmaster::after {
-	content: ", legendary grandmaster";
 }
 
 /* Username color */
@@ -367,41 +322,42 @@ table.splited td {
 	font-weight: bold;
 }
 
-.username.unrated {
+.username.unrated,
+.username.unrated:hover {
 	color: black;
 }
 
-.username.newbie {
+.username.newbie,
+.username.newbie:hover {
 	color: grey;
 }
 
-.username.pupil {
+.username.pupil,
+.username.pupil:hover {
 	color: green;
 }
 
-.username.specialist {
+.username.specialist,
+.username.specialist:hover {
 	color: #03a89e;
 }
 
-.username.expert {
+.username.expert,
+.username.expert:hover {
 	color: blue;
 }
 
-.username.candidate-master {
+.username.candidate-master,
+.username.candidate-master:hover {
 	color: #aa00aa;
 }
 
 .username.master,
-.username.international-master {
+.username.master:hover {
 	color: #ff8c00;
 }
 
 .username.grandmaster,
-.username.international-grandmaster,
-.username.legendary-grandmaster {
+.username.grandmaster:hover {
 	color: red;
-}
-
-.username.legendary-grandmaster::first-letter {
-	color: black;
 }
