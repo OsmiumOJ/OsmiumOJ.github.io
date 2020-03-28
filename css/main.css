@@ -107,11 +107,11 @@ header {
 }
 
 #left-sidebar {
-	left: 26px;
+	left: 30px;
 }
 
 #right-sidebar {
-	right: 26px;
+	right: 30px;
 }
 
 #left-sidebar li,
@@ -180,13 +180,15 @@ header {
 }
 
 #main-content #left-content {
-	width: calc(61.8% - 20px);
+	width: calc(61.8% - 10px);
 	margin-right: 10px;
+	float: left;
 }
 
 #main-content #right-content {
-	width: calc(38.2% - 20px);
+	width: calc(38.2% - 10px);
 	margin-left: 10px;
+	float: right;
 }
 
 /* Box */
