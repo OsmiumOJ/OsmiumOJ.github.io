@@ -367,7 +367,8 @@ table.splited td {
 }
 
 /* Sign in & Sign up */
-#sign-box input {
+#sign-box input[type=text],
+#sign-box input[type=password] {
 	display: block;
 	text-align: center;
 	width: 100%;
