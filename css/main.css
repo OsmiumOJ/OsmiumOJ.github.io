@@ -366,3 +366,12 @@ table.splited td {
 }
 
 /* Sign in & Sign up */
+#sign-box input {
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin: 0 0 4px 0;
+	border-radius: 12px;
+	height: 24px;
+	border: 0;
+}

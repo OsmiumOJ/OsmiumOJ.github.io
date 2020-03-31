@@ -10,12 +10,14 @@
 		{% include header.html %}
 		{% include sidebar.html %}
 		<div id="main-content-small">
-			<div class="box">
-				<h2>登录</h2>
-				<div style="margin: 0 30px;">
+			<div class="box article">
+				<h2 class="box-title" style="text-align: center;">登录</h2>
+				<div style="margin: 0 30px;" id="sign-box">
 					<input id="username" name="username" class="shadow user-sign-input" placeholder="用户名 or 邮箱"/>
 					<input id="password" name="username" class="shadow user-sign-input" placeholder="密码" type="password"/>
-					<a href="/forget">忘记密码</a> | <a href="/register">注册</a>
+					<div style="text-align: center;">
+						<a href="/forget">找回密码</a> <span style="color: grey;">|</span> <a href="/register">注册账号</a>
+					</div>
 				</div>
 			</div>
 		</div>
