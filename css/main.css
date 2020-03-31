@@ -169,7 +169,6 @@ header {
 
 /* Main Content */
 #main-content {
-	height: 200px;
 	margin: 68px 100px 0; /* margin-left of sidebar: 26px, width of sidebar: 48px, so margin-left of main is 26 + 48 + 26 = 100 */
 }
 
@@ -189,6 +188,10 @@ header {
 	width: calc(38.2% - 10px);
 	margin-left: 10px;
 	float: right;
+}
+
+#main-content-small {
+	margin: 68px 300px 0;
 }
 
 /* Box */
@@ -361,3 +364,5 @@ table.splited td {
 .username.grandmaster:hover {
 	color: red;
 }
+
+/* Sign in & Sign up */

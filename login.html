@@ -1,0 +1,23 @@
+---
+---
+<!doctype html>
+<html>
+	<head>
+		{% include main.html %}
+		<title>登录 - OOJ</title>
+	</head>
+	<body>
+		{% include header.html %}
+		{% include sidebar.html %}
+		<div id="main-content-small">
+			<div class="box">
+				<h2>登录</h2>
+				<div style="margin: 0 30px;">
+					<input id="username" name="username" class="shadow user-sign-input" placeholder="用户名 or 邮箱"/>
+					<input id="password" name="username" class="shadow user-sign-input" placeholder="密码" type="password"/>
+					<a href="/forget">忘记密码</a> | <a href="/register">注册</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
