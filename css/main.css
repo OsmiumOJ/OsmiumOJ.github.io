@@ -191,7 +191,8 @@ header {
 }
 
 #main-content-small {
-	margin: 68px 300px 0;
+	width: 300px;
+	margin: 68px auto 0 auto;
 }
 
 /* Box */
@@ -374,4 +375,25 @@ table.splited td {
 	border-radius: 12px;
 	height: 24px;
 	border: 0;
+}
+
+.grey-button {
+	color: black;
+	border: 1px solid var(--default-color);
+	background-image: linear-gradient(to right, rgba(239, 239, 239, .85), rgba(175, 175, 175, .85));
+	background-size: 220% 220%;
+	background-position: 80% 80%;
+	transition-duration: .4s;
+	transition-delay: .07s;
+	outline: medium;
+	display: block;
+	margin: 8px auto;
+	border-radius: 32px;
+    padding: 2px 25px;
+    font-size: 1.24em;
+    line-height: 32px;
+    cursor: pointer;
+}
+.grey-button:hover {
+	background-position: 10% 10%;
 }

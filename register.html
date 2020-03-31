@@ -4,19 +4,21 @@
 <html>
 	<head>
 		{% include main.html %}
-		<title>登录 - OOJ</title>
+		<title>注册 - OOJ</title>
 	</head>
 	<body>
 		{% include header.html %}
 		{% include sidebar.html %}
 		<div id="main-content-small">
 			<div class="box article">
-				<h2 class="box-title" style="text-align: center;">登录</h2>
+				<h2 class="box-title" style="text-align: center;">注册</h2>
 				<div style="margin: 0 30px;" id="sign-box">
-					<input id="username" name="username" class="shadow user-sign-input" placeholder="用户名 or 邮箱"/>
+					<input id="username" name="username" class="shadow user-sign-input" placeholder="邮箱"/>
 					<input id="password" name="password" class="shadow user-sign-input" placeholder="密码" type="password"/>
+					<input id="confirm-password" name="confirm-password" class="shadow user-sign-input" placeholder="确认密码" type="password"/>
+					<input id="agreement-read" type="checkbox"/>我已阅读并同意<a href="/blog/OsmiumOJ/1">用户协议</a>和<a href="/blog/OsmiumOJ/2">隐私协议</a>。
 					<div style="text-align: center;">
-						<a href="/forget">找回密码</a> <span style="color: grey;">|</span> <a href="/register">注册账号</a>
+						<a href="/login">登录</a>
 					</div>
 					<button class="grey-button shadow" type="submit">登&ensp;录</button>
 				</div>
