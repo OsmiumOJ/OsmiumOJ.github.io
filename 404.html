@@ -3,8 +3,26 @@
 <!doctype html>
 <html>
 	<head>
+		<title>404 - OOJ</title>
 		{% include main.html %}
 		<style>
+			@keyframes main-404 {
+				0% {
+					margin-top: calc(48vh - 200px);
+				}
+				100% {
+					margin-top: calc(43vh - 200px);
+				}
+			}
+			@-webkit-keyframes main-404 {
+				0% {
+					margin-top: calc(48vh - 200px);
+				}
+				100% {
+					margin-top: calc(43vh - 200px);
+				}
+			}
+			
 			#main-404 span {
 				margin: 0 auto;
 			}
@@ -20,13 +38,72 @@
 				width: 400px;
 				height: 400px;
 				border-radius: 50%;
-				margin: calc(48vh - 200px) 0 calc(50vw - 200px) 0;
+				margin: calc(48vh - 200px) 0 0 calc(50vw - 200px);
 				position: fixed;
-				animation: main-404 1.5s infinite;
+				animation: main-404 1.5s infinite alternate;
+				-webkit-animation: main-404 1.5s infinite alternate;
 				display: flex;
 				text-align: center;
 			}
 		</style>
+		<script>
+			"use strict";
+			$(() => {
+				const text404Text = [
+					['这个叫「', '」的页面被藏起来了呢'],
+					['你说的「', '」是什么呀'],
+					['怎么也找不到「', '」……'],
+					['「', '」被lemonnyh吃掉了'],
+					['「', '」上上上上海的车跑了'],
+					['「', '」去火星了，不知什么时候回来'],
+					['「', '」感染了█████-████，已经送医治疗'],
+					['「', '」被外星人抓走了'],
+					['「', '」可能搬家了'],
+					['哎呀，「', '」走丢了'],
+					['「', '」可能不在地球上，换个页面试试？'],
+					['关于「', '」，它SPFA了'],
+					['康娜把「', '」吃掉了'],
+					['饿极了的茵蒂克丝把「', '」吃掉了'],
+					['根本就没有「', '」啊，你是在玩我吗'],
+					['「', '」根本就不存在，换个页面试试？'],
+					['什么是「', '」？能吃吗？']
+				];
+				const span404Text = ['4', '0', 'N', 'o', 't', 'f', 'u', 'n', 'd'];
+				
+				const messageIndex = Math.random() * 1e17 % text404Text.length;
+				$('#404-message').append(`${text404Text[messageIndex][0]}<b>${window.location.pathname}</b>${text404Text[messageIndex][1]}`);
+				
+				for (let i = 0; i < 108; ++i) {
+					let margin = Math.random() * 1e17 / 1.0e15;
+					$('body').append(`<span id="span-404-${i}"></span>`);
+					let initMarginLeft, initMarginRight;
+					if (i % 2) {
+						initMarginLeft = margin;
+						initMarginRight = Math.random() * 1e17 / 1.0e15;
+						$('style').append(`@keyframes span-404-${i} {0% {margin-left: ${margin}vw;} 100% {margin-left: calc(${margin}vw + ${Math.random() * 1e17 / 85.0e14}px)}}`);
+						$('style').append(`@-webkit-keyframes span-404-${i} {0% {margin-left: ${margin}vw;} 100% {margin-left: calc(${margin}vw + ${Math.random() * 1e17 / 85.0e14}px)}}`);
+					}
+					else {
+						initMarginLeft = Math.random() * 1e17 / 1.0e15;
+						initMarginRight = margin;
+						$('style').append(`@keyframes span-404-${i} {0% {margin-left: ${margin}vh;} 100% {margin-top: calc(${margin}vh + ${Math.random() * 1e17 / 85.0e14}px)}}`);
+						$('style').append(`@-webkit-keyframes span-404-${i} {0% {margin-left: ${margin}vh;} 100% {margin-left: calc(${margin}vh + ${Math.random() * 1e17 / 85.0e14}px)}}`);
+					}
+					$(`#span-404-${i}`).text(span404Text[i % span404Text.length]);
+					$(`#span-404-${i}`).css({
+						position: 'fixed',
+						marginLeft: `${initMarginLeft}vw`,
+						marginTop: `${initMarginRight}vh`,
+						color: '#999999',
+						fontSize: `${Math.random() * 1e17 / 35.0e14}px`,
+						filter: `blur(${Math.random() * 1e17 / 35.0e15}px)`,
+						userSelect: 'none',
+						zIndex: '-99',
+						animation: `span-404-${i} ${Math.random() * 1e17 / 1.0e16 + 4.0}s infinite alternate`
+					});
+				}
+			});
+		</script>
 	</head>
 	<body>
 		{% include header.html %}
@@ -51,13 +128,6 @@
 					</tr>
 				</tbody>
 			</table>
-			<!-- <div>
-				<span class="gradient-text">肆零肆</span>
-				<br/>
-				<span class="gradient-text">404 Not Found</span>
-				<br/>
-				<span id="404-content"></span>
-			</div> -->
 		</div>
 	</body>
 </html>
