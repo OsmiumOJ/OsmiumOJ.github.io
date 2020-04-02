@@ -86,8 +86,8 @@
 					else {
 						initMarginLeft = Math.random() * 1e17 / 1.0e15;
 						initMarginRight = margin;
-						$('style').append(`@keyframes span-404-${i} {0% {margin-left: ${margin}vh;} 100% {margin-top: calc(${margin}vh + ${Math.random() * 1e17 / 85.0e14}px);}}`);
-						$('style').append(`@-webkit-keyframes span-404-${i} {0% {margin-left: ${margin}vh;} 100% {margin-top: calc(${margin}vh + ${Math.random() * 1e17 / 85.0e14}px);}}`);
+						$('style').append(`@keyframes span-404-${i} {0% {margin-top: ${margin}vh;} 100% {margin-top: calc(${margin}vh + ${Math.random() * 1e17 / 85.0e14}px);}}`);
+						$('style').append(`@-webkit-keyframes span-404-${i} {0% {margin-top: ${margin}vh;} 100% {margin-top: calc(${margin}vh + ${Math.random() * 1e17 / 85.0e14}px);}}`);
 					}
 					$(`#span-404-${i}`).text(span404Text[i % span404Text.length]);
 					$(`#span-404-${i}`).css({
