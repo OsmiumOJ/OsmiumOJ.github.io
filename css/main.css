@@ -399,9 +399,3 @@ table.splited td {
 .grey-button:hover {
 	background-position: 10% 10%;
 }
-
-/* Mourn */
-html {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-}
