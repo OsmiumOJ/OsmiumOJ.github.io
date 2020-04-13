@@ -169,6 +169,7 @@ header {
 
 /* Main Content */
 #main-content {
+	display: flex;
 	margin: 68px 100px 0; /* margin-left of sidebar: 26px, width of sidebar: 48px, so margin-left of main is 26 + 48 + 26 = 100 */
 }
 
@@ -399,4 +400,22 @@ table.splited td {
 }
 .grey-button:hover {
 	background-position: 10% 10%;
+}
+
+/* Footer */
+footer a {
+	color: var(--default-color-begin);
+	transition-duration: .4s;
+}
+footer a:hover {
+	color: var(--default-color-end);
+}
+
+footer span[onclick] {
+	cursor: pointer;
+}
+
+footer {
+	margin-top: 10px;
+	text-align: center;
 }

@@ -9,3 +9,7 @@ $(() => {
 		window.open(`/register?href=${encodeURIComponent(window.location.pathname)}`, '_self');
 	});
 });
+
+function modifyLanguage() {
+	
+}
