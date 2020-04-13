@@ -1,6 +1,6 @@
 {
 	"simplifyChinese": {
-		"首页": "首页",
+		"mainPage": "首页",
 		"公告": "公告",
 		"近期比赛": "近期比赛",
 		"比赛列表": "比赛列表",
@@ -17,7 +17,7 @@
 		"设置": "设置"
 	},
 	"traditionalChinese": {
-		"首页": "首頁",
+		"mainPage": "首頁",
 		"公告": "公告",
 		"近期比赛": "近期比賽",
 		"比赛列表": "比賽列表",
@@ -34,7 +34,7 @@
 		"设置": "設置"
 	},
 	"english": {
-		"首页": "Main page",
+		"mainPage": "Main page",
 		"公告": "Announcement",
 		"近期比赛": "Upcoming contests",
 		"比赛列表": "Contest List",
