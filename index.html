@@ -4,7 +4,7 @@
 <html>
 	<head>
 		{% include main.html %}
-		<title>首页 - OOJ</title>
+		<title>{{首页}} - OOJ</title>
 	</head>
 	<body>
 		{% include header.html %}
@@ -12,7 +12,7 @@
 		<div id="main-content">
 			<div id="left-content">
 				<div class="box article">
-					<h2 class="box-title">公告</h2>
+					<h2 class="box-title">{{公告}}</h2>
 					<table class="splited">
 						<tbody>
 							<tr>
@@ -33,7 +33,7 @@
 							</tr>
 							<tr>
 								<td class="left-part">
-									<a href="/blog/3">OOJ管理员书库信息</a>
+									<a href="/blog/3">OOJ 管理员书库信息</a>
 								</td>
 								<td class="right-part">
 									2020-03-26
@@ -43,7 +43,7 @@
 					</table>
 				</div>
 				<div class="box article">
-					<h2 class="box-title">近期比赛</h2>
+					<h2 class="box-title">{{近期比赛}}</h2>
 					<table class="splited">
 						<tbody>
 							<tr>
@@ -80,13 +80,13 @@
 					</table>
 					<a href="/contests">
 						<i class="fas fa-angle-double-right"></i>
-						比赛列表
+						{{比赛列表}}
 					</a>
 				</div>
 			</div>
 			<div id="right-content">
 				<div class="box article">
-					<h2 class="box-title">一言</h2>
+					<h2 class="box-title">{{一言}}</h2>
 					<script>
 						$.get('https://v1.hitokoto.cn?c=a&c=b&c=c&c=d', (data, status) => {
 							data = JSON.parse(data);
@@ -96,26 +96,26 @@
 							$('#hitokoto-author').append('——' + data.from);
 						})
 					</script>
-					<p id="hitokoto-content">加载中……</p>
-					<p id="hitokoto-author" style="text-align: right;">——加载中……</p>
+					<p id="hitokoto-content">{{加载中……}}</p>
+					<p id="hitokoto-author" style="text-align: right;">{{——加载中……}}</p>
 				</div>
 				<div class="box article">
 					<h2 class="box-title"><a href="/user?id=0" class="username grandmaster">demo_user</a></h2>
 					<img src="/img/ooj.png" style="float: right; height: 5em;" alt="avatar"/>
 					<span style="color: black;">
 						<i class="fas fa-chart-line"></i>
-						当前Rating：<span class="rating grandmaster">23333, grandmaster</span>
+						{{当前rating：}}<span class="rating grandmaster">23333, grandmaster</span>
 						<br/>
 						<i class="fas fa-angle-double-up" style="margin-right: 6px;"></i>
-						最高Rating：<span class="rating grandmaster">23333, grandmaster</span>
+						{{最高rating：}}<span class="rating grandmaster">23333, grandmaster</span>
 					</span>
 					<ul style="padding-inline-start: 25px;">
-						<li><a href="/messages">私信</a></li>
-						<li><a href="/notifications">通知</a></li>
-						<li><a href="/favourites">收藏</a></li>
-						<li><a href="/blog/demo_user">博客</a></li>
-						<li><a href="/rating-changes">Rating变化</a></li>
-						<li><a href="/settings">设置</a></li>
+						<li><a href="/messages">{{私信}}</a></li>
+						<li><a href="/notifications">{{通知}}</a></li>
+						<li><a href="/favourites">{{收藏}}</a></li>
+						<li><a href="/blog/demo_user">{{博客}}</a></li>
+						<li><a href="/rating-changes">{{Rating变化}}</a></li>
+						<li><a href="/settings">{{设置}}</a></li>
 					</ul>
 				</div>
 			</div>

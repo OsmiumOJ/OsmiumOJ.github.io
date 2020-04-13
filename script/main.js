@@ -10,6 +10,26 @@ $(() => {
 	});
 });
 
-function modifyLanguage() {
-	
+import languageLibrary from './json/lang.json';
+
+let languageModifier = new Vue({
+	el: '*',
+	data: JSON.parse(localStorage.getItem('language-library'))
+});
+
+function modifyLanguage(lang) {
+	if (localStorage.getItem('language') === lang) {
+		return;
+	}
+	let tmp;
+	if (lang === 'simplify-chinese') {
+		tmp = languageLibrary.simplifyChinese;
+	}
+	if (lang === 'traditional-chinese') {
+		tmp = languageLibrary.traditionalChinese;
+	}
+	if (lang === 'english') {
+		tmp = languageLibrary.english;
+	}
+	localStorage.setItem('language-library', JSON.stringify(tmp));
 }
