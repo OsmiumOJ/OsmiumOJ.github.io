@@ -324,6 +324,7 @@ table.splited td {
 /* Username color */
 .username {
 	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .username.unrated,
