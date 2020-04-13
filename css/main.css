@@ -286,6 +286,7 @@ table.splited td {
 /* Ratings */
 .rating {
 	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .rating.unrated {
