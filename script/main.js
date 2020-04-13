@@ -10,7 +10,7 @@ $(() => {
 	});
 });
 
-const languageLibrary = $.getJSON('/script/json/lang.json');
+const languageLibrary = $.getJSON('/script/json/lang.json').responseJSON;
 
 let languageModifier = new Vue({
 	el: '*',
