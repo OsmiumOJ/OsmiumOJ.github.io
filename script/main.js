@@ -14,7 +14,7 @@ import languageLibrary from './json/lang.json';
 
 let languageModifier = new Vue({
 	el: '*',
-	data: JSON.parse(localStorage.getItem('language-library'))
+	data: localStorage.getItem('language-library') === undefined ? languageLibrary.simplifyChinese : JSON.parse(localStorage.getItem('language-library'))
 });
 
 function modifyLanguage(lang) {
