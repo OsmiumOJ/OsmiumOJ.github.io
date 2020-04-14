@@ -229,10 +229,12 @@ table.splited tr {
 }
 
 table.splited td.left-part {
+	padding-left: 5px;
 	width: 61.8%;
 }
 
 table.splited td.right-part {
+	padding-right: 5px;
 	width: 38.2%;
 	text-align: right;
 	color: grey;
@@ -379,6 +381,7 @@ table.splited td {
 	border-radius: 12px;
 	height: 24px;
 	border: 0;
+	outline: medium;
 }
 
 .grey-button {
