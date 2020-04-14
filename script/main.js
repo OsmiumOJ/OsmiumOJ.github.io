@@ -10,6 +10,7 @@ $(() => {
 	});
 });
 
+// TODO: throw it into a seperate JSON file.
 const languageLibrary = {
 	"simplifyChinese": {
 		"mainPage": "首页",
@@ -64,8 +65,17 @@ const languageLibrary = {
 	}
 };
 
-let languageModifier = new Vue({
-	el: '*',
+// TODO: Merge them.
+let languageModifierForDiv = new Vue({
+	el: 'div',
+	data: localStorage.getItem('language-library') === null ? languageLibrary.simplifyChinese : JSON.parse(localStorage.getItem('language-library'))
+});
+let languageModifierForHeader = new Vue({
+	el: 'header',
+	data: localStorage.getItem('language-library') === null ? languageLibrary.simplifyChinese : JSON.parse(localStorage.getItem('language-library'))
+});
+let languageModifierForFooter = new Vue({
+	el: 'footer',
 	data: localStorage.getItem('language-library') === null ? languageLibrary.simplifyChinese : JSON.parse(localStorage.getItem('language-library'))
 });
 
