@@ -1,14 +1,4 @@
 "use strict";
-$(() => {
-	$('#sign-in-button').click((event) => { 
-		event.preventDefault();
-		window.open(`/login?href=${encodeURIComponent(window.location.pathname)}`, '_self');
-	});
-	$('#sign-up-button').click((event) => { 
-		event.preventDefault();
-		window.open(`/register?href=${encodeURIComponent(window.location.pathname)}`, '_self');
-	});
-});
 
 // TODO: throw it into a seperate JSON file.
 const languageLibrary = {
@@ -95,3 +85,31 @@ function modifyLanguage(lang) {
 	}
 	localStorage.setItem('language-library', JSON.stringify(tmp));
 }
+
+
+$(() => {
+	$('#sign-in-button').click((event) => { 
+		event.preventDefault();
+		window.open(`/login?href=${encodeURIComponent(window.location.pathname)}`, '_self');
+	});
+	$('#sign-up-button').click((event) => { 
+		event.preventDefault();
+		window.open(`/register?href=${encodeURIComponent(window.location.pathname)}`, '_self');
+	});
+	new Vue({
+		el: 'div',
+		data: localStorage.getItem('language-library') === null ? languageLibrary.simplifyChinese : JSON.parse(localStorage.getItem('language-library'))
+	});
+	new Vue({
+		el: 'header',
+		data: localStorage.getItem('language-library') === null ? languageLibrary.simplifyChinese : JSON.parse(localStorage.getItem('language-library'))
+	});
+	new Vue({
+		el: 'title',
+		data: localStorage.getItem('language-library') === null ? languageLibrary.simplifyChinese : JSON.parse(localStorage.getItem('language-library'))
+	});
+	new Vue({
+		el: 'footer',
+		data: localStorage.getItem('language-library') === null ? languageLibrary.simplifyChinese : JSON.parse(localStorage.getItem('language-library'))
+	});
+});
