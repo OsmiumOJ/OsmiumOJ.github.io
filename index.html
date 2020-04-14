@@ -89,7 +89,6 @@
 					<h2 class="box-title">一言</h2>
 					<script>
 						$.get('https://v1.hitokoto.cn?c=a&c=b&c=c&c=d', (data, status) => {
-							data = JSON.parse(data);
 							$('#hitokoto-content').empty();
 							$('#hitokoto-content').append(data.hitokoto);
 							$('#hitokoto-author').empty();
