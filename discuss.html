@@ -4,12 +4,183 @@
 		<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
 		<script src="/script/include.js"></script>
 		<title>日本投降矣！ - 讨论 - OOJ</title>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<script src="https://unpkg.com/stackedit-js@1.0.7/docs/lib/stackedit.min.js"></script>
+		<!-- <script src="/script/markdown.js"></script> -->
+		<script type="module">
+			const mainContent = 
+`
+普通文字  
+**粗体**  
+*斜体*  
+__粗体2__  
+_斜体2_  
+***粗体+斜体***
+~~删除线~~  
+
+==标记==  
+还能~下标~  
+也能^上标^
+
+> Quote
+>
+> > Quote
+
+\`code\`
+
+---
+
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+---
+
+- foo
+- bar
+  - bar
+	- bar
+	  - bar
+* this
++ that
+
+1. foo
+2. bar
+   1. bar
+	  1. bar
+		 1. bar
+			1. bar
+			   1. bar
+				  1. bar
+				     1. bar
+
+- [ ] AKCTS
+- [ ] AKWC
+- [ ] AKNOI
+- [ ] AKIOI
+- [ ] AK省选
+- [ ] AKTG
+- [ ] AKPJ
+- [ ] 获得省选资格
+- [x] 咕咕咕
+---
+
+[Link](/)
+
+![](http://www.chinanews.com/ga/fkjc/news/2007/08-15/U45P4T8D1002859F107DT20070815160419.jpg)
+
+---
+
+
+Item     | Value
+-------- | -----
+Computer | $1600
+Phone    | $12
+Pipe     | $1
+
+
+| Column 1 | Column 2      |
+|:--------:| -------------:|
+| centered | right-aligned |
+
+
+---
+Markdown
+:  Text-to-HTML conversion tool
+
+Authors
+:  John
+:  Luke
+
+---
+
+Some text with a footnote.[^1]
+
+[^1]: The footnote.
+
+---
+Markdown converts text to HTML.
+
+*[HTML]: HyperText Markup Language
+
+---
+
+Math? GuGuGu!
+`;
+			const review = [
+				'致远星',
+				'战况',
+				'如何'
+			];
+			const stackedit = new Stackedit();
+			stackedit.openFile({
+				content: {
+					text: mainContent
+				}
+			}, true);
+			stackedit.on('fileChange', (file) => {
+				$('div[main-content] .message-bubble').empty();
+				$('div[main-content] .message-bubble').prepend(file.content.html);
+			});
+			for (let i = 0; i < review.length(); ++i) {
+				stackedit.openFile({
+					content: {
+						text: review[i]
+					}
+				});
+				$(`div[reply]>div:nth-child(${i + 2}) .message-bubble`).empty();
+				$(`div[reply]>div:nth-child(${i + 2}) .message-bubble`).prepend();
+			}
+		</script>
 	</head>
 	<body>
 		<div id="main-content">
 			<div id="left-content">
-				<div class="box article">
+				<div class="box" main-content>
 					<h2 class="box-title">日本投降矣！</h2>
+					<div class="discuss-comment">
+						<img src="/img/ooj.png" alt="avatar"/>
+						<a href="/user?name=osmiumoj">OsmiumOJ</a>
+						<span>2020-04-17 17:36</span>
+						<a onclick="reply();">回复</a>
+						<div class="message-bubble article">
+							Loading...
+						</div>
+					</div>
+				</div>
+				<div class="box" reply>
+					<h2 class="box-title">回复</h2>
+					<div class="discuss-comment">
+						<img src="/img/ooj.png" alt="avatar"/>
+						<a href="/user?name=osmiumoj">OsmiumOJ</a>
+						<span>2020-04-17 17:37</span>
+						<a onclick="reply();">回复</a>
+						<div class="message-bubble article">
+							Loading...
+						</div>
+					</div>
+					<div class="discuss-comment">
+						<img src="/img/ooj.png" alt="avatar"/>
+						<a href="/user?name=osmiumoj">OsmiumOJ</a>
+						<span>2020-04-17 17:38</span>
+						<a onclick="reply();">回复</a>
+						<div class="message-bubble article">
+							Loading...
+						</div>
+					</div>
+					<div class="discuss-comment">
+						<img src="/img/ooj.png" alt="avatar"/>
+						<a href="/user?name=osmiumoj">OsmiumOJ</a>
+						<span>2020-04-17 17:39</span>
+						<a onclick="reply();">回复</a>
+						<div class="message-bubble article">
+							Loading...
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="right-content">

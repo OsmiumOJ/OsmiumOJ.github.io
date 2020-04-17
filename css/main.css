@@ -45,9 +45,9 @@ header {
 	border-left: 0;
 	border-right: 0;
 	border-image: linear-gradient(to right, var(--default-color-begin), var(--default-color-end)) 20 20;
-	-ms-username-select: none;
-	-moz-username-select: none;
-	-webkit-username-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
 	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .24), 0 3px 9px 0 rgba(0, 0, 0, .19);
 }
 
@@ -215,6 +215,15 @@ header {
 	margin-top: 0;
 }
 
+.box a {
+	color: var(--default-color-begin);
+	transition-duration: .4s;
+}
+.box a:hover {
+	color: var(--default-color);
+}
+
+
 table.splited {
 	width: 100%;
 	border-collapse: collapse;
@@ -244,12 +253,11 @@ table.splited td {
 	padding: 3px 0 6px;
 }
 
-/* Article */
-.article a {
+.box a {
 	color: var(--default-color-begin);
 	transition-duration: .4s;
 }
-.article a:hover {
+.box a:hover {
 	color: var(--default-color);
 }
 
@@ -421,4 +429,98 @@ footer span[onclick] {
 footer {
 	margin-top: 10px;
 	text-align: center;
+}
+
+/* Discuss */
+
+.discuss-comment {
+	font-size: small;
+}
+
+.discuss-comment>img { /* avatar */
+	height: 40px;
+	float: left;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.discuss-comment>span::before { /* date & time */
+	content: "发表于 ";
+}
+
+.discuss-comment>a[onclick] { /* 'comment back' */
+	cursor: pointer;
+}
+
+.message-bubble {
+	border: 1px solid rgba(165, 165, 165, .85);
+	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
+	border-radius: 0 12px 12px;
+	margin: 8px 0 0 48px;
+	padding: 8px;
+	color: black;
+}
+
+/* article */
+
+.article p {
+	margin: 8px 0;
+}
+.article p:first-child {
+	margin-top: 0;
+}
+.article p:last-child {
+	margin-bottom: 0;
+}
+
+.article blockquote {
+	margin: 4px 4px 4px 12px;
+	padding: 8px;
+	border-left: 3px solid rgba(165, 165, 165, .85);
+	background-image: linear-gradient(to right, rgba(207, 207, 207, .85), transparent);
+}
+
+.article * {
+	color: inherit;
+}
+
+.article code {
+	font-family: monaco, consolas, sans-serif;
+	padding: 2px;
+	border: 1px solid rgba(165, 165, 165, .85);
+	border-radius: 3px;
+	background-color: rgba(207, 207, 207, .85);
+}
+
+.article .task-list-item-checkbox[type=checkbox] {
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.article ol>li>ol {
+	list-style-type: upper-roman;
+}
+.article ol>li>ol>li>ol {
+	list-style-type: lower-alpha;
+}
+.article ol>li>ol>li>ol>li>ol {
+	list-style-type: lower-roman;
+}
+.article ol>li>ol>li>ol>li>ol>li>ol {
+	list-style-type: lower-greek;
+}
+.article ol>li>ol>li>ol>li>ol>li>ol>li>ol {
+	list-style-type: upper-alpha;
+}
+.article ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
+	list-style-type: decimal-leading-zero;
+}
+.article ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol ol {
+	list-style-type: cjk-ideographic;
+}
+
+.article abbr {
+	text-decoration: underline wavy;
 }
