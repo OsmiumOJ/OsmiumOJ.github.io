@@ -87,7 +87,7 @@ $(() => {
 	`);
 	$('body').append(`
 	<footer>
-		OsmiumOJ Powered by <a href="https://github.com/ooj-dev">OOJ Develop Team</a>.
+		OsmiumOJ Powered by <a href="https://github.com/OsmiumOJ">OOJ Develop Team</a>.
 	</footer>
 	`);
 })
