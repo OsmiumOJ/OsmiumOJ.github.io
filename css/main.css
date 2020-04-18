@@ -1,11 +1,13 @@
-/* Theme Colors */
+/******************* Theme Colors *******************/
+
 :root {
 	--default-color-begin: #8600ff;
 	--default-color-end: #ff359a;
 	--default-color: #ff359a;
 }
 
-/* Global Settings */
+/******************* Global Settings *******************/
+
 * {
 	font-family: 'Microsoft Yahei', sans-serif;
 	color: var(--default-color);
@@ -30,7 +32,8 @@ h6 {
 	margin: 0.44em 0.33em;
 }
 
-/* Header */
+/******************* Header *******************/
+
 header {
 	position: fixed;
 	left: 0;
@@ -51,7 +54,8 @@ header {
 	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .24), 0 3px 9px 0 rgba(0, 0, 0, .19);
 }
 
-/* Sign in & Sign up Button */
+/******************* Sign in & Sign up *******************/
+
 #sign-in-button,
 #sign-up-button {
 	width: 76px;
@@ -82,7 +86,8 @@ header {
 	background-position: 10% 10%;
 }
 
-/* Gradient Text */
+/******************* Gradient text *******************/
+
 .gradient-text {
 	background-image: linear-gradient(to top right, var(--default-color-begin), var(--default-color-end));
 	background-color: var(--default-color);
@@ -92,7 +97,8 @@ header {
 	-moz-background-clip: text;
 }
 
-/* Sidebar */
+/******************* Sidebar *******************/
+
 #left-sidebar,
 #right-sidebar {
 	position: fixed;
@@ -165,7 +171,8 @@ header {
 	transition-delay: .27s; /* transition-duration of #left-sidebar li is .4s, transition-delay of #left-sidebar li is .07s, this will appear at the middle of transition, so its transition-delay is .07s+.4s/2=.27s*/
 }
 
-/* Main Content */
+/******************* Main Content *******************/
+
 #main-content {
 	display: flex;
 	margin: 68px 100px 0; /* margin-left of sidebar: 26px, width of sidebar: 48px, so margin-left of main is 26 + 48 + 26 = 100 */
@@ -221,6 +228,7 @@ header {
 	color: var(--default-color);
 }
 
+/******************* Splited table (use for alignment) *******************/
 
 table.splited {
 	width: 100%;
@@ -251,6 +259,8 @@ table.splited td {
 	padding: 3px 0 6px;
 }
 
+/******************* Boxes *******************/
+
 .box a {
 	color: var(--default-color-begin);
 	transition-duration: .4s;
@@ -259,13 +269,15 @@ table.splited td {
 	color: var(--default-color);
 }
 
-/* Shadow */
+/******************* Light *******************/
+
 .shadow {
 	transition-duration: .4s;
 	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
 }
 
-/* Tags */
+/******************* Tag *******************/
+
 .tag {
 	transition-duration: .4s;
 	border-radius: 4px;
@@ -273,24 +285,32 @@ table.splited td {
 	font-size: 11px;
 	padding: 4px;
 	word-wrap: normal;
+	color: white;
 }
 .tag:hover {
 	opacity: .95;
 }
 
-.tag.contest-div,
-.tag.contest-div:hover {
+.tag.light-green,
+.tag.light-green:hover {
 	background-color: #00bf00;
 	color: white;
 }
 
-.tag.contest-type,
-.tag.contest-type:hover {
+.tag.grey,
+.tag.grey:hover {
 	background-color: grey;
 	color: white;
 }
 
-/* Ratings */
+.tag.pink,
+.tag.pink:hover {
+	background-color: lightcoral;
+	color: white;
+}
+
+/******************* Rating *******************/
+
 .rating {
 	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
@@ -329,53 +349,47 @@ table.splited td {
 	color: red;
 }
 
-/* Username color */
+/******************* Username color *******************/
+
 .username {
 	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.username.unrated,
-.username.unrated:hover {
+.username.unrated {
 	color: black;
 }
 
-.username.newbie,
-.username.newbie:hover {
+.username.newbie {
 	color: grey;
 }
 
-.username.pupil,
-.username.pupil:hover {
+.username.pupil {
 	color: green;
 }
 
-.username.specialist,
-.username.specialist:hover {
+.username.specialist {
 	color: #03a89e;
 }
 
-.username.expert,
-.username.expert:hover {
+.username.expert {
 	color: blue;
 }
 
-.username.candidate-master,
-.username.candidate-master:hover {
+.username.candidate-master {
 	color: #aa00aa;
 }
 
-.username.master,
-.username.master:hover {
+.username.master {
 	color: #ff8c00;
 }
 
-.username.grandmaster,
-.username.grandmaster:hover {
+.username.grandmaster {
 	color: red;
 }
 
-/* Sign in & Sign up */
+/******************* Input box & button *******************/
+
 .input-box {
 	display: block;
 	text-align: center;
@@ -408,7 +422,8 @@ table.splited td {
 	background-position: 10% 10%;
 }
 
-/* Footer */
+/******************* Footer *******************/
+
 footer a {
 	color: var(--default-color-begin);
 	transition-duration: .4s;
@@ -426,7 +441,7 @@ footer {
 	text-align: center;
 }
 
-/* Discuss */
+/******************* Discussion *******************/
 
 .discuss-comment {
 	font-size: small;
@@ -461,7 +476,7 @@ footer {
 	color: black;
 }
 
-/* article */
+/******************* Article *******************/
 
 .article p {
 	margin: 8px 0;
@@ -549,6 +564,8 @@ footer {
 	color: inherit;
 }
 
+/******************* Page modifier *******************/
+
 ul.page-modifier {
 	padding-left: 0;
 	margin: 3px 0 0;
@@ -583,4 +600,80 @@ ul.page-modifier>a:last-child>li {
 	border-right: 1px solid var(--default-color);
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
+}
+
+/******************* Problemset *******************/
+
+table.problemset {
+	color: black;
+	margin: 5px;
+	width: calc(100% - 10px);
+	border-collapse: collapse;
+}
+
+table.problemset>thead {
+	color: black;
+}
+
+table.problemset i.fa-check {
+	color: green;
+}
+
+table.problemset i.fa-minus {
+	color: black;
+}
+
+table.problemset i.fa-clock {
+	color: sandybrown;
+}
+
+table.problemset i.fa-times {
+	color: red;
+}
+
+table.problemset td {
+	height: 40px;
+}
+
+table.problemset th:nth-child(1), /* Status */
+table.problemset td:nth-child(1),
+table.problemset th:nth-child(4), /* Difficulty */
+table.problemset td:nth-child(4) { 
+	text-align: center;
+	width: 35px;
+}
+
+table.problemset th:nth-child(2), /* Number */
+table.problemset td:nth-child(2),
+table.problemset th:nth-child(5), /* Accepted count*/
+table.problemset td:nth-child(5),
+table.problemset th:nth-child(6), /* Tried count */
+table.problemset td:nth-child(6) {
+	text-align: center;
+	width: 40px;
+}
+
+table.problemset th:nth-child(3) { /* Problem Name */
+	text-align: left;
+}
+
+table.problemset th:nth-child(7), /* Accepted rate */
+table.problemset td:nth-child(7) {
+	text-align: center;
+	width: 70px;
+}
+
+table.problemset td {
+	border-top: 1px solid grey;
+}
+table.problemset tr:first-child td {
+	border-top: 2px solid grey;
+}
+
+table.problemset .tag-wrapper {
+	float: right;
+	vertical-align: middle;
+}
+table.problemset .tag-wrapper a[hide] {
+	display: none;
 }
