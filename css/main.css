@@ -124,8 +124,6 @@ header {
 	margin: 3px 0;
 	border-right: 1px solid var(--default-color);
 	border-left: 1px solid var(--default-color);
-	border-top: 0;
-	border-bottom: 0;
 	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
 }
 #left-sidebar li:hover,
@@ -270,7 +268,6 @@ table.splited td {
 /* Tags */
 .tag {
 	transition-duration: .4s;
-	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
 	border-radius: 4px;
 	opacity: .7;
 	font-size: 11px;
@@ -279,7 +276,6 @@ table.splited td {
 }
 .tag:hover {
 	opacity: .95;
-	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.24), 17px 17px 24px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tag.contest-div,
@@ -380,8 +376,7 @@ table.splited td {
 }
 
 /* Sign in & Sign up */
-#sign-box input[type=text],
-#sign-box input[type=password] {
+.input-box {
 	display: block;
 	text-align: center;
 	width: 100%;
@@ -451,6 +446,10 @@ footer {
 
 .discuss-comment>a[onclick] { /* 'comment back' */
 	cursor: pointer;
+}
+
+.discuss-comment>span {
+	color: black;
 }
 
 .message-bubble {
@@ -523,4 +522,65 @@ footer {
 
 .article abbr {
 	text-decoration: underline wavy;
+}
+
+.article td,
+.article th,
+.article table {
+	border: 1px solid rgba(165, 165, 165, .85);
+}
+
+.article table {
+	border-collapse: collapse;
+	margin: 3px 0;
+}
+
+.hover-shadow {
+	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
+}
+.hover-shadow:hover {
+	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, .24), 17px 17px 24px 0 rgba(0, 0, 0, .19);
+}
+
+.box th,
+.box tr,
+.box td,
+.box tbody {
+	color: inherit;
+}
+
+ul.page-modifier {
+	padding-left: 0;
+	margin: 3px 0 0;
+}
+
+ul.page-modifier li {
+	display: inline-block;
+	background-color: #eeeeee;
+	text-align: center;
+	margin: 0;
+	transition-delay: .07s;
+	transition-duration: .4s;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	border-top: 1px solid var(--default-color);
+	border-bottom: 1px solid var(--default-color);
+	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
+}
+ul.page-modifier li:hover {
+	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, .24), 17px 17px 24px 0 rgba(0, 0, 0, .19);
+}
+ul.page-modifier li[current-page]:hover {
+	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
+}
+ul.page-modifier>a:first-child>li {
+	border-left: 1px solid var(--default-color);
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+ul.page-modifier>a:last-child>li {
+	border-right: 1px solid var(--default-color);
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
 }

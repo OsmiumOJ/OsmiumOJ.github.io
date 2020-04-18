@@ -114,9 +114,9 @@ Math? GuGuGu!
 			const review = [
 				'致远星',
 				'战况',
-				'如何'
+				'如何？'
 			];
-			const stackedit = new Stackedit();
+			var stackedit = new Stackedit();
 			stackedit.openFile({
 				content: {
 					text: mainContent
@@ -126,16 +126,43 @@ Math? GuGuGu!
 				$('div[main-content] .message-bubble').empty();
 				$('div[main-content] .message-bubble').prepend(file.content.html);
 			});
-			for (let i = 0; i < review.length(); ++i) {
+			for (let i = 0; i < review.length; ++i) {
+				let stackedit = new Stackedit();
 				stackedit.openFile({
 					content: {
 						text: review[i]
 					}
+				}, true);
+				// console.log(`div[reply]>div:nth-child(${i + 2}) .message-bubble`);
+				stackedit.on('fileChange', (file) => {
+					$(`div[reply]>div:nth-child(${i + 2}) .message-bubble`).empty();
+					$(`div[reply]>div:nth-child(${i + 2}) .message-bubble`).prepend(file.content.html);
 				});
-				$(`div[reply]>div:nth-child(${i + 2}) .message-bubble`).empty();
-				$(`div[reply]>div:nth-child(${i + 2}) .message-bubble`).prepend();
 			}
+			var userComment;
+			$('button[submit-comment]').click(() => {
+				let stackedit2 = new Stackedit();
+				stackedit2.openFile({
+					content: {
+						text: userComment
+					}
+				});
+				stackedit2.on('fileChange', (file) => {
+					userComment = file.content.text;
+				});
+			});
 		</script>
+		<style>
+			div[reply]>div {
+				margin: 8px 0;
+			}
+			div[reply]>div:nth-child(2) {
+				margin-top: 0;
+			}
+			div[reply]>div:nth-last-child(1) {
+				margin-bottom: 0;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="main-content">
@@ -146,7 +173,7 @@ Math? GuGuGu!
 						<img src="/img/ooj.png" alt="avatar"/>
 						<a href="/user?name=osmiumoj">OsmiumOJ</a>
 						<span>2020-04-17 17:36</span>
-						<a onclick="reply();">回复</a>
+						<a onclick="reply(0);">回复</a>
 						<div class="message-bubble article">
 							Loading...
 						</div>
@@ -158,7 +185,7 @@ Math? GuGuGu!
 						<img src="/img/ooj.png" alt="avatar"/>
 						<a href="/user?name=osmiumoj">OsmiumOJ</a>
 						<span>2020-04-17 17:37</span>
-						<a onclick="reply();">回复</a>
+						<a onclick="reply(1);">回复</a>
 						<div class="message-bubble article">
 							Loading...
 						</div>
@@ -167,7 +194,7 @@ Math? GuGuGu!
 						<img src="/img/ooj.png" alt="avatar"/>
 						<a href="/user?name=osmiumoj">OsmiumOJ</a>
 						<span>2020-04-17 17:38</span>
-						<a onclick="reply();">回复</a>
+						<a onclick="reply(2);">回复</a>
 						<div class="message-bubble article">
 							Loading...
 						</div>
@@ -176,7 +203,7 @@ Math? GuGuGu!
 						<img src="/img/ooj.png" alt="avatar"/>
 						<a href="/user?name=osmiumoj">OsmiumOJ</a>
 						<span>2020-04-17 17:39</span>
-						<a onclick="reply();">回复</a>
+						<a onclick="reply(3);">回复</a>
 						<div class="message-bubble article">
 							Loading...
 						</div>
@@ -184,7 +211,36 @@ Math? GuGuGu!
 				</div>
 			</div>
 			<div id="right-content">
-				
+				<div class="box">
+					<table style="color: black; text-align: center;">
+						<tr>
+							<th>类型</th>
+							<td>测试</td>
+						</tr>
+						<tr>
+							<th>评论数</th>
+							<td>3</td>
+						</tr>
+					</table>
+					<hr/>
+					<input class="shadow input-box" placeholder="页码" style="color: black;width: 80%; display: inline;"/>
+					<button class="grey-button shadow" style="display: inline; height: 24px; font-size: 14px; margin: 0 4px; vertical-align: middle; line-height: initial; width: calc(20% - 14px); padding: initial;">跳转</button>
+					<div style="width: 100%; text-align: center;">
+						<ul class="page-modifier">
+							<a href=".?id=1"><li><i class="fas fa-angle-double-left"></i></li></a>
+							<a href=".?id=1&page=0"><li><i class="fas fa-angle-left"></i></li></a>
+							<a href=".?id=1&page=-1"><li>-1</li></a>
+							<a href=".?id=1&page=0"><li>0</li></a>
+							<a><li current-page>1</li></a>
+							<a href=".?id=1&page=2"><li>2</li></a>
+							<a href=".?id=1&page=3"></a><li>3</li></a>
+							<a href=".?id=1&page=2"><li><i class="fas fa-angle-right"></i></li></a>
+							<a href=".?id=1&page=3"><li><i class="fas fa-angle-double-right"></i></li></a>
+						</ul>
+					</div>
+					<hr/>
+					<button class="grey-button shadow" submit-comment>发表评论</button>
+				</div>
 			</div>
 		</div>
 	</body>

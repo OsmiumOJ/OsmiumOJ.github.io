@@ -1,20 +1,17 @@
----
----
 <!doctype html>
 <html>
 	<head>
-		{% include main.html %}
+		<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/script/include.js"></script>
 		<title>登录 - OOJ</title>
 	</head>
 	<body>
-		{% include header.html %}
-		{% include sidebar.html %}
 		<div id="main-content-small">
 			<div class="box">
 				<h2 class="box-title" style="text-align: center;">登录</h2>
 				<div style="margin: 0 30px;" id="sign-box">
-					<input id="username" name="username" class="shadow user-sign-input" placeholder="用户名 or 邮箱" type="text"/>
-					<input id="password" name="password" class="shadow user-sign-input" placeholder="密码" type="password"/>
+					<input id="username" name="username" class="shadow input-box" placeholder="用户名 or 邮箱" type="text"/>
+					<input id="password" name="password" class="shadow input-box" placeholder="密码" type="password"/>
 					<div style="text-align: center;">
 						<a href="/forget">找回密码</a> <span style="color: grey;">|</span> <a href="/register">注册账号</a>
 					</div>
