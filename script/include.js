@@ -45,7 +45,7 @@ $(() => {
 					<span class="gradient-text">比赛</span>
 				</li>
 			</a>
-			<a href="/judgments">
+			<a href="/submissions">
 				<li>
 					<i class="fas fa-calendar-check gradient-text"></i>
 					<span class="gradient-text">评测</span>
