@@ -173,9 +173,13 @@ header {
 
 /******************* Main Content *******************/
 
+body {
+	margin: 0; /* cover the user-agent stylesheet */
+}
+
 #main-content {
 	display: flex;
-	margin: 68px 100px 0; /* margin-left of sidebar: 26px, width of sidebar: 48px, so margin-left of main is 26 + 48 + 26 = 100 */
+	margin: 68px 108px 0; /* 30 + width of sidebar(48) + 30 */
 }
 
 #main-content #left-content,
@@ -185,14 +189,14 @@ header {
 }
 
 #main-content #left-content {
-	width: calc(61.8% - 10px);
-	margin-right: 10px;
+	width: calc(61.8% - 15px);
+	margin-right: 15px;
 	float: left;
 }
 
 #main-content #right-content {
-	width: calc(38.2% - 10px);
-	margin-left: 10px;
+	width: calc(38.2% - 15px);
+	margin-left: 15px;
 	float: right;
 }
 
@@ -201,14 +205,15 @@ header {
 	margin: 68px auto 0 auto;
 }
 
-/* Box */
+/******************* Box *******************/
+
 .box {
 	background-color: rgba(239, 239, 239, .85);
 	border: 1px solid var(--default-color);
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	padding: 8px;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .box .box-title {
