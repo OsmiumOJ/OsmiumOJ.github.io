@@ -7,12 +7,29 @@
 	</head>
 	<body>
 		<div id="main-content">
+			<!-- <div class="box" style="width: 100%;">
+				
+			</div> -->
 			<div class="box" style="width: 100%;">
+				<div style="width: 100%; text-align: center;">
+					<ul class="page-modifier">
+						<a href="?id=1"><li><i class="fas fa-angle-double-left"></i></li></a>
+						<a href="?page=0"><li><i class="fas fa-angle-left"></i></li></a>
+						<a href="?page=-1"><li>-1</li></a>
+						<a href="?page=0"><li>0</li></a>
+						<a><li current-page>1</li></a>
+						<a href="?page=2"><li>2</li></a>
+						<a href="?page=3"></a><li>3</li></a>
+						<a href="?page=2"><li><i class="fas fa-angle-right"></i></li></a>
+						<a href="?page=3"><li><i class="fas fa-angle-double-right"></i></li></a>
+					</ul>
+				</div>
 				<table class="problemset" cellspaceing="0">
 					<thead>
 						<th>状态</th>
 						<th>编号</th>
 						<th>题目名称</th>
+						<th></th>
 						<th>难度</th>
 						<th>通过</th>
 						<th>提交</th>
@@ -24,9 +41,9 @@
 							<td>1</td>
 							<td>
 								<a href="/problem?id=1">Accepted Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -38,9 +55,9 @@
 							<td>2</td>
 							<td>
 								<a href="/problem?id=2">Didn't Submmited Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -52,9 +69,9 @@
 							<td>3</td>
 							<td>
 								<a href="/problem?id=3">Wrong Answer Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -66,9 +83,9 @@
 							<td>4</td>
 							<td>
 								<a href="/problem?id=4">Time Limit Exceeded Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -80,9 +97,9 @@
 							<td>5</td>
 							<td>
 								<a href="/problem?id=5">Memory Limit Exceeded Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -94,9 +111,9 @@
 							<td>6</td>
 							<td>
 								<a href="/problem?id=3">Output Limit Exceeded Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -108,9 +125,9 @@
 							<td>7</td>
 							<td>
 								<a href="/problem?id=3">Runtime Error Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -122,9 +139,9 @@
 							<td>8</td>
 							<td>
 								<a href="/problem?id=3">Unknown Result Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -136,9 +153,9 @@
 							<td>9</td>
 							<td>
 								<a href="/problem?id=3">Queueing Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -150,9 +167,9 @@
 							<td>10</td>
 							<td>
 								<a href="/problem?id=3">Judging Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -164,9 +181,9 @@
 							<td>11</td>
 							<td>
 								<a href="/problem?id=3">Partially Correct Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -178,9 +195,9 @@
 							<td>12</td>
 							<td>
 								<a href="/problem?id=3">Compile Error Problem</a>
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -192,9 +209,9 @@
 							<td>13</td>
 							<td>
 								<a href="/problem?id=3">File Error Problem</a> <!-- 如果我们能发现你搞错文件了（比如容易发现的提交答案，或者题目要求输出到foo.out而你却输出到了stdout中 -->
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -206,9 +223,9 @@
 							<td>14</td>
 							<td>
 								<a href="/problem?id=3">Judgment Failed Problem</a> <!-- 评测程序锅了 -->
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -217,12 +234,12 @@
 						</tr>
 						<tr>
 							<td><a><i class="fas fa-fast-forward"></i></a></td>
-							<td>14</td>
+							<td>15</td>
 							<td>
 								<a href="/problem?id=3">Skipped Problem</a> <!-- 作弊了？ -->
-								<div class="tag-wrapper">
-									<a class="tag grey" href="?tag=">系统测试</a>
-								</div>
+							</td>
+							<td>
+								<a class="tag grey" href="?tag=">系统测试</a>
 							</td>
 							<td>N/A</td>
 							<td>0</td>
@@ -231,6 +248,19 @@
 						</tr>
 					</tbody>
 				</table>
+				<div style="width: 100%; text-align: center;">
+					<ul class="page-modifier">
+						<a href="?id=1"><li><i class="fas fa-angle-double-left"></i></li></a>
+						<a href="?page=0"><li><i class="fas fa-angle-left"></i></li></a>
+						<a href="?page=-1"><li>-1</li></a>
+						<a href="?page=0"><li>0</li></a>
+						<a><li current-page>1</li></a>
+						<a href="?page=2"><li>2</li></a>
+						<a href="?page=3"></a><li>3</li></a>
+						<a href="?page=2"><li><i class="fas fa-angle-right"></i></li></a>
+						<a href="?page=3"><li><i class="fas fa-angle-double-right"></i></li></a>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</body>

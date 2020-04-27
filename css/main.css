@@ -291,6 +291,7 @@ table.splited td {
 	padding: 4px;
 	word-wrap: normal;
 	color: white;
+	white-space: nowrap;
 }
 .tag:hover {
 	opacity: .95;
@@ -671,18 +672,18 @@ table.problemset td {
 
 table.problemset th:nth-child(1), /* Status */
 table.problemset td:nth-child(1),
-table.problemset th:nth-child(4), /* Difficulty */
-table.problemset td:nth-child(4) { 
+table.problemset th:nth-child(5), /* Difficulty */
+table.problemset td:nth-child(5) { 
 	text-align: center;
 	width: 35px;
 }
 
 table.problemset th:nth-child(2), /* Number */
 table.problemset td:nth-child(2),
-table.problemset th:nth-child(5), /* Accepted count*/
-table.problemset td:nth-child(5),
-table.problemset th:nth-child(6), /* Tried count */
-table.problemset td:nth-child(6) {
+table.problemset th:nth-child(6), /* Accepted count*/
+table.problemset td:nth-child(6),
+table.problemset th:nth-child(7), /* Tried count */
+table.problemset td:nth-child(7) {
 	text-align: center;
 	width: 40px;
 }
@@ -691,8 +692,8 @@ table.problemset th:nth-child(3) { /* Problem Name */
 	text-align: left;
 }
 
-table.problemset th:nth-child(7), /* Accepted rate */
-table.problemset td:nth-child(7) {
+table.problemset th:nth-child(8), /* Accepted rate */
+table.problemset td:nth-child(8) {
 	text-align: center;
 	width: 70px;
 }
@@ -704,10 +705,10 @@ table.problemset tr:first-child td {
 	border-top: 2px solid grey;
 }
 
-table.problemset .tag-wrapper {
+/* table.problemset .tag-wrapper {
 	float: right;
 	vertical-align: middle;
 }
 table.problemset .tag-wrapper a[hide] {
 	display: none;
-}
+} */
