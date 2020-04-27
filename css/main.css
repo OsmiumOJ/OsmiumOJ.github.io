@@ -442,7 +442,7 @@ footer span[onclick] {
 }
 
 footer {
-	margin-top: 10px;
+	margin: 10px 0;
 	text-align: center;
 }
 
@@ -620,19 +620,48 @@ table.problemset>thead {
 	color: black;
 }
 
-table.problemset i.fa-check {
+table.problemset i.fa-check { /* AC */
 	color: green;
 }
 
-table.problemset i.fa-minus {
+table.problemset i.fa-minus { /* no submission */
 	color: black;
 }
 
-table.problemset i.fa-clock {
+table.problemset i.fa-clock, /* TLE */
+table.problemset i.fa-database, /* MLE */
+table.problemset i.fa-print { /* OLE */
 	color: sandybrown;
 }
 
-table.problemset i.fa-times {
+table.problemset i.fa-bomb { /* RE */
+	color: darkviolet;
+}
+
+table.problemset i.fa-question-circle { /* Unknown Result */
+	color: lightcoral;
+}
+
+table.problemset i.fa-hourglass-start, /* Queueing */
+table.problemset i.fa-spinner { /* Judging */
+	color: lightskyblue;
+}
+
+table.problemset i.fa-star-half-alt { /* PAC */
+	color: springgreen;
+}
+
+table.problemset i.fa-code, /* CE */
+table.problemset i.fa-file { /* File Error */
+	color: chocolate;
+}
+
+table.problemset i.fa-server, /* Judgment Failed */
+table.problemset i.fa-fast-forward { /* Skipped */
+	color: grey;
+}
+
+table.problemset i.fa-times { /* WA */
 	color: red;
 }
 
