@@ -179,7 +179,7 @@ body {
 
 #main-content {
 	display: flex;
-	margin: 68px 108px 0; /* 30 + width of sidebar(48) + 30 */
+	margin: 80px 108px 0; /* 30 + width of sidebar(48) + 30 */
 }
 
 #main-content #left-content,
