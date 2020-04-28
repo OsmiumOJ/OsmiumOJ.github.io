@@ -178,7 +178,7 @@ body {
 }
 
 #main-content {
-	display: flex;
+	display: flow-root;
 	margin: 80px 108px 0; /* 30 + width of sidebar(48) + 30 */
 }
 
