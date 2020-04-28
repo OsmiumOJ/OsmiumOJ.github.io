@@ -137,15 +137,15 @@ header {
 	height: 96px;
 }
 
-#left-sidebar>:first-of-type li,
-#right-sidebar>:first-of-type li {
+#left-sidebar > :first-of-type li,
+#right-sidebar > :first-of-type li {
 	border-top-left-radius: 24px; /* width is 48px, this is half of width */
 	border-top-right-radius: 24px;
 	border-top: 1px solid var(--default-color);
 }
 
-#left-sidebar>:last-of-type li,
-#right-sidebar>:last-of-type li {
+#left-sidebar > :last-of-type li,
+#right-sidebar > :last-of-type li {
 	border-bottom-left-radius: 24px;
 	border-bottom-right-radius: 24px;
 	border-bottom: 1px solid var(--default-color);
@@ -453,7 +453,7 @@ footer {
 	font-size: small;
 }
 
-.discuss-comment>img { /* avatar */
+.discuss-comment > img { /* avatar */
 	height: 40px;
 	float: left;
 	-ms-user-select: none;
@@ -461,15 +461,15 @@ footer {
 	-webkit-user-select: none;
 }
 
-.discuss-comment>span::before { /* date & time */
+.discuss-comment > span::before { /* date & time */
 	content: "发表于 ";
 }
 
-.discuss-comment>a[onclick] { /* 'comment back' */
+.discuss-comment > a[onclick] { /* 'comment back' */
 	cursor: pointer;
 }
 
-.discuss-comment>span {
+.discuss-comment > span {
 	color: black;
 }
 
@@ -519,25 +519,25 @@ footer {
 	-webkit-user-select: none;
 }
 
-.article ol>li>ol {
+.article ol > li > ol {
 	list-style-type: upper-roman;
 }
-.article ol>li>ol>li>ol {
+.article ol > li > ol > li > ol {
 	list-style-type: lower-alpha;
 }
-.article ol>li>ol>li>ol>li>ol {
+.article ol > li > ol > li > ol > li > ol {
 	list-style-type: lower-roman;
 }
-.article ol>li>ol>li>ol>li>ol>li>ol {
+.article ol > li > ol > li > ol > li > ol > li > ol {
 	list-style-type: lower-greek;
 }
-.article ol>li>ol>li>ol>li>ol>li>ol>li>ol {
+.article ol > li > ol > li > ol > li > ol > li > ol > li > ol {
 	list-style-type: upper-alpha;
 }
-.article ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
+.article ol > li > ol > li > ol > li > ol > li > ol > li > ol > li > ol {
 	list-style-type: decimal-leading-zero;
 }
-.article ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol ol {
+.article ol > li > ol > li > ol > li > ol > li > ol > li > ol > li > ol ol {
 	list-style-type: cjk-ideographic;
 }
 
@@ -597,12 +597,12 @@ ul.page-modifier li:hover {
 ul.page-modifier li[current-page]:hover {
 	box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .24), 3px 3px 9px 0 rgba(0, 0, 0, .19);
 }
-ul.page-modifier>a:first-child>li {
+ul.page-modifier > a:first-child > li {
 	border-left: 1px solid var(--default-color);
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
-ul.page-modifier>a:last-child>li {
+ul.page-modifier > a:last-child > li {
 	border-right: 1px solid var(--default-color);
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
@@ -617,7 +617,7 @@ table.problemset {
 	border-collapse: collapse;
 }
 
-table.problemset>thead {
+table.problemset > thead {
 	color: black;
 }
 
@@ -670,6 +670,14 @@ table.problemset td {
 	height: 40px;
 }
 
+table.problemset td:nth-child(4) > a { /* Tags */
+	float: right;
+	margin-right: 2px;
+}
+table.problemset td:nth-child(4) > a:first-child {
+	margin-right: 0;
+}
+
 table.problemset th:nth-child(1), /* Status */
 table.problemset td:nth-child(1),
 table.problemset th:nth-child(5), /* Difficulty */
@@ -680,7 +688,7 @@ table.problemset td:nth-child(5) {
 
 table.problemset th:nth-child(2), /* Number */
 table.problemset td:nth-child(2),
-table.problemset th:nth-child(6), /* Accepted count*/
+table.problemset th:nth-child(6) , /* Accepted count*/
 table.problemset td:nth-child(6),
 table.problemset th:nth-child(7), /* Tried count */
 table.problemset td:nth-child(7) {
