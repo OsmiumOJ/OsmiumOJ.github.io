@@ -720,3 +720,15 @@ table.problemset tr:first-child td {
 table.problemset .tag-wrapper a[hide] {
 	display: none;
 } */
+
+/******************* Pigeon Wrapper *******************/
+
+.pigeon-wrapper * {
+	display: block;
+	margin: 0 auto;
+}
+
+.pigeon-wrapper span {
+	width: fit-content;
+	font-size: 60px;
+}
