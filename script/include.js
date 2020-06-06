@@ -13,6 +13,10 @@ $(() => {
 		
 		<script src="https://cdn.staticfile.org/vue/2.6.11/vue.min.js"></script>
 		<script src="/script/main.js"></script>
+		
+		<!-- 实时统计 -->
+		<script id="_wau3z0">var _wau = _wau || []; _wau.push(["tab", "y65jhjdpj6", "3z0", "left-middle"]);</script>
+		<script async src="//waust.at/t.js"></script>
 	`);
 	$('body').prepend(`
 		<header unselectable="on" onselectstart="return false;">
