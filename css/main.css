@@ -6,10 +6,16 @@
 	--default-color: #ff359a;
 }
 
+/******************* Fonts *******************/
+@font-face {
+	font-family: Lato;
+	src: url(/font/lato-medium.ttf);
+}
+
 /******************* Global Settings *******************/
 
 * {
-	font-family: 'Microsoft Yahei', sans-serif;
+	font-family: Lato, 'Microsoft Yahei', sans-serif;
 	color: var(--default-color);
 	box-sizing: border-box;
 	word-wrap: break-word;
@@ -44,7 +50,7 @@ header {
 	line-height: 50px;
 	background-color: rgba(240, 240, 240, .836);
 	border-bottom: 2px solid;
-	border-top: 0; /* some username agent stylesheet will set these into non-zero value (such as iOS Safari) */
+	border-top: 0; /* some user agent stylesheet will set these into non-zero value (such as iOS Safari) */
 	border-left: 0;
 	border-right: 0;
 	border-image: linear-gradient(to right, var(--default-color-begin), var(--default-color-end)) 20 20;
@@ -359,38 +365,45 @@ table.splited td {
 
 .username {
 	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
-.username.unrated {
+.username.unrated,
+.username.unrated:hover {
 	color: black;
 }
 
-.username.newbie {
+.username.newbie,
+.username.newbie:hover {
 	color: grey;
 }
 
-.username.pupil {
+.username.pupil,
+.username.pupil:hover {
 	color: green;
 }
 
-.username.specialist {
+.username.specialist,
+.username.specialist:hover {
 	color: #03a89e;
 }
 
-.username.expert {
+.username.expert,
+.username.expert:hover {
 	color: blue;
 }
 
-.username.candidate-master {
+.username.candidate-master,
+.username.candidate-master:hover {
 	color: #aa00aa;
 }
 
-.username.master {
+.username.master,
+.username.master:hover {
 	color: #ff8c00;
 }
 
-.username.grandmaster {
+.username.grandmaster,
+.username.grandmaster:hover {
 	color: red;
 }
 
